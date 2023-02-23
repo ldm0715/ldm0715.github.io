@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-02-23T01:51:22.528Z</updated>
+  <updated>2023-02-23T03:57:43.230Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2023/02/21/hello-hexo/"/>
     <id>http://example.com/2023/02/21/hello-hexo/</id>
     <published>2023-02-21T03:27:44.000Z</published>
-    <updated>2023-02-23T01:51:22.528Z</updated>
+    <updated>2023-02-23T03:57:43.230Z</updated>
     
     
     <summary type="html">由于复杂原因搭建起Hexo博客，搭建起来确实有点费力，但是加载速度很快，也不怎么吃性能，各种插件也很自由，感觉不错</summary>
