@@ -1,4 +1,11 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>.pace {
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>.loading-img {
+  background: url(https://pic.imgdb.cn/item/63e4ec274757feff339981c5.webp) no-repeat center center;
+  background-size: cover;
+}
+
+
+
+.pace {
   -webkit-pointer-events: none;
   pointer-events: none;
   -webkit-user-select: none;
@@ -62,10 +69,4 @@
   100% {
     background-position: 0% 50%;
   }
-}
-
-
-.loading-img {
-  background: url(https://pic.imgdb.cn/item/63e4ec274757feff339981c5.webp) no-repeat center center;
-  background-size: cover;
 }
