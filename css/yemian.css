@@ -1,4 +1,4 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>:root {
+:root {
   --trans-light: rgba(255, 255, 255, 0.99);
   --trans-dark: rgba(25, 25, 25, 0.88);
   --border-style: 1px solid rgb(169, 169, 169);

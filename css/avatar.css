@@ -1,4 +1,4 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/* 侧边栏个人信息卡片动态渐变色 */
+/* 侧边栏个人信息卡片动态渐变色 */
 #aside-content > .card-widget.card-info {
   background: linear-gradient(
     -45deg,
