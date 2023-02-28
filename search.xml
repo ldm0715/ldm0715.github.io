@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>music</title>
+      <link href="/2023/02/28/music/"/>
+      <url>/2023/02/28/music/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><!-- 简单示例 (id, server, type)  -->    <div id="aplayer-WjrStegR" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><!-- 进阶示例 -->    <div id="aplayer-WqWjkVxo" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"    ></div>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello Hexo</title>
       <link href="/2023/02/21/hello-hexo/"/>
       <url>/2023/02/21/hello-hexo/</url>

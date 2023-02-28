@@ -6,7 +6,7 @@
   <link href="http://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="http://ldm0715.github.io/"/>
-  <updated>2023-02-26T02:50:47.839Z</updated>
+  <updated>2023-02-28T02:38:19.081Z</updated>
   <id>http://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>music</title>
+    <link href="http://ldm0715.github.io/2023/02/28/music/"/>
+    <id>http://ldm0715.github.io/2023/02/28/music/</id>
+    <published>2023-02-28T02:34:49.000Z</published>
+    <updated>2023-02-28T02:38:19.081Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><!-- 简单示例 (id, server, type)  -->    <div id="aplayer-WjrStegR" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><!-- 进阶示例 -->    <div id="aplayer-WqWjkVxo" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"    ></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello Hexo</title>
