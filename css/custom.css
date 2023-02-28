@@ -1,5 +1,4 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
-@font-face {
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>@font-face {
   /* 为载入的字体取名字(随意) */
   font-family: 'YSHST';	
   /* 字体文件地址(相对或者绝对路径都可以) */
@@ -11,6 +10,12 @@
   /* 定义显示样式 */
   font-display: block;
 }
+
+.loading-img {
+  background: url(https://pic.imgdb.cn/item/63e4ec274757feff339981c5.webp) no-repeat center center;
+  background-size: cover;
+}
+
 
 /* 文章页H1-H6图标样式效果 */
 /* 控制风车转动速度 4s那里可以自己调节快慢 */
@@ -165,8 +170,8 @@ h6::before {
 }
 
 :root {
-  --trans-light: rgba(255, 255, 255, 0.88);
-  --trans-dark: rgba(25, 25, 25, 0.88);
+  --trans-light: rgba(255, 255, 255, 0.78);
+  --trans-dark: rgba(25, 25, 25, 0.78);
   --border-style: 1px solid rgb(169, 169, 169);
   --backdrop-filter: blur(5px) saturate(150%);
 }
