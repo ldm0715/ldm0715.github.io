@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Python编程中遇到的一些问题 | gcnanmuの博客</title><meta name="author" content="gcnanmu"><meta name="copyright" content="gcnanmu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言  近期进行Python编程的问题汇总。 需求文档的生成   需求文档，其实就是requirements.txt。   对于一个项目来说，要能够运行，需要构建相应的运行环境，运行环境中需要包含项目运行的所有库。对于Python来说，它并没有向下兼容的特性，所以明确项目的运行环境就更加重要。对于同一个库，不同的版本可能会有所差异，因此一个对 项目运行库环境的说明就尤其重要。requirement">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python编程中遇到的一些问题">
+<meta property="og:url" content="http://gcnanmu.gitee.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/index.html">
+<meta property="og:site_name" content="gcnanmuの博客">
+<meta property="og:description" content="前言  近期进行Python编程的问题汇总。 需求文档的生成   需求文档，其实就是requirements.txt。   对于一个项目来说，要能够运行，需要构建相应的运行环境，运行环境中需要包含项目运行的所有库。对于Python来说，它并没有向下兼容的特性，所以明确项目的运行环境就更加重要。对于同一个库，不同的版本可能会有所差异，因此一个对 项目运行库环境的说明就尤其重要。requirement">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://z4a.net/images/2023/02/23/pycharm.png">
+<meta property="article:published_time" content="2022-11-19T02:12:00.000Z">
+<meta property="article:modified_time" content="2023-03-19T08:02:50.168Z">
+<meta property="article:author" content="gcnanmu">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="PyCharm">
+<meta property="article:tag" content="Jupyter">
+<meta property="article:tag" content="OpenCV">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://z4a.net/images/2023/02/23/pycharm.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://gcnanmu.gitee.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":90,"position":"top","messagePrev":"本文章距编写至今已达","messageNext":"天 如有变动，请以实际情况为准."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: gcnanmu","link":"链接: ","source":"来源: gcnanmuの博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Python编程中遇到的一些问题',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-03-19 16:02:50'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/runtime.css"><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/yemian.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="/css/runtime.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="gcnanmuの博客" type="application/atom+xml">
+</head><body><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://pic.imgdb.cn/item/63e4ec274757feff339981c5.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/journals/"><i class="fa-fw fa-sharp fa-solid fa-pen-nib"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://z4a.net/images/2023/02/23/pycharm.png')"><nav id="nav"><span id="blog-info"><a href="/" title="gcnanmuの博客"><img class="site-icon" src="https://pic.imgdb.cn/item/63e4ec274757feff339981c5.webp# image"/><span class="site-name">gcnanmuの博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/journals/"><i class="fa-fw fa-sharp fa-solid fa-pen-nib"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Python编程中遇到的一些问题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-19T02:12:00.000Z" title="发表于 2022-11-19 10:12:00">2022-11-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-19T08:02:50.168Z" title="更新于 2023-03-19 16:02:50">2023-03-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Python/">Python</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Python编程中遇到的一些问题"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  近期进行Python编程的问题汇总。</p>
+<h2 id="需求文档的生成"><a href="#需求文档的生成" class="headerlink" title="需求文档的生成"></a>需求文档的生成</h2><hr>
+<p>  需求文档，其实就是<code>requirements.txt</code>。</p>
+<p>  对于一个项目来说，要能够运行，需要构建相应的运行环境，运行环境中需要包含项目运行的所有库。对于Python来说，它并没有向下兼容的特性，所以明确项目的运行环境就更加重要。对于同一个库，不同的版本可能会有所差异，因此一个对 项目运行库环境的说明就尤其重要。<code>requirements.txt</code>本质就是包含了项目所需要库的一个详细总结。<br>  生成requirements文件一般来说有两种方法。</p>
+<h3 id="pip-freeze-gt-requirements-txt"><a href="#pip-freeze-gt-requirements-txt" class="headerlink" title="pip freeze &gt; requirements.txt"></a><code>pip freeze &gt; requirements.txt</code></h3><hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip freeze &gt; requirements.txt</span><br></pre></td></tr></table></figure>
+<ul>
+<li>按这种方式生成的话<strong>一定要在特定的环境下</strong>。</li>
+<li>如果在命令行中运行指令，默认是在Anaconda（base）的环境下运行，会导致将<strong>base环境中所有的包全部导入</strong>，这样操作明显是错误的。会给后续的操作带来很大的麻烦。</li>
+</ul>
+<div align="center">
+  <img src="https://z4a.net/images/2022/11/19/requirements1.png" alt="直接在cmd生成" width=600>
+</div>
+
+
+<h3 id="pipreqs-encoding-utf8-force"><a href="#pipreqs-encoding-utf8-force" class="headerlink" title="pipreqs . --encoding=utf8 --force"></a><code>pipreqs . --encoding=utf8 --force</code></h3><hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pipreqs . --encoding=utf8 --force</span><br></pre></td></tr></table></figure>
+<ul>
+<li>此命令需要安装<code>pipreqs</code>，安装命令为：<code>pip install pipreqs</code> 。此方法最大的优点就是<strong>在任何情况都能正确导入项目需要的库</strong>，因此非常推荐使用。</li>
+<li>注意–encoding&#x3D;utf8为使用utf8编码，不然可能会报<code>UnicodeDecodeError: ‘gbk’ codec can’t decode byte 0xae in position 406: illegal multibyte sequence </code>的错误.</li>
+<li><code>--force</code>强制执行， 生成目录下的<code>requirements.txt</code>，存在时会直接覆盖。</li>
+</ul>
+<div align="center">
+     <img src="https://z4a.net/images/2022/11/19/requirements2.png" alt="直接在cmd生成" width=600>
+</div>
+
+<h3 id="从requirements中安装相应的库。"><a href="#从requirements中安装相应的库。" class="headerlink" title="从requirements中安装相应的库。"></a>从requirements中安装相应的库。</h3><hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+<p>   这个也是非常常用的一个操作，在运行项目时经常需要通过<code>requirements.txt</code>来安装各种项目依赖库。</p>
+<h2 id="PyInstall打包过于臃肿"><a href="#PyInstall打包过于臃肿" class="headerlink" title="PyInstall打包过于臃肿"></a>PyInstall打包过于臃肿</h2><hr>
+<p>  这个问题其实跟上面<code>pip freeze &gt; requirements.txt</code>生成需求文档的问题一样，需要在特定的虚拟环境中进行打包。如果<strong>直接在命令行输入指令（命令行默认是base环境），就会导致直接将base环境中所有的包都纳入打包范围</strong>，结果生成大小不符合常理的打包文件。</p>
+<h3 id="错误做法"><a href="#错误做法" class="headerlink" title="错误做法"></a>错误做法</h3><hr>
+<div align="center">
+      <img src="https://z4a.net/images/2022/11/19/pyinstaller1.png" alt="直接在cmd生成" width="500">
+    <img src="https://z4a.net/images/2022/11/19/pyinstaller2.png" alt="直接在cmd生成" width="500">
+</div>
+
+<h3 id="正确做法"><a href="#正确做法" class="headerlink" title="正确做法"></a>正确做法</h3><hr>
+<div align="center">
+      <img src="https://z4a.net/images/2022/11/19/pyinstaller3.png" alt="直接在cmd生成" width="500">
+    <br>
+    <img src="https://z4a.net/images/2022/11/19/pyinstaller4.png" alt="直接在cmd生成" width="500">
+</div>
+
+<h2 id="PyCharm连接Jupyter报错"><a href="#PyCharm连接Jupyter报错" class="headerlink" title="PyCharm连接Jupyter报错"></a>PyCharm连接Jupyter报错</h2><hr>
+<p>  虽然VsCode作为代码编辑器足够优秀，但是并没有很好的编写项目的能力。<br>PyCharm其实是做项目更好的选择。但是我的PyCharm运行ipynb文件时会报如下的错误，这个问题真的困扰我很久了。</p>
+<div align="center">
+  <img src="https://z4a.net/images/2022/11/19/jupyter5.png" alt="直接在cmd生成" width="600">
+</div>
+
+<p>  解决方法今天找到：</p>
+<h3 id="得到jupyter内核所在的路径。"><a href="#得到jupyter内核所在的路径。" class="headerlink" title="得到jupyter内核所在的路径。"></a>得到jupyter内核所在的路径。</h3><hr>
+<p>  在cmd输入<code>jupyter kernelspec list</code>,得到jupyter内核所在的路径。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter kernelspec list</span><br></pre></td></tr></table></figure>
+<div align="center">
+  <img src="https://z4a.net/images/2022/11/19/jupyter.png" alt="直接在cmd生成" width="600">
+</div>
+​	
+
+
+<h3 id="查看Python编译器的路径是否正确。"><a href="#查看Python编译器的路径是否正确。" class="headerlink" title="查看Python编译器的路径是否正确。"></a>查看Python编译器的路径是否正确。</h3><hr>
+<p>  进入安装内核目录打开<code>kernel.jason</code>文件，查看Python编译器的路径是否正确。</p>
+<div align="center">
+  <img src="https://z4a.net/images/2022/11/19/jupyter2.png" alt="直接在cmd生成" width="600">
+</div>
+
+
+<h3 id="修改kernel-jason中内核的路径"><a href="#修改kernel-jason中内核的路径" class="headerlink" title="修改kernel.jason中内核的路径"></a>修改<code>kernel.jason</code>中内核的路径</h3><hr>
+<p>  按照自己能够启动jupyter的Python路径，修改<code>kernel.jason</code>中内核的路径。（基本情况是生成了错误的路径）</p>
+<div align="center">
+  <img src="https://z4a.net/images/2022/11/19/jupyter3.png" alt="直接在cmd生成" width="600">
+</div>
+
+<h3 id="重启jupyter"><a href="#重启jupyter" class="headerlink" title="重启jupyter"></a>重启jupyter</h3><hr>
+<h3 id="重启PyChram"><a href="#重启PyChram" class="headerlink" title="重启PyChram"></a>重启PyChram</h3><hr>
+<p>  重启PyChram，问题解决。</p>
+<div align="center">
+  <img src="https://z4a.net/images/2022/11/19/jupyter4.png" alt="直接在cmd生成" width="600">
+</div>
+
+
+<blockquote>
+<p>我也是生成了错误的内核路径，不知道啥情况，我连那个文件夹都没有，这个估计是PyCharm的bug，希望日后修复。</p>
+</blockquote>
+<h2 id="PyCharm中OpenCV无法得到提示"><a href="#PyCharm中OpenCV无法得到提示" class="headerlink" title="PyCharm中OpenCV无法得到提示"></a>PyCharm中OpenCV无法得到提示</h2><hr>
+<p>在PyCharm中<code>import cv2</code>后，会出现调用cv2方法时没有任何补全提示，甚至输入<code>cv2.</code>时还会出现未知高亮，但是还是可以正常使用。PyCharm无法提供补全提示，说明PyCharm无法找到对应的索引，这时候就需要去找到cv2包所在的文件路径，然后将它加入到解释器路径中。</p>
+<h3 id="寻找cv2所在路径"><a href="#寻找cv2所在路径" class="headerlink" title="寻找cv2所在路径"></a>寻找cv2所在路径</h3><hr>
+<p>  如果是在conda环境中安装，以我的路径为例：</p>
+<blockquote>
+<p>D:\Anaconda\envs\digital_image\Lib\site-packages\cv2</p>
+</blockquote>
+<div align="center">
+  <img src="https://z4a.net/images/2023/02/08/cv26a4b7efd79bb3fb0.png" alt="cv2所在路径" width=600>
+</div>
+
+<p>  如果不是在conda环境中安装，那么此时可以先写入<code>cv2.imread</code>，选中<code>imread</code>后右键，按照“转到→实现”的顺序就可以跳转到<code>_init_.py</code>文件中，鼠标悬停在标签上即可看到路径。</p>
+<div align="center">
+  <img src="https://z4a.net/images/2023/02/08/cv2.png" alt="查找cv2所在路径" width=600>
+</div>
+
+<br>
+
+<blockquote>
+<p>小插曲：其实可以看到我的cv2路径已经被复制到c盘中，所以一开始我本来尝试删除进行错误展示，但是发现删除解释器中的cv2路径后还是能正常进行代码提示，原因就在这里，估计是PyCharm进行了备份。</p>
+</blockquote>
+<h3 id="将路径加入解释器路径中"><a href="#将路径加入解释器路径中" class="headerlink" title="将路径加入解释器路径中"></a>将路径加入解释器路径中</h3><hr>
+<p>  找到路径后，按照“文件→设置→项目→Python解释器”的顺序，找到PyCharm解释器列表，之后的操作如下图所示。</p>
+<div align="center">
+
+<img src="https://z4a.net/images/2023/02/08/d37934718875d1edba8d4243137c3b1a.png" alt="Python解释器" width="600">
+
+<img src="https://z4a.net/images/2023/02/08/cv22.png" alt="直接在cmd生成" width="600">
+
+
+<img src="https://z4a.net/images/2023/02/08/cv21.png" alt="直接在cmd生成" width="600">
+</div>
+
+<h3 id="重启PyCharm"><a href="#重启PyCharm" class="headerlink" title="重启PyCharm"></a>重启PyCharm</h3><hr>
+<p>  操作完成后，<strong>建议重启一下PyCharm</strong>，之后写入<code>import cv2</code>操作后，就可以直接看见代码提示，未知的高亮提示也不见了。</p>
+<div align="center">
+  <img src="https://z4a.net/images/2023/02/08/e280accc813259725a0330982e12968f.png" alt="解决补全问题" width="600">
+</div></article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>Python编程中遇到的一些问题</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="http://gcnanmu.gitee.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/">http://gcnanmu.gitee.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>gcnanmu</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2022-11-19</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2023-03-19</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Python/">Python</a><a class="post-meta__tags" href="/tags/PyCharm/">PyCharm</a><a class="post-meta__tags" href="/tags/Jupyter/">Jupyter</a><a class="post-meta__tags" href="/tags/OpenCV/">OpenCV</a></div><div class="post_share"><div class="social-share" data-image="https://z4a.net/images/2023/02/23/pycharm.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/02/21/hexo-bo-ke-da-jian-li-cheng/" title="Hello Hexo！"><img class="cover" src="https://pic.imgdb.cn/item/640ef4daf144a01007901814.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Hello Hexo！</div></div></a></div><div class="next-post pull-right"><a href="/2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/" title="使用whl文件快速安装PyTorch"><img class="cover" src="https://z4a.net/images/2023/03/13/pytorch.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">使用whl文件快速安装PyTorch</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3%E7%9A%84%E7%94%9F%E6%88%90"><span class="toc-number">2.</span> <span class="toc-text">需求文档的生成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pip-freeze-gt-requirements-txt"><span class="toc-number">2.1.</span> <span class="toc-text">pip freeze &gt; requirements.txt</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pipreqs-encoding-utf8-force"><span class="toc-number">2.2.</span> <span class="toc-text">pipreqs . --encoding&#x3D;utf8 --force</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8Erequirements%E4%B8%AD%E5%AE%89%E8%A3%85%E7%9B%B8%E5%BA%94%E7%9A%84%E5%BA%93%E3%80%82"><span class="toc-number">2.3.</span> <span class="toc-text">从requirements中安装相应的库。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PyInstall%E6%89%93%E5%8C%85%E8%BF%87%E4%BA%8E%E8%87%83%E8%82%BF"><span class="toc-number">3.</span> <span class="toc-text">PyInstall打包过于臃肿</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E5%81%9A%E6%B3%95"><span class="toc-number">3.1.</span> <span class="toc-text">错误做法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A3%E7%A1%AE%E5%81%9A%E6%B3%95"><span class="toc-number">3.2.</span> <span class="toc-text">正确做法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PyCharm%E8%BF%9E%E6%8E%A5Jupyter%E6%8A%A5%E9%94%99"><span class="toc-number">4.</span> <span class="toc-text">PyCharm连接Jupyter报错</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%97%E5%88%B0jupyter%E5%86%85%E6%A0%B8%E6%89%80%E5%9C%A8%E7%9A%84%E8%B7%AF%E5%BE%84%E3%80%82"><span class="toc-number">4.1.</span> <span class="toc-text">得到jupyter内核所在的路径。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8BPython%E7%BC%96%E8%AF%91%E5%99%A8%E7%9A%84%E8%B7%AF%E5%BE%84%E6%98%AF%E5%90%A6%E6%AD%A3%E7%A1%AE%E3%80%82"><span class="toc-number">4.2.</span> <span class="toc-text">查看Python编译器的路径是否正确。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9kernel-jason%E4%B8%AD%E5%86%85%E6%A0%B8%E7%9A%84%E8%B7%AF%E5%BE%84"><span class="toc-number">4.3.</span> <span class="toc-text">修改kernel.jason中内核的路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%90%AFjupyter"><span class="toc-number">4.4.</span> <span class="toc-text">重启jupyter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%90%AFPyChram"><span class="toc-number">4.5.</span> <span class="toc-text">重启PyChram</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PyCharm%E4%B8%ADOpenCV%E6%97%A0%E6%B3%95%E5%BE%97%E5%88%B0%E6%8F%90%E7%A4%BA"><span class="toc-number">5.</span> <span class="toc-text">PyCharm中OpenCV无法得到提示</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BB%E6%89%BEcv2%E6%89%80%E5%9C%A8%E8%B7%AF%E5%BE%84"><span class="toc-number">5.1.</span> <span class="toc-text">寻找cv2所在路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86%E8%B7%AF%E5%BE%84%E5%8A%A0%E5%85%A5%E8%A7%A3%E9%87%8A%E5%99%A8%E8%B7%AF%E5%BE%84%E4%B8%AD"><span class="toc-number">5.2.</span> <span class="toc-text">将路径加入解释器路径中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%90%AFPyCharm"><span class="toc-number">5.3.</span> <span class="toc-text">重启PyCharm</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By gcnanmu</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'R2gIzaVCo5mQPnjj80trjDQ9-gzGzoHsz',
+      appKey: 'U0decE1mFeJg9vbglhkkE20P',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="/js/runtime.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div><!-- hexo injector body_end start --><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.3.1" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 380px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 320px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(https://z4a.net/images/2023/02/21/halo.png);"> <a class="categoryBar-list-link" href="categories/Halo博客搭建/">Halo博客搭建</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr">halo博客搭建</span></li><li class="categoryBar-list-item" style="background:url(https://z4a.net/images/2023/02/21/Hexo.jpg);"> <a class="categoryBar-list-link" href="categories/Hexo博客搭建/">Hexo博客搭建</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr">Hexo博客搭建</span></li><li class="categoryBar-list-item" style="background:url(https://z4a.net/images/2023/02/23/pycharm.png);"> <a class="categoryBar-list-link" href="categories/Python/">Python</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">Python</span></li><li class="categoryBar-list-item" style="background:url(https://z4a.net/images/2023/03/13/pytorch.png);"> <a class="categoryBar-list-link" href="categories/PyTorch实践/">PyTorch实践</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">PyTorch实践</span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/02/21/hexo-bo-ke-da-jian-li-cheng/" alt=""><img width="48" height="48" src="https://pic.imgdb.cn/item/640ef4daf144a01007901814.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-02-21</span><a class="blog-slider__title" href="2023/02/21/hexo-bo-ke-da-jian-li-cheng/" alt="">Hello Hexo！</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" href="2023/02/21/hexo-bo-ke-da-jian-li-cheng/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2022/11/11/halo-bo-ke-da-jian-li-cheng/" alt=""><img width="48" height="48" src="https://z4a.net/images/2023/02/21/halo.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-11</span><a class="blog-slider__title" href="2022/11/11/halo-bo-ke-da-jian-li-cheng/" alt="">Halo博客搭建历程</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" href="2022/11/11/halo-bo-ke-da-jian-li-cheng/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/03/13/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/" alt=""><img width="48" height="48" src="https://pic.imgdb.cn/item/640ef4daf144a01007901814.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-03-13</span><a class="blog-slider__title" href="2023/03/13/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/" alt="">Hexo与Halo的使用后的感受</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" href="2023/03/13/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/" alt=""><img width="48" height="48" src="https://z4a.net/images/2023/03/13/pytorch.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-16</span><a class="blog-slider__title" href="2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/" alt="">使用whl文件快速安装PyTorch</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" href="2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/" alt=""><img width="48" height="48" src="https://z4a.net/images/2023/02/23/pycharm.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-19</span><a class="blog-slider__title" href="2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/" alt="">Python编程中遇到的一些问题</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" href="2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '500ms');
+    arr[i].setAttribute('data-wow-delay', '1s');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --></body></html>
