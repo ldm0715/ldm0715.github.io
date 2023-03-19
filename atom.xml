@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>gcnanmuの博客</title>
-  <icon>http://gcnanmu.gitee.io/icon.png</icon>
+  <icon>https://gcnanmu.gitee.io/icon.png</icon>
+  <subtitle>是大学牲</subtitle>
+  <link href="https://gcnanmu.gitee.io/atom.xml" rel="self"/>
   
-  <link href="http://gcnanmu.gitee.io/atom.xml" rel="self"/>
-  
-  <link href="http://gcnanmu.gitee.io/"/>
+  <link href="https://gcnanmu.gitee.io/"/>
   <updated>2023-03-19T08:02:58.920Z</updated>
-  <id>http://gcnanmu.gitee.io/</id>
+  <id>https://gcnanmu.gitee.io/</id>
   
   <author>
     <name>gcnanmu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hexo与Halo的使用后的感受</title>
-    <link href="http://gcnanmu.gitee.io/2023/03/13/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/"/>
-    <id>http://gcnanmu.gitee.io/2023/03/13/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/</id>
+    <link href="https://gcnanmu.gitee.io/2023/03/13/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/"/>
+    <id>https://gcnanmu.gitee.io/2023/03/13/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/</id>
     <published>2023-03-13T05:57:45.000Z</published>
     <updated>2023-03-19T08:02:58.920Z</updated>
     
@@ -34,19 +34,19 @@
     
     
     
-    <category term="Halo博客搭建" scheme="http://gcnanmu.gitee.io/categories/Halo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="Halo博客搭建" scheme="https://gcnanmu.gitee.io/categories/Halo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Halo" scheme="http://gcnanmu.gitee.io/tags/Halo/"/>
+    <category term="Halo" scheme="https://gcnanmu.gitee.io/tags/Halo/"/>
     
-    <category term="Hexo" scheme="http://gcnanmu.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://gcnanmu.gitee.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello Hexo！</title>
-    <link href="http://gcnanmu.gitee.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/"/>
-    <id>http://gcnanmu.gitee.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/</id>
+    <link href="https://gcnanmu.gitee.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/"/>
+    <id>https://gcnanmu.gitee.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/</id>
     <published>2023-02-21T05:57:45.000Z</published>
     <updated>2023-03-19T09:19:36.418Z</updated>
     
@@ -61,17 +61,17 @@
     
     
     
-    <category term="Hexo博客搭建" scheme="http://gcnanmu.gitee.io/categories/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="Hexo博客搭建" scheme="https://gcnanmu.gitee.io/categories/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Hexo" scheme="http://gcnanmu.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://gcnanmu.gitee.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://gcnanmu.gitee.io/2023/02/21/hello-world/"/>
-    <id>http://gcnanmu.gitee.io/2023/02/21/hello-world/</id>
+    <link href="https://gcnanmu.gitee.io/2023/02/21/hello-world/"/>
+    <id>https://gcnanmu.gitee.io/2023/02/21/hello-world/</id>
     <published>2023-02-21T05:57:45.000Z</published>
     <updated>2023-03-19T09:59:50.642Z</updated>
     
@@ -86,17 +86,17 @@
     
     
     
-    <category term="Hexo博客搭建" scheme="http://gcnanmu.gitee.io/categories/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="Hexo博客搭建" scheme="https://gcnanmu.gitee.io/categories/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Hexo" scheme="http://gcnanmu.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://gcnanmu.gitee.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Python编程中遇到的一些问题</title>
-    <link href="http://gcnanmu.gitee.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/"/>
-    <id>http://gcnanmu.gitee.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/</id>
+    <link href="https://gcnanmu.gitee.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/"/>
+    <id>https://gcnanmu.gitee.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/</id>
     <published>2022-11-19T02:12:00.000Z</published>
     <updated>2023-03-19T08:02:50.168Z</updated>
     
@@ -112,23 +112,23 @@
     
     
     
-    <category term="Python" scheme="http://gcnanmu.gitee.io/categories/Python/"/>
+    <category term="Python" scheme="https://gcnanmu.gitee.io/categories/Python/"/>
     
     
-    <category term="Python" scheme="http://gcnanmu.gitee.io/tags/Python/"/>
+    <category term="Python" scheme="https://gcnanmu.gitee.io/tags/Python/"/>
     
-    <category term="PyCharm" scheme="http://gcnanmu.gitee.io/tags/PyCharm/"/>
+    <category term="PyCharm" scheme="https://gcnanmu.gitee.io/tags/PyCharm/"/>
     
-    <category term="Jupyter" scheme="http://gcnanmu.gitee.io/tags/Jupyter/"/>
+    <category term="Jupyter" scheme="https://gcnanmu.gitee.io/tags/Jupyter/"/>
     
-    <category term="OpenCV" scheme="http://gcnanmu.gitee.io/tags/OpenCV/"/>
+    <category term="OpenCV" scheme="https://gcnanmu.gitee.io/tags/OpenCV/"/>
     
   </entry>
   
   <entry>
     <title>使用whl文件快速安装PyTorch</title>
-    <link href="http://gcnanmu.gitee.io/2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/"/>
-    <id>http://gcnanmu.gitee.io/2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/</id>
+    <link href="https://gcnanmu.gitee.io/2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/"/>
+    <id>https://gcnanmu.gitee.io/2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/</id>
     <published>2022-11-16T12:44:00.000Z</published>
     <updated>2023-03-19T08:02:42.444Z</updated>
     
@@ -144,19 +144,19 @@
     
     
     
-    <category term="PyTorch实践" scheme="http://gcnanmu.gitee.io/categories/PyTorch%E5%AE%9E%E8%B7%B5/"/>
+    <category term="PyTorch实践" scheme="https://gcnanmu.gitee.io/categories/PyTorch%E5%AE%9E%E8%B7%B5/"/>
     
     
-    <category term="Python" scheme="http://gcnanmu.gitee.io/tags/Python/"/>
+    <category term="Python" scheme="https://gcnanmu.gitee.io/tags/Python/"/>
     
-    <category term="PyTorch" scheme="http://gcnanmu.gitee.io/tags/PyTorch/"/>
+    <category term="PyTorch" scheme="https://gcnanmu.gitee.io/tags/PyTorch/"/>
     
   </entry>
   
   <entry>
     <title>Halo博客搭建历程</title>
-    <link href="http://gcnanmu.gitee.io/2022/11/11/halo-bo-ke-da-jian-li-cheng/"/>
-    <id>http://gcnanmu.gitee.io/2022/11/11/halo-bo-ke-da-jian-li-cheng/</id>
+    <link href="https://gcnanmu.gitee.io/2022/11/11/halo-bo-ke-da-jian-li-cheng/"/>
+    <id>https://gcnanmu.gitee.io/2022/11/11/halo-bo-ke-da-jian-li-cheng/</id>
     <published>2022-11-11T11:25:00.000Z</published>
     <updated>2023-03-19T08:03:13.732Z</updated>
     
@@ -171,14 +171,14 @@
     
     
     
-    <category term="Halo博客搭建" scheme="http://gcnanmu.gitee.io/categories/Halo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="Halo博客搭建" scheme="https://gcnanmu.gitee.io/categories/Halo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Halo" scheme="http://gcnanmu.gitee.io/tags/Halo/"/>
+    <category term="Halo" scheme="https://gcnanmu.gitee.io/tags/Halo/"/>
     
-    <category term="服务器" scheme="http://gcnanmu.gitee.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <category term="服务器" scheme="https://gcnanmu.gitee.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-    <category term="DNS" scheme="http://gcnanmu.gitee.io/tags/DNS/"/>
+    <category term="DNS" scheme="https://gcnanmu.gitee.io/tags/DNS/"/>
     
   </entry>
   
