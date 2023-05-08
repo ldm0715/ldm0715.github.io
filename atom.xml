@@ -6,7 +6,7 @@
   <link href="https://gcnanmu.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://gcnanmu.gitee.io/"/>
-  <updated>2023-04-23T10:23:49.222Z</updated>
+  <updated>2023-05-08T10:06:01.374Z</updated>
   <id>https://gcnanmu.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>音频处理——G711A-law编码</title>
+    <link href="https://gcnanmu.gitee.io/2023/05/08/yin-pin-chu-li-g711a-lu-bian-ma/"/>
+    <id>https://gcnanmu.gitee.io/2023/05/08/yin-pin-chu-li-g711a-lu-bian-ma/</id>
+    <published>2023-05-08T10:00:00.000Z</published>
+    <updated>2023-05-08T10:06:01.374Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="音视频信号处理" scheme="https://gcnanmu.gitee.io/categories/%E9%9F%B3%E8%A7%86%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    
+    
+    <category term="Python" scheme="https://gcnanmu.gitee.io/tags/Python/"/>
+    
+    <category term="音视频信号处理" scheme="https://gcnanmu.gitee.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>机器视觉-生成高斯金字塔</title>
