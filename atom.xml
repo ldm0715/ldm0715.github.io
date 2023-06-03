@@ -6,7 +6,7 @@
   <link href="https://gcnanmu.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://gcnanmu.gitee.io/"/>
-  <updated>2023-05-10T05:56:46.650Z</updated>
+  <updated>2023-06-02T09:55:26.108Z</updated>
   <id>https://gcnanmu.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FFmpeg——一些简单的视频处理</title>
+    <link href="https://gcnanmu.gitee.io/2023/05/22/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/"/>
+    <id>https://gcnanmu.gitee.io/2023/05/22/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/</id>
+    <published>2023-05-22T02:25:25.000Z</published>
+    <updated>2023-06-02T09:55:26.108Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="音视频处理" scheme="https://gcnanmu.gitee.io/categories/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/"/>
+    
+    
+    <category term="音视频处理" scheme="https://gcnanmu.gitee.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/"/>
+    
+    <category term="FFmpeg" scheme="https://gcnanmu.gitee.io/tags/FFmpeg/"/>
+    
+  </entry>
   
   <entry>
     <title>音频处理——G711A-law编码</title>
@@ -152,18 +179,18 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://gcnanmu.gitee.io/2023/02/21/hello-world/"/>
-    <id>https://gcnanmu.gitee.io/2023/02/21/hello-world/</id>
+    <title>Hello Hexo！</title>
+    <link href="https://gcnanmu.gitee.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/"/>
+    <id>https://gcnanmu.gitee.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/</id>
     <published>2023-02-21T05:57:45.000Z</published>
-    <updated>2023-03-19T09:59:50.642Z</updated>
+    <updated>2023-04-24T07:27:16.055Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;关于我为什么使用 Hexo，其实还挺戏剧性的，一开始我使用的是 Halo</summary>
         
       
     
@@ -177,18 +204,18 @@
   </entry>
   
   <entry>
-    <title>Hello Hexo！</title>
-    <link href="https://gcnanmu.gitee.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/"/>
-    <id>https://gcnanmu.gitee.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/</id>
+    <title>Hello World</title>
+    <link href="https://gcnanmu.gitee.io/2023/02/21/hello-world/"/>
+    <id>https://gcnanmu.gitee.io/2023/02/21/hello-world/</id>
     <published>2023-02-21T05:57:45.000Z</published>
-    <updated>2023-04-24T07:27:16.055Z</updated>
+    <updated>2023-03-19T09:59:50.642Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;关于我为什么使用 Hexo，其实还挺戏剧性的，一开始我使用的是 Halo</summary>
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
         
       
     
