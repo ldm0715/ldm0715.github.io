@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>gcnanmuの博客</title>
-  <icon>https://gcnanmu.gitee.io/icon.png</icon>
+  <icon>https://ldm0715.github.io/icon.png</icon>
   <subtitle>是大学牲</subtitle>
-  <link href="https://gcnanmu.gitee.io/atom.xml" rel="self"/>
+  <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
-  <link href="https://gcnanmu.gitee.io/"/>
+  <link href="https://ldm0715.github.io/"/>
   <updated>2023-06-02T09:55:26.108Z</updated>
-  <id>https://gcnanmu.gitee.io/</id>
+  <id>https://ldm0715.github.io/</id>
   
   <author>
     <name>gcnanmu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>FFmpeg——一些简单的视频处理</title>
-    <link href="https://gcnanmu.gitee.io/2023/05/22/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/"/>
-    <id>https://gcnanmu.gitee.io/2023/05/22/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/</id>
+    <link href="https://ldm0715.github.io/2023/05/22/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/"/>
+    <id>https://ldm0715.github.io/2023/05/22/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/</id>
     <published>2023-05-22T02:25:25.000Z</published>
     <updated>2023-06-02T09:55:26.108Z</updated>
     
@@ -34,19 +34,19 @@
     
     
     
-    <category term="音视频处理" scheme="https://gcnanmu.gitee.io/categories/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/"/>
+    <category term="音视频处理" scheme="https://ldm0715.github.io/categories/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/"/>
     
     
-    <category term="音视频处理" scheme="https://gcnanmu.gitee.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/"/>
+    <category term="音视频处理" scheme="https://ldm0715.github.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/"/>
     
-    <category term="FFmpeg" scheme="https://gcnanmu.gitee.io/tags/FFmpeg/"/>
+    <category term="FFmpeg" scheme="https://ldm0715.github.io/tags/FFmpeg/"/>
     
   </entry>
   
   <entry>
     <title>音频处理——G711A-law编码</title>
-    <link href="https://gcnanmu.gitee.io/2023/05/08/yin-pin-chu-li-g711a-lu-bian-ma/"/>
-    <id>https://gcnanmu.gitee.io/2023/05/08/yin-pin-chu-li-g711a-lu-bian-ma/</id>
+    <link href="https://ldm0715.github.io/2023/05/08/yin-pin-chu-li-g711a-lu-bian-ma/"/>
+    <id>https://ldm0715.github.io/2023/05/08/yin-pin-chu-li-g711a-lu-bian-ma/</id>
     <published>2023-05-08T10:00:00.000Z</published>
     <updated>2023-05-10T05:56:46.650Z</updated>
     
@@ -61,19 +61,19 @@
     
     
     
-    <category term="音视频信号处理" scheme="https://gcnanmu.gitee.io/categories/%E9%9F%B3%E8%A7%86%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    <category term="音视频信号处理" scheme="https://ldm0715.github.io/categories/%E9%9F%B3%E8%A7%86%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
     
     
-    <category term="Python" scheme="https://gcnanmu.gitee.io/tags/Python/"/>
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
     
-    <category term="音视频信号处理" scheme="https://gcnanmu.gitee.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    <category term="音视频信号处理" scheme="https://ldm0715.github.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>机器视觉-生成高斯金字塔</title>
-    <link href="https://gcnanmu.gitee.io/2023/04/23/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/"/>
-    <id>https://gcnanmu.gitee.io/2023/04/23/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/</id>
+    <link href="https://ldm0715.github.io/2023/04/23/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/"/>
+    <id>https://ldm0715.github.io/2023/04/23/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/</id>
     <published>2023-04-23T10:01:00.000Z</published>
     <updated>2023-05-10T05:55:39.718Z</updated>
     
@@ -88,19 +88,19 @@
     
     
     
-    <category term="机器视觉" scheme="https://gcnanmu.gitee.io/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
+    <category term="机器视觉" scheme="https://ldm0715.github.io/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
     
     
-    <category term="Python" scheme="https://gcnanmu.gitee.io/tags/Python/"/>
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
     
-    <category term="机器视觉" scheme="https://gcnanmu.gitee.io/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
+    <category term="机器视觉" scheme="https://ldm0715.github.io/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
     
   </entry>
   
   <entry>
     <title>使用Mermaid绘图</title>
-    <link href="https://gcnanmu.gitee.io/2023/04/18/shi-yong-mermaid-hui-tu/"/>
-    <id>https://gcnanmu.gitee.io/2023/04/18/shi-yong-mermaid-hui-tu/</id>
+    <link href="https://ldm0715.github.io/2023/04/18/shi-yong-mermaid-hui-tu/"/>
+    <id>https://ldm0715.github.io/2023/04/18/shi-yong-mermaid-hui-tu/</id>
     <published>2023-04-18T06:42:00.000Z</published>
     <updated>2023-04-19T06:16:28.390Z</updated>
     
@@ -115,19 +115,19 @@
     
     
     
-    <category term="Typora" scheme="https://gcnanmu.gitee.io/categories/Typora/"/>
+    <category term="Typora" scheme="https://ldm0715.github.io/categories/Typora/"/>
     
     
-    <category term="mermaid" scheme="https://gcnanmu.gitee.io/tags/mermaid/"/>
+    <category term="mermaid" scheme="https://ldm0715.github.io/tags/mermaid/"/>
     
-    <category term="Typora" scheme="https://gcnanmu.gitee.io/tags/Typora/"/>
+    <category term="Typora" scheme="https://ldm0715.github.io/tags/Typora/"/>
     
   </entry>
   
   <entry>
     <title>Anaconda的基础使用总结</title>
-    <link href="https://gcnanmu.gitee.io/2023/03/25/anaconda-de-ji-chu-shi-yong/"/>
-    <id>https://gcnanmu.gitee.io/2023/03/25/anaconda-de-ji-chu-shi-yong/</id>
+    <link href="https://ldm0715.github.io/2023/03/25/anaconda-de-ji-chu-shi-yong/"/>
+    <id>https://ldm0715.github.io/2023/03/25/anaconda-de-ji-chu-shi-yong/</id>
     <published>2023-03-25T08:00:00.000Z</published>
     <updated>2023-03-25T08:45:57.832Z</updated>
     
@@ -142,19 +142,19 @@
     
     
     
-    <category term="Anaconda" scheme="https://gcnanmu.gitee.io/categories/Anaconda/"/>
+    <category term="Anaconda" scheme="https://ldm0715.github.io/categories/Anaconda/"/>
     
     
-    <category term="pip" scheme="https://gcnanmu.gitee.io/tags/pip/"/>
+    <category term="pip" scheme="https://ldm0715.github.io/tags/pip/"/>
     
-    <category term="Anaconda" scheme="https://gcnanmu.gitee.io/tags/Anaconda/"/>
+    <category term="Anaconda" scheme="https://ldm0715.github.io/tags/Anaconda/"/>
     
   </entry>
   
   <entry>
     <title>Hexo与Halo的使用后的感受</title>
-    <link href="https://gcnanmu.gitee.io/2023/03/13/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/"/>
-    <id>https://gcnanmu.gitee.io/2023/03/13/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/</id>
+    <link href="https://ldm0715.github.io/2023/03/13/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/"/>
+    <id>https://ldm0715.github.io/2023/03/13/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/</id>
     <published>2023-03-13T05:57:45.000Z</published>
     <updated>2023-03-19T08:02:58.920Z</updated>
     
@@ -169,44 +169,19 @@
     
     
     
-    <category term="Halo博客搭建" scheme="https://gcnanmu.gitee.io/categories/Halo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="Halo博客搭建" scheme="https://ldm0715.github.io/categories/Halo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Halo" scheme="https://gcnanmu.gitee.io/tags/Halo/"/>
+    <category term="Halo" scheme="https://ldm0715.github.io/tags/Halo/"/>
     
-    <category term="Hexo" scheme="https://gcnanmu.gitee.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello Hexo！</title>
-    <link href="https://gcnanmu.gitee.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/"/>
-    <id>https://gcnanmu.gitee.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/</id>
-    <published>2023-02-21T05:57:45.000Z</published>
-    <updated>2023-04-24T07:27:16.055Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;关于我为什么使用 Hexo，其实还挺戏剧性的，一开始我使用的是 Halo</summary>
-        
-      
-    
-    
-    
-    <category term="Hexo博客搭建" scheme="https://gcnanmu.gitee.io/categories/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    
-    <category term="Hexo" scheme="https://gcnanmu.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://gcnanmu.gitee.io/2023/02/21/hello-world/"/>
-    <id>https://gcnanmu.gitee.io/2023/02/21/hello-world/</id>
+    <link href="https://ldm0715.github.io/2023/02/21/hello-world/"/>
+    <id>https://ldm0715.github.io/2023/02/21/hello-world/</id>
     <published>2023-02-21T05:57:45.000Z</published>
     <updated>2023-03-19T09:59:50.642Z</updated>
     
@@ -221,17 +196,42 @@
     
     
     
-    <category term="Hexo博客搭建" scheme="https://gcnanmu.gitee.io/categories/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="Hexo博客搭建" scheme="https://ldm0715.github.io/categories/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Hexo" scheme="https://gcnanmu.gitee.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello Hexo！</title>
+    <link href="https://ldm0715.github.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/"/>
+    <id>https://ldm0715.github.io/2023/02/21/hexo-bo-ke-da-jian-li-cheng/</id>
+    <published>2023-02-21T05:57:45.000Z</published>
+    <updated>2023-04-24T07:27:16.055Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;关于我为什么使用 Hexo，其实还挺戏剧性的，一开始我使用的是 Halo</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo博客搭建" scheme="https://ldm0715.github.io/categories/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Python编程中遇到的一些问题</title>
-    <link href="https://gcnanmu.gitee.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/"/>
-    <id>https://gcnanmu.gitee.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/</id>
+    <link href="https://ldm0715.github.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/"/>
+    <id>https://ldm0715.github.io/2022/11/19/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/</id>
     <published>2022-11-19T02:12:00.000Z</published>
     <updated>2023-03-19T08:02:50.168Z</updated>
     
@@ -247,23 +247,23 @@
     
     
     
-    <category term="Python" scheme="https://gcnanmu.gitee.io/categories/Python/"/>
+    <category term="Python" scheme="https://ldm0715.github.io/categories/Python/"/>
     
     
-    <category term="Python" scheme="https://gcnanmu.gitee.io/tags/Python/"/>
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
     
-    <category term="PyCharm" scheme="https://gcnanmu.gitee.io/tags/PyCharm/"/>
+    <category term="PyCharm" scheme="https://ldm0715.github.io/tags/PyCharm/"/>
     
-    <category term="Jupyter" scheme="https://gcnanmu.gitee.io/tags/Jupyter/"/>
+    <category term="Jupyter" scheme="https://ldm0715.github.io/tags/Jupyter/"/>
     
-    <category term="OpenCV" scheme="https://gcnanmu.gitee.io/tags/OpenCV/"/>
+    <category term="OpenCV" scheme="https://ldm0715.github.io/tags/OpenCV/"/>
     
   </entry>
   
   <entry>
     <title>使用whl文件快速安装PyTorch</title>
-    <link href="https://gcnanmu.gitee.io/2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/"/>
-    <id>https://gcnanmu.gitee.io/2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/</id>
+    <link href="https://ldm0715.github.io/2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/"/>
+    <id>https://ldm0715.github.io/2022/11/16/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/</id>
     <published>2022-11-16T12:44:00.000Z</published>
     <updated>2023-03-19T08:02:42.444Z</updated>
     
@@ -279,19 +279,19 @@
     
     
     
-    <category term="PyTorch实践" scheme="https://gcnanmu.gitee.io/categories/PyTorch%E5%AE%9E%E8%B7%B5/"/>
+    <category term="PyTorch实践" scheme="https://ldm0715.github.io/categories/PyTorch%E5%AE%9E%E8%B7%B5/"/>
     
     
-    <category term="Python" scheme="https://gcnanmu.gitee.io/tags/Python/"/>
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
     
-    <category term="PyTorch" scheme="https://gcnanmu.gitee.io/tags/PyTorch/"/>
+    <category term="PyTorch" scheme="https://ldm0715.github.io/tags/PyTorch/"/>
     
   </entry>
   
   <entry>
     <title>Halo博客搭建历程</title>
-    <link href="https://gcnanmu.gitee.io/2022/11/11/halo-bo-ke-da-jian-li-cheng/"/>
-    <id>https://gcnanmu.gitee.io/2022/11/11/halo-bo-ke-da-jian-li-cheng/</id>
+    <link href="https://ldm0715.github.io/2022/11/11/halo-bo-ke-da-jian-li-cheng/"/>
+    <id>https://ldm0715.github.io/2022/11/11/halo-bo-ke-da-jian-li-cheng/</id>
     <published>2022-11-11T11:25:00.000Z</published>
     <updated>2023-03-19T08:03:13.732Z</updated>
     
@@ -306,14 +306,14 @@
     
     
     
-    <category term="Halo博客搭建" scheme="https://gcnanmu.gitee.io/categories/Halo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="Halo博客搭建" scheme="https://ldm0715.github.io/categories/Halo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Halo" scheme="https://gcnanmu.gitee.io/tags/Halo/"/>
+    <category term="Halo" scheme="https://ldm0715.github.io/tags/Halo/"/>
     
-    <category term="服务器" scheme="https://gcnanmu.gitee.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <category term="服务器" scheme="https://ldm0715.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-    <category term="DNS" scheme="https://gcnanmu.gitee.io/tags/DNS/"/>
+    <category term="DNS" scheme="https://ldm0715.github.io/tags/DNS/"/>
     
   </entry>
   
