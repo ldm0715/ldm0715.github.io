@@ -1,0 +1,654 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>正则表达式 | gcnanmuの博客</title><meta name="author" content="gcnanmu"><meta name="copyright" content="gcnanmu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言距离上一次更新已经是五个月以前了，时光荏苒，已经到2024年了。由于自己会的是Python，所以不太清楚自己能否找到合适的工作，思来想去还是准备学习一下前端的知识，希望能在当前艰难的大环境下生存下来。 正则表达式其实就是字符串的一个匹配规则，能方便匹配一系列符合规则的字符串，让开发效率变高，这次也是趁着学完了来做个笔记记录一下，毕竟如果后续不常用还是容易忘记。以下部分均以Javascript作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则表达式">
+<meta property="og:url" content="https://ldm0715.github.io/post/zheng-ze-biao-da-shi/index.html">
+<meta property="og:site_name" content="gcnanmuの博客">
+<meta property="og:description" content="前言距离上一次更新已经是五个月以前了，时光荏苒，已经到2024年了。由于自己会的是Python，所以不太清楚自己能否找到合适的工作，思来想去还是准备学习一下前端的知识，希望能在当前艰难的大环境下生存下来。 正则表达式其实就是字符串的一个匹配规则，能方便匹配一系列符合规则的字符串，让开发效率变高，这次也是趁着学完了来做个笔记记录一下，毕竟如果后续不常用还是容易忘记。以下部分均以Javascript作">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://z4a.net/images/2024/01/29/b181fbe1c5923be102d39a01820834d4.png">
+<meta property="article:published_time" content="2024-01-29T10:00:00.000Z">
+<meta property="article:modified_time" content="2024-01-29T09:25:23.708Z">
+<meta property="article:author" content="gcnanmu">
+<meta property="article:tag" content="string">
+<meta property="article:tag" content="正则表达式">
+<meta property="article:tag" content="JavaScript">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://z4a.net/images/2024/01/29/b181fbe1c5923be102d39a01820834d4.png"><link rel="shortcut icon" href="https://pic.imgdb.cn/item/63e4ec274757feff339981c5.webp"><link rel="canonical" href="https://ldm0715.github.io/post/zheng-ze-biao-da-shi/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":90,"position":"top","messagePrev":"本文章距编写至今已达","messageNext":"天 如有变动，请以实际情况为准."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":250},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: gcnanmu","link":"链接: ","source":"来源: gcnanmuの博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '正则表达式',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-01-29 17:25:23'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/set_font.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3962437_6snoplzeg9u.css"><span id="fps"></span><link rel="stylesheet" href="/css/fps.css"><link rel="stylesheet" href="/css/pic_border.css"><link rel="stylesheet" href="/css/right.css"><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/yemian.css"><link rel="stylesheet" href="/css/bilibili.css"><link rel="stylesheet" href="/css/kuanping.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="/css/runtime.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="gcnanmuの博客" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://pic.imgdb.cn/item/63e4ec274757feff339981c5.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-shouye"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw iconfont icon-yuedu"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-wenzhangliebiao"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-guidang"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/journals/"><i class="fa-fw iconfont icon-icon-shishi"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-lianjie"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw iconfont icon-caozuojiemiantubiao---_jingxiang"></i><span> 镜像</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://gcnanmu.gitee.io/"><i class="fa-fw iconfont icon-gitee"></i><span> Gitee</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://hexo.gcnanmu3125.xyz/"><i class="fa-fw iconfont icon-github"></i><span> GitHub</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vercel.gcnanmu3125.xyz/"><i class="fa-fw iconfont icon-auth"></i><span> Vercel</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-iconzhengli-"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/64d87c461ddac507cc88686f.png')"><nav id="nav"><span id="blog-info"><a href="/" title="gcnanmuの博客"><img class="site-icon" src="https://pic.imgdb.cn/item/63e4ec274757feff339981c5.webp"/><span class="site-name">gcnanmuの博客</span></a></span><div id="randomPost"><a class="site-page social-icon search" href="javascript:;" onclick="randomPost()" title="随机访问一篇文章"><i class="fas fa-circle-notch fa-fw"></i></a></div><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索"><i class="fas fa-search fa-fw"></i><span>    </span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-shouye"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw iconfont icon-yuedu"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-wenzhangliebiao"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-guidang"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/journals/"><i class="fa-fw iconfont icon-icon-shishi"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-lianjie"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw iconfont icon-caozuojiemiantubiao---_jingxiang"></i><span> 镜像</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://gcnanmu.gitee.io/"><i class="fa-fw iconfont icon-gitee"></i><span> Gitee</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://hexo.gcnanmu3125.xyz/"><i class="fa-fw iconfont icon-github"></i><span> GitHub</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vercel.gcnanmu3125.xyz/"><i class="fa-fw iconfont icon-auth"></i><span> Vercel</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-iconzhengli-"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">正则表达式</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-01-29T10:00:00.000Z" title="发表于 2024-01-29 18:00:00">2024-01-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-01-29T09:25:23.708Z" title="更新于 2024-01-29 17:25:23">2024-01-29</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>14分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="正则表达式"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>距离上一次更新已经是五个月以前了，时光荏苒，已经到2024年了。由于自己会的是Python，所以不太清楚自己能否找到合适的工作，思来想去还是准备学习一下前端的知识，希望能在当前艰难的大环境下生存下来。</p>
+<p>正则表达式其实就是字符串的一个匹配规则，能方便匹配一系列符合规则的字符串，让开发效率变高，这次也是趁着学完了来做个笔记记录一下，毕竟如果后续不常用还是容易忘记。<strong>以下部分均以Javascript作为示范语言，Python语言实际也大差不差。</strong></p>
+<p>以下是一个匹配24小时时间的例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg4 = <span class="regexp">/^(([01][0-9])|([2][0123])):[0-5][0-9]$/</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg4.<span class="title function_">test</span>(<span class="string">&quot;23:59&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg4.<span class="title function_">test</span>(<span class="string">&quot;00:00&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg4.<span class="title function_">test</span>(<span class="string">&quot;24:00&quot;</span>)); <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg4.<span class="title function_">test</span>(<span class="string">&quot;23:60&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<p>其中<code>/^(([01][0-9])|([2][0123])):[0-5][0-9]$/</code>即为一个正则表达式。由<code>//</code>包裹，在第二个&#x2F;之后可添加修饰符来约束正则中执行的某些细节，如<code>//g</code>，表示全局匹配。</p>
+<h2 id="常见的字符串匹配函数"><a href="#常见的字符串匹配函数" class="headerlink" title="常见的字符串匹配函数"></a>常见的字符串匹配函数</h2><p>在学习正则表达式之前，我们需要了解js中一些常用的字符串匹配方法，这样才能方便后续学习时的测试。</p>
+<p>本段落使用的测试字符串为：<code>&quot;前端开发，必须掌握正则表达式，前端就业前景好，前端工资高&quot;</code>，固定的正则表达式为：<code>/前端/g</code>，即在字符串中匹配前端这两个字符，g的含义为全局匹配，这里不必深究。</p>
+<h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><p>正则表达式的一个方法（并非字符串的方法，后续学习记得区分一下）。用来检测字符串是否符合正则表达式的规则，如果符合返回true，否则返回false。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/前端/g</span>;</span><br><span class="line"><span class="keyword">const</span> str = <span class="string">&quot;前端开发，必须掌握正则表达式，前端就业前景好，前端工资高&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg.<span class="title function_">test</span>(<span class="string">&quot;前端开发&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg.<span class="title function_">test</span>(<span class="string">&quot;Java开发&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<p>这边有一个注意点。</p>
+<p>test 方法在被连续调用时会从上一次匹配的下一个位置开始查找，而不是每次都从第一个位置开始匹配，如果不注意可能会出现反常的结果，如下的一个例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">reg.<span class="title function_">test</span>(<span class="string">&#x27;前端开发,用js&#x27;</span>)</span><br><span class="line"><span class="comment">// 能匹配到可以返回true，否则返回false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg.<span class="title function_">test</span>(<span class="string">&quot;前端开发&quot;</span>)); <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg.<span class="title function_">test</span>(<span class="string">&quot;Java开发&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<p>这是因为test方法在被连续调用时会从上一次匹配的下一个位置开始查找，当<code>reg.test(&#39;前端开发,用js&#39;)</code>执行后，第二次调用 test 方法时将从字符串的第3个字符开始匹配，而不是从第 0 个字符开始，因此出现了反常的错误。</p>
+<h3 id="exec"><a href="#exec" class="headerlink" title="exec"></a>exec</h3><p>是正则表达式的一个方法，作用是查找符合规则的字符串。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/前端/g</span>;</span><br><span class="line"><span class="keyword">const</span> str = <span class="string">&quot;前端开发，必须掌握正则表达式，前端就业前景好，前端工资高&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/前端/g</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg.<span class="title function_">exec</span>(<span class="string">&quot;前端开发&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+<p>输出为：<code>[ &#39;前端&#39;, index: 0, input: &#39;前端开发&#39;, groups: undefined ]</code></p>
+<p>返回值为数组，如果匹配失败则返回<code>NULL</code>，匹配成功的返回值有三个参数：</p>
+<ul>
+<li>第一项为匹配到的字符串 ‘前端’</li>
+<li>第二项为匹配到的字符串的索引 index:0</li>
+<li>第三项为原字符串 input: ‘前端开发’</li>
+</ul>
+<blockquote>
+<p>需要注意的是exec方法也会从上一次匹配的下一个位置开始查找，这点和text一样。</p>
+</blockquote>
+<h3 id="replace"><a href="#replace" class="headerlink" title="replace"></a>replace</h3><p><strong>是字符串的方法</strong>（不是正则表达式的方法），替换字符串中符合规则的字符串。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/前端/g</span>;</span><br><span class="line"><span class="keyword">const</span> str = <span class="string">&quot;前端开发，必须掌握正则表达式，前端就业前景好，前端工资高&quot;</span>;</span><br><span class="line">str.<span class="title function_">replace</span>(reg, <span class="string">&quot;后端&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str.<span class="title function_">replace</span>(reg, <span class="string">&quot;后端&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+<p>输出为<code>后端开发，必须掌握正则表达式，后端就业前景好，后端工资高</code></p>
+<h3 id="match"><a href="#match" class="headerlink" title="match"></a>match</h3><p><strong>是字符串的方法</strong>，查找符合规则的字符串</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/前端/g</span>;</span><br><span class="line"><span class="keyword">const</span> str = <span class="string">&quot;前端开发，必须掌握正则表达式，前端就业前景好，前端工资高&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str.<span class="title function_">match</span>(reg));</span><br></pre></td></tr></table></figure>
+
+<p>输出为：<code>[ &#39;前端&#39;, &#39;前端&#39;, &#39;前端&#39; ]</code></p>
+<p>匹配成功返回一个数组，匹配失败返回None。</p>
+<blockquote>
+<p>更多关注返回值是否为None，与test的区别在于方法调用对象不同，且match方法明显比test安全，也更符合一般代码逻辑。</p>
+</blockquote>
+<h2 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h2><p>放在第二个&#x2F;之后，作用是约束正则中执行的某些细节，常见的有三个取值。</p>
+<table>
+<thead>
+<tr>
+<th align="center">sign</th>
+<th align="center">function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">i</td>
+<td align="center">执行对大小写不敏感的匹配</td>
+</tr>
+<tr>
+<td align="center">g</td>
+<td align="center">执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）</td>
+</tr>
+<tr>
+<td align="center">m</td>
+<td align="center">执行多行匹配（应用场景较少）</td>
+</tr>
+</tbody></table>
+<ol>
+<li><p>大小写脱敏</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg1 = <span class="regexp">/a/i</span>;</span><br><span class="line"><span class="keyword">const</span> reg2 = <span class="regexp">/a/</span>;</span><br><span class="line"><span class="keyword">const</span> str = <span class="string">&quot;A&quot;</span>; </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg1.<span class="title function_">test</span>(str)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg2.<span class="title function_">test</span>(str)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>全局匹配</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg1 = <span class="regexp">/前端/</span>;</span><br><span class="line"><span class="keyword">const</span> reg2 = <span class="regexp">/前端/g</span>;</span><br><span class="line"><span class="keyword">const</span> str = <span class="string">&quot;前端开发，必须掌握正则表达式，前端就业前景好，前端工资高&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str.<span class="title function_">match</span>(reg1)); </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str.<span class="title function_">match</span>(reg2));</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>reg1:<code>[   &#39;前端&#39;,   index: 0,   input: &#39;前端开发，必须掌握正则表达式，前端就业前景好，前端工资高&#39;,    groups: undefined ]</code></li>
+<li>reg2:<code>[ &#39;前端&#39;, &#39;前端&#39;, &#39;前端&#39; ]</code></li>
+</ul>
+</li>
+<li><p>使用多个修饰符</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg3 = <span class="regexp">/Java/gi</span>;</span><br><span class="line"><span class="keyword">const</span> message = <span class="string">&quot;学Java，java工资高，java前景好&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(message.<span class="title function_">replace</span>(reg3, <span class="string">&quot;Python&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+<p>输出为：<code>学Python，Python工资高，Python前景好</code></p>
+</li>
+</ol>
+<h2 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h2><p>即具有特殊含义的字符，给与正则表达式更加多样灵活的组合。</p>
+<h3 id="边界符"><a href="#边界符" class="headerlink" title="边界符"></a>边界符</h3><p>即为规定表达式的边界部分，常见有单词边界、字符串边界、精确匹配三种情况。</p>
+<ol>
+<li><p>单词边界</p>
+<p>在字符串头尾加上<code>\b</code> 构成单词的部分，如下面这个例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 加上\b 构成单词的部分</span></span><br><span class="line"><span class="keyword">const</span> reg1 = <span class="regexp">/cat/g</span>;</span><br><span class="line"><span class="keyword">const</span> reg2 = <span class="regexp">/\bcat\b/g</span>;</span><br><span class="line"><span class="keyword">const</span> message = <span class="string">&quot;The cat scattered his food all over the room.&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(message.<span class="title function_">replace</span>(reg1, <span class="string">&quot;dog&quot;</span>));</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(message.<span class="title function_">replace</span>(reg2, <span class="string">&quot;dog&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>reg1:<code>The dog sdogtered his food all over the room.</code></li>
+<li>reg2:<code>The dog scattered his food all over the room.</code></li>
+</ul>
+<p>可以看到由于reg1并未添加单词边界，导致scattered中的“cat”部分也会被匹配上，出现了大相径庭的结果。</p>
+</li>
+<li><p>字符串边界</p>
+<p>使用<code>^</code>作为字符串的开头，<code>$</code>作为字符串的结尾。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg5 = <span class="regexp">/^a/i</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg5.<span class="title function_">test</span>(<span class="string">&quot;a&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg5.<span class="title function_">test</span>(<span class="string">&quot;abc&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg5.<span class="title function_">test</span>(<span class="string">&quot;bcd&quot;</span>)); <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> reg6 = <span class="regexp">/c$/i</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg6.<span class="title function_">test</span>(<span class="string">&quot;c&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg6.<span class="title function_">test</span>(<span class="string">&quot;cb&quot;</span>)); <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg6.<span class="title function_">test</span>(<span class="string">&quot;C&quot;</span>)); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>精确匹配</p>
+<p>如果同时在开头与结尾加上<code>^ $</code>在一块，那么就编程了精确匹配，即字符串必须完全满足正则的全部要求。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg7 = <span class="regexp">/^a$/</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg7.<span class="title function_">test</span>(<span class="string">&quot;a&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg7.<span class="title function_">test</span>(<span class="string">&quot;aaa&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h3><p>顾名思义，即规定字符出现的频率。</p>
+<table>
+<thead>
+<tr>
+<th align="center">sign</th>
+<th align="center">function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">*</td>
+<td align="center">表示0次或者多次</td>
+</tr>
+<tr>
+<td align="center">+</td>
+<td align="center">表示一次或者多次</td>
+</tr>
+<tr>
+<td align="center">?</td>
+<td align="center">表示零次与一次</td>
+</tr>
+<tr>
+<td align="center">{n}</td>
+<td align="center">只能有n次</td>
+</tr>
+<tr>
+<td align="center">{n,m}</td>
+<td align="center">表示从n到m次（包括n与m）</td>
+</tr>
+</tbody></table>
+<ol>
+<li><ul>
+<li></li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg8 = <span class="regexp">/^a*$/i</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg8.<span class="title function_">test</span>(<span class="string">&quot;aaa&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg8.<span class="title function_">test</span>(<span class="string">&quot;&quot;</span>)); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><ul>
+<li></li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg8 = <span class="regexp">/^a+$/i</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg8.<span class="title function_">test</span>(<span class="string">&quot;aaa&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg8.<span class="title function_">test</span>(<span class="string">&quot;&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>?</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg_1 = <span class="regexp">/^a?$/i</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg_1.<span class="title function_">test</span>(<span class="string">&quot;&quot;</span>)); <span class="comment">//true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg_1.<span class="title function_">test</span>(<span class="string">&quot;aaa&quot;</span>)); <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>{n}</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg9 = <span class="regexp">/^a&#123;3&#125;$/</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg9.<span class="title function_">test</span>(<span class="string">&quot;a&quot;</span>)); <span class="comment">//false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg9.<span class="title function_">test</span>(<span class="string">&quot;aaa&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg9.<span class="title function_">test</span>(<span class="string">&quot;&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>{n,m}</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg9 = <span class="regexp">/^a&#123;1,3&#125;$/</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg9.<span class="title function_">test</span>(<span class="string">&quot;a&quot;</span>)); <span class="comment">//true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg9.<span class="title function_">test</span>(<span class="string">&quot;aaa&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg9.<span class="title function_">test</span>(<span class="string">&quot;&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="字符类"><a href="#字符类" class="headerlink" title="字符类"></a>字符类</h3><p>日常生活中经常出现一些字符串不同但是等效的情况，如<code>Python</code>与<code>python</code>，<code>color</code>与<code>colour</code>，广义来说即为多个字符都符合匹配要求，可以出现替换的情况。</p>
+<p>如：<code>/[abc]/</code>，意味着我要匹配的字符串其中有a或b或c；<code>/[Pp]thon/</code>为匹配<code>Python</code>与<code>python</code>。</p>
+<p>常见的字符类情况为：</p>
+<table>
+<thead>
+<tr>
+<th align="left">sign</th>
+<th>function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">[a-z]</td>
+<td>表示a到z，26个小写的英文字母</td>
+</tr>
+<tr>
+<td align="left">[A-Z]</td>
+<td>表示A到Z，26个大写的英文字母</td>
+</tr>
+<tr>
+<td align="left">[0-9]</td>
+<td>表示0-9十个数字</td>
+</tr>
+<tr>
+<td align="left">.</td>
+<td>匹配除了换行符(\n与\r)外的任意一个字符</td>
+</tr>
+<tr>
+<td align="left">[^]</td>
+<td>表示取反，与[]合并使用，注意要写在[]里面</td>
+</tr>
+</tbody></table>
+<p>以下是一些例子：</p>
+<ol>
+<li><p>密码匹配(6-16位字母、数字或者下划线组成)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/[a-zA-Z0-9_]&#123;6,16&#125;/</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg.<span class="title function_">test</span>(<span class="string">&quot;123456&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg.<span class="title function_">test</span>(<span class="string">&quot;1234567&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg.<span class="title function_">test</span>(<span class="string">&quot;12345&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>替换Python为Java</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/[Pp]ython/</span>;</span><br><span class="line"><span class="keyword">const</span> str1 = <span class="string">&quot;人生苦短，我学Python&quot;</span></span><br><span class="line"><span class="keyword">const</span> str2 = <span class="string">&quot;人生苦短，我学Python&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str1.<span class="title function_">replace</span>(reg,<span class="string">&quot;Java&quot;</span>)); </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str2.<span class="title function_">replace</span>(reg,<span class="string">&quot;Java&quot;</span>)); </span><br></pre></td></tr></table></figure>
+
+<p>输出都为：<code>人生苦短，我学Java</code></p>
+</li>
+<li><p>匹配爱后面没有你的数据</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/爱[^你]/</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg.<span class="title function_">test</span>(<span class="string">&quot;不爱你&quot;</span>)); <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg.<span class="title function_">test</span>(<span class="string">&quot;爱你一万年&quot;</span>)); <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg.<span class="title function_">test</span>(<span class="string">&quot;我爱我&quot;</span>)); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>.匹配的例子</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg14 = <span class="regexp">/./</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg14.<span class="title function_">test</span>(<span class="string">&quot;&quot;</span>)); <span class="comment">//false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg14.<span class="title function_">test</span>(<span class="string">&quot;\n&quot;</span>)) <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg14.<span class="title function_">test</span>(<span class="string">&quot;\r&quot;</span>)) <span class="comment">// false</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="预定义"><a href="#预定义" class="headerlink" title="预定义"></a>预定义</h3><p>对于一些既定的字符类来说，还有简化的写法，这些简化的写法就是预定义。</p>
+<table>
+<thead>
+<tr>
+<th>sign</th>
+<th>Same meaning</th>
+<th>function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\d</td>
+<td>[0-9]</td>
+<td>小写数字0-9</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>[^0-9]</td>
+<td>除了数字的部分</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>[a-zA-Z0-9_]</td>
+<td>匹配任意的字母、数字、下划线</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>[^a-zA-Z0-9_]</td>
+<td>匹配任意非字母、数字、下划线</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>[\t\r\n\v\f]</td>
+<td>匹配空格（包含换行、空格、制表符）</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>[^\t\r\n\v\f]</td>
+<td>匹配非空格</td>
+</tr>
+</tbody></table>
+<p><strong>大写其实就是小写的取反效果</strong>。</p>
+<h2 id="分组与选择"><a href="#分组与选择" class="headerlink" title="分组与选择"></a>分组与选择</h2><h3 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h3><p>分组就是将数据的不同部分分开以适应不同的规则，使用<code>()</code>，每一个小括号就是一个分组。</p>
+<p>一个经典的案例为：将日期<code>2020-10-10</code>格式转化为<code>10/10/2020</code>的格式。</p>
+<p>此时我们就需要将匹配成功的年、月、日部分单独拿出来使用，这时候就可以使用分组的方法，匹配代码如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/^(\d&#123;4&#125;)-(\d&#123;2&#125;)-(\d&#123;2&#125;)$/</span></span><br><span class="line"><span class="keyword">const</span> str = <span class="string">&quot;2020-10-10&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str.<span class="title function_">match</span>(reg))</span><br></pre></td></tr></table></figure>
+
+<p>输出为：<code>[   &#39;2020-10-10&#39;,   &#39;2020&#39;,   &#39;10&#39;,   &#39;10&#39;,   index: 0,   input: &#39;2020-10-10&#39;,   groups: undefined ]</code></p>
+<p>可以看到实际上match按照正则表达式分组的想法（一个小括号一组）将匹配结果分为了三组（年、月、日），其中将整个日期作为一个group匹配起来，我们称其为group0。</p>
+<blockquote>
+<p>2020-10-10 group0</p>
+<p>2020 group1</p>
+<p>10 group2</p>
+<p>10 group3</p>
+</blockquote>
+<p>在replace中支持使用<code>$n</code>来获取其中的分组数据</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/^(\d&#123;4&#125;)-(\d&#123;2&#125;)-(\d&#123;2&#125;)$/</span></span><br><span class="line"><span class="keyword">const</span> str = <span class="string">&quot;2020-10-10&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str.<span class="title function_">replace</span>(reg,<span class="string">&quot;$1年$2月$3日&quot;</span>))</span><br></pre></td></tr></table></figure>
+
+<p>输出为：<code>2020年10月10日</code></p>
+<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><p>使用<code>|</code>来表示或者，如：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg17 = <span class="regexp">/^good|nice$/</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg17.<span class="title function_">test</span>(<span class="string">&quot;good&quot;</span>)) <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg17.<span class="title function_">test</span>(<span class="string">&quot;nice&quot;</span>)) <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<p>与<code>[\bnice\b\bgood\b]</code>、<code>/[(nice)(good)]/</code>效果相同。</p>
+<blockquote>
+<p>分支与可选[]效果实际相同，但可选一般用于两者之间，而选择一般用于多者之间</p>
+</blockquote>
+<h3 id="非分组匹配"><a href="#非分组匹配" class="headerlink" title="非分组匹配"></a>非分组匹配</h3><p>在正则表达式中用于将多个表达式组合成一个单元，但是与普通的括号不同，它不会保存匹配的内容用于后续的引用。这意味着你可以使用非捕获组来应用量词（如 <code>+</code> 或 <code>*</code>）到整个组合的模式上，而不会捕获该组的匹配结果。</p>
+<p>我的理解是帮助你找出成对或组合的模式出现的次数，但不需要具体的捕获内容。</p>
+<p>以下是一个捕获HTML标签的例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> text = <span class="string">&quot;This is a &lt;b&gt;bold&lt;b&gt; word and this is an &lt;i&gt;italic&lt;/i&gt; word.&quot;</span></span><br><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/(?:&lt;.&gt;)/g</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(text.<span class="title function_">match</span>(reg))</span><br></pre></td></tr></table></figure>
+
+<p>输出为<code>[ &#39;&lt;b&gt;&#39;, &#39;&lt;b&gt;&#39;, &#39;&lt;i&gt;&#39; ]</code></p>
+<blockquote>
+<p>个人感觉这个东西没什么用</p>
+</blockquote>
+<h2 id="一些零碎知识"><a href="#一些零碎知识" class="headerlink" title="一些零碎知识"></a>一些零碎知识</h2><ol>
+<li><p>可选字符</p>
+<p>有时，我们可能想要匹配一个单词的不同写法，比如color和colour，或者honor与honour</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg19 = <span class="regexp">/colou?r/</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg19.<span class="title function_">test</span>(<span class="string">&quot;color&quot;</span>)) <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg19.<span class="title function_">test</span>(<span class="string">&quot;colour&quot;</span>)) <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<p>这个正则表达式中?代表u可有可无。</p>
+</li>
+<li><p>重复区间</p>
+<p>算是一些细节的补充，因为正则表达式默认是贪婪模式，即尽可能的匹配更多字符，于是会出现以下情况：</p>
+<blockquote>
+<p>{M,} - 表示至少M次</p>
+<p>{,N} - 表示至多N次</p>
+<p>{M} - 表示恰好M次</p>
+</blockquote>
+<p>而要使用非贪婪模式，我们要在表达式后面加上<code>?</code>号。</p>
+</li>
+</ol>
+<h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><h3 id="密码匹配"><a href="#密码匹配" class="headerlink" title="密码匹配"></a>密码匹配</h3><p>密码匹配(6-16位字母、数字或者下划线组成)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg = <span class="regexp">/[a-zA-Z0-9_]&#123;6,16&#125;/</span>;</span><br><span class="line"><span class="keyword">const</span> reg2 = <span class="regexp">/^\w&#123;6,16&#125;$/</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg2.<span class="title function_">test</span>(<span class="string">&quot;123456&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg2.<span class="title function_">test</span>(<span class="string">&quot;1234567&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg2.<span class="title function_">test</span>(<span class="string">&quot;12345&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="匹配16进制颜色值"><a href="#匹配16进制颜色值" class="headerlink" title="匹配16进制颜色值"></a>匹配16进制颜色值</h3><p>如<code>#ffffff</code>，<code>#fff</code>。</p>
+<p>可以看出数字的个数为6个或者3个，可以使用分支结构，另外，每个字符的取值范围在0-9与a-f（包括大写）之间,这可以使用选择[]。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg3 = <span class="regexp">/^#([0-9a-fA-F]&#123;3&#125;|[0-9A-Fa-f]&#123;6&#125;)$/</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg3.<span class="title function_">test</span>(<span class="string">&quot;#ccc&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg3.<span class="title function_">test</span>(<span class="string">&quot;#cccccc&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg3.<span class="title function_">test</span>(<span class="string">&quot;#cc&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="匹配24小时时间"><a href="#匹配24小时时间" class="headerlink" title="匹配24小时时间"></a>匹配24小时时间</h3><p>这个分为小时与分钟两部分进行分析。</p>
+<p>小时部分：</p>
+<ol>
+<li>当第一个数字为0或1的时候，第二个数字为0-9</li>
+<li>当第一个数字为2时，第二个数字为0-3</li>
+</ol>
+<p>分钟部分：</p>
+<ol>
+<li>第一个数字为0-5</li>
+<li>第二个数字为0-9</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg4 = <span class="regexp">/^(([01][0-9])|([2][0123])):[0-5][0-9]$/</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg4.<span class="title function_">test</span>(<span class="string">&quot;23:59&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg4.<span class="title function_">test</span>(<span class="string">&quot;00:00&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg4.<span class="title function_">test</span>(<span class="string">&quot;24:00&quot;</span>)); <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg4.<span class="title function_">test</span>(<span class="string">&quot;23:60&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="手机号脱敏"><a href="#手机号脱敏" class="headerlink" title="手机号脱敏"></a>手机号脱敏</h3><p>将11位手机号中间4位替换为*，例如<code>13812341234</code>替换为<code>*138****1234*</code>,这里就可以把头三个数与尾四个数各分为一组，后续就可以使用<code>$</code>获取数据。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&quot;13812341234&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str.<span class="title function_">substring</span>(<span class="number">0</span>, <span class="number">3</span>) + <span class="string">&quot;****&quot;</span> + str.<span class="title function_">substring</span>(<span class="number">7</span>,<span class="number">11</span>));</span><br><span class="line"><span class="keyword">const</span> reg6 = <span class="regexp">/^(1[3-9]\d&#123;1&#125;)\d&#123;4&#125;(\d&#123;4&#125;)$/</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str.<span class="title function_">replace</span>(reg6, <span class="string">&quot;$1****$2&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+<h3 id="匹配电话号码"><a href="#匹配电话号码" class="headerlink" title="匹配电话号码"></a>匹配电话号码</h3><p><em>假设电话号码可以有下列两种方式：</em></p>
+<ul>
+<li><p>0XX-XXXXXXX，例如020-8810456；</p>
+</li>
+<li><p>0XXXXXXXXX，例如0208810456</p>
+</li>
+</ul>
+<p>020 代表区号，8810456是电话号码，区号第一个数字必须是0，电话号码的第一个数字必须大于等于1。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> reg9 = <span class="regexp">/^0[0-9]&#123;2&#125;-?[1-9]\d&#123;6&#125;$/</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg9.<span class="title function_">test</span>(<span class="string">&quot;020-8810456&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg9.<span class="title function_">test</span>(<span class="string">&quot;0208810456&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg9.<span class="title function_">test</span>(<span class="string">&quot;020-88104XX&quot;</span>)); <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(reg9.<span class="title function_">test</span>(<span class="string">&quot;3208810456&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>正则表达式功能强大，虽然在平时大部分的时候都可以直接靠搜索引擎解决需求（如：手机号，身份证等），VsCode中也有名为<code>any-rule</code>的正则插件，几乎涵盖了开发中大部分的需求，但是如果遇到一些特殊情况要求重新编写一个正则表达匹配，那就需要自己动手实现了，比如匹配特定的网站链接是否合法。</p>
+<p>最后找到两个非常好用的网站：</p>
+<ol>
+<li>编程胶囊:<a target="_blank" rel="noopener" href="https://codejiaonang.com/#/">编程胶囊-打造学习编程的最好系统 (codejiaonang.com)</a></li>
+<li>正则可视化:<a target="_blank" rel="noopener" href="https://regexper.com/">Regexper</a></li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>正则表达式</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://ldm0715.github.io/post/zheng-ze-biao-da-shi/">https://ldm0715.github.io/post/zheng-ze-biao-da-shi/</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>gcnanmu</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2024-01-29</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2024-01-29</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/string/">string</a><a class="post-meta__tags" href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a><a class="post-meta__tags" href="/tags/JavaScript/">JavaScript</a></div><div class="post_share"><div class="social-share" data-image="https://z4a.net/images/2024/01/29/b181fbe1c5923be102d39a01820834d4.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/post/github-page-zi-ding-yi-yu-ming/" title="Github Page自定义域名"><img class="cover" src="https://z4a.net/images/2023/08/19/a442a3dd893c9ec31848307c23cdc789.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Github Page自定义域名</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E5%87%BD%E6%95%B0"><span class="toc-number">2.</span> <span class="toc-text">常见的字符串匹配函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#test"><span class="toc-number">2.1.</span> <span class="toc-text">test</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#exec"><span class="toc-number">2.2.</span> <span class="toc-text">exec</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#replace"><span class="toc-number">2.3.</span> <span class="toc-text">replace</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#match"><span class="toc-number">2.4.</span> <span class="toc-text">match</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-number">3.</span> <span class="toc-text">修饰符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%83%E5%AD%97%E7%AC%A6"><span class="toc-number">4.</span> <span class="toc-text">元字符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%B9%E7%95%8C%E7%AC%A6"><span class="toc-number">4.1.</span> <span class="toc-text">边界符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8F%E8%AF%8D"><span class="toc-number">4.2.</span> <span class="toc-text">量词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E7%B1%BB"><span class="toc-number">4.3.</span> <span class="toc-text">字符类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%84%E5%AE%9A%E4%B9%89"><span class="toc-number">4.4.</span> <span class="toc-text">预定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E7%BB%84%E4%B8%8E%E9%80%89%E6%8B%A9"><span class="toc-number">5.</span> <span class="toc-text">分组与选择</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%BB%84"><span class="toc-number">5.1.</span> <span class="toc-text">分组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%94%AF"><span class="toc-number">5.2.</span> <span class="toc-text">分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E5%88%86%E7%BB%84%E5%8C%B9%E9%85%8D"><span class="toc-number">5.3.</span> <span class="toc-text">非分组匹配</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E9%9B%B6%E7%A2%8E%E7%9F%A5%E8%AF%86"><span class="toc-number">6.</span> <span class="toc-text">一些零碎知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B"><span class="toc-number">7.</span> <span class="toc-text">案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%86%E7%A0%81%E5%8C%B9%E9%85%8D"><span class="toc-number">7.1.</span> <span class="toc-text">密码匹配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%B9%E9%85%8D16%E8%BF%9B%E5%88%B6%E9%A2%9C%E8%89%B2%E5%80%BC"><span class="toc-number">7.2.</span> <span class="toc-text">匹配16进制颜色值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%B9%E9%85%8D24%E5%B0%8F%E6%97%B6%E6%97%B6%E9%97%B4"><span class="toc-number">7.3.</span> <span class="toc-text">匹配24小时时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E6%9C%BA%E5%8F%B7%E8%84%B1%E6%95%8F"><span class="toc-number">7.4.</span> <span class="toc-text">手机号脱敏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%B9%E9%85%8D%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81"><span class="toc-number">7.5.</span> <span class="toc-text">匹配电话号码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">8.</span> <span class="toc-text">总结</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">Copyright &copy;2022 - 2024 By gcnanmu</div><div class="framework-info"><span>- 如果只是点缀，愿当皎洁明月 -</span></div><a target="_blank" rel="noopener" href="https://notbyai.fyi/">
+<img src="/img/Written-By-Human-Not-By-AI-Badge-white.png" alt="Written-By-Human-Not-By-A" width="110">
+</a> 
+<a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+<img src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120">
+</a></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:window.scrollTo(0, 0);"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度搜索</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="#post-comment"><i class="fas fa-comment"></i><span>空降评论</span></a><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:rmf.switchReadMode();"><i class="fa fa-book"></i><span>阅读模式</span></a><a class="rightMenu-item" href="/about/"><i class="fa fa-info-circle"></i><span>关于博客</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addModeChange('mermaid', runMermaid)
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'R2gIzaVCo5mQPnjj80trjDQ9-gzGzoHsz',
+      appKey: 'U0decE1mFeJg9vbglhkkE20P',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script async src="https://at.alicdn.com/t/c/font_3962437_6snoplzeg9u.js"></script><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><script src="/js/vue.js"></script><script src="/js/runtime.js"></script><script src="/js/fps.js"></script><script src="/js/random_post.js"></script><script type="text/javascript" src="https://cdn1.tianli0.top/npm/jquery@latest/dist/jquery.min.js"></script><script type="text/javascript" src="/js/rightmenu.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script><script src="/js/share.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">   </span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://ldm0715.github.io/categories/Hexo博客/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍐 Hexo博客 (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://ldm0715.github.io/categories/Halo博客/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍒 Halo博客 (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://ldm0715.github.io/categories/Python实践/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍉 Python实践 (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://ldm0715.github.io/categories/机器视觉/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍇 机器视觉 (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://ldm0715.github.io/categories/杂-Mess/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍍 杂&Mess (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://ldm0715.github.io/categories/音视频信号处理/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🥥 音视频信号处理 (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="https://ldm0715.github.io/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: #b30070}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="post/anaconda-de-ji-chu-shi-yong/" alt=""><img width="48" height="48" src="https://z4a.net/images/2023/03/25/conda.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-03-25</span><a class="blog-slider__title" href="post/anaconda-de-ji-chu-shi-yong/" alt="">Anaconda的基础使用总结</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" href="post/anaconda-de-ji-chu-shi-yong/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="post/hexo-bo-ke-da-jian-li-cheng/" alt=""><img width="48" height="48" src="https://z4a.net/images/2023/08/19/hexo.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-02-21</span><a class="blog-slider__title" href="post/hexo-bo-ke-da-jian-li-cheng/" alt="">Hexo博客搭建</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" href="post/hexo-bo-ke-da-jian-li-cheng/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="post/halo-bo-ke-da-jian-li-cheng/" alt=""><img width="48" height="48" src="https://z4a.net/images/2023/02/21/halo.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-11</span><a class="blog-slider__title" href="post/halo-bo-ke-da-jian-li-cheng/" alt="">Halo博客搭建历程</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" href="post/halo-bo-ke-da-jian-li-cheng/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="post/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/" alt=""><img width="48" height="48" src="https://z4a.net/images/2023/08/19/hexohalo.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-03-13</span><a class="blog-slider__title" href="post/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/" alt="">Hexo与Halo的使用后的感受</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" href="post/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="post/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/" alt=""><img width="48" height="48" src="https://z4a.net/images/2023/03/13/pytorch.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-16</span><a class="blog-slider__title" href="post/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/" alt="">使用whl文件快速安装PyTorch</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" href="post/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="post/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/" alt=""><img width="48" height="48" src="https://z4a.net/images/2023/02/23/pycharm.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-19</span><a class="blog-slider__title" href="post/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/" alt="">Python编程中遇到的一些问题</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" href="post/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '500ms');
+    arr[i].setAttribute('data-wow-delay', '1s');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.9.0" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=brevo" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src="https://img.shields.io/badge/Powerby-Github-d021d6?style=flat&amp;logo=Github" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/lxgw/LxgwWenKai-Screen" style="margin-inline:5px" data-title="本站字体为霞鹜文楷" title=""><img src="https://img.shields.io/badge/Font-LXGW%20WenKai-pink?style=flat&amp;logo=fluentd" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><!-- hexo injector body_end end --></body></html>

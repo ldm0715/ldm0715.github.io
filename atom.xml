@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>gcnanmuの博客</title>
+  <icon>https://ldm0715.github.io/icon.png</icon>
+  <subtitle>是大学牲</subtitle>
+  <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://ldm0715.github.io/"/>
+  <updated>2024-01-29T09:25:23.708Z</updated>
+  <id>https://ldm0715.github.io/</id>
+  
+  <author>
+    <name>gcnanmu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>正则表达式</title>
+    <link href="https://ldm0715.github.io/post/zheng-ze-biao-da-shi/"/>
+    <id>https://ldm0715.github.io/post/zheng-ze-biao-da-shi/</id>
+    <published>2024-01-29T10:00:00.000Z</published>
+    <updated>2024-01-29T09:25:23.708Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="string" scheme="https://ldm0715.github.io/tags/string/"/>
+    
+    <category term="正则表达式" scheme="https://ldm0715.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github Page自定义域名</title>
+    <link href="https://ldm0715.github.io/post/github-page-zi-ding-yi-yu-ming/"/>
+    <id>https://ldm0715.github.io/post/github-page-zi-ding-yi-yu-ming/</id>
+    <published>2023-08-17T15:01:00.000Z</published>
+    <updated>2024-01-29T09:27:35.989Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;如果将静态博客搭建到Github</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo博客" scheme="https://ldm0715.github.io/categories/Hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Github Page" scheme="https://ldm0715.github.io/tags/Github-Page/"/>
+    
+    <category term="域名" scheme="https://ldm0715.github.io/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实验报告中的Word排版</title>
+    <link href="https://ldm0715.github.io/post/shi-yan-bao-gao-zhong-de-word-pai-ban-ji-qiao/"/>
+    <id>https://ldm0715.github.io/post/shi-yan-bao-gao-zhong-de-word-pai-ban-ji-qiao/</id>
+    <published>2023-07-18T13:18:00.000Z</published>
+    <updated>2023-08-18T03:42:13.542Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="杂&amp;Mess" scheme="https://ldm0715.github.io/categories/%E6%9D%82-Mess/"/>
+    
+    
+    <category term="Word" scheme="https://ldm0715.github.io/tags/Word/"/>
+    
+    <category term="排版" scheme="https://ldm0715.github.io/tags/%E6%8E%92%E7%89%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器视觉-LBP特征提取算法</title>
+    <link href="https://ldm0715.github.io/post/ji-qi-shi-jue-lbp-suan-fa/"/>
+    <id>https://ldm0715.github.io/post/ji-qi-shi-jue-lbp-suan-fa/</id>
+    <published>2023-06-19T12:00:00.000Z</published>
+    <updated>2023-08-13T07:00:16.099Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="机器视觉" scheme="https://ldm0715.github.io/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="机器视觉" scheme="https://ldm0715.github.io/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FFmpeg——一些简单的视频处理</title>
+    <link href="https://ldm0715.github.io/post/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/"/>
+    <id>https://ldm0715.github.io/post/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/</id>
+    <published>2023-05-22T02:25:25.000Z</published>
+    <updated>2023-08-17T15:35:03.851Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="音视频信号处理" scheme="https://ldm0715.github.io/categories/%E9%9F%B3%E8%A7%86%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    
+    
+    <category term="音视频处理" scheme="https://ldm0715.github.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/"/>
+    
+    <category term="FFmpeg" scheme="https://ldm0715.github.io/tags/FFmpeg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>音频处理——G711A-law编码</title>
+    <link href="https://ldm0715.github.io/post/yin-pin-chu-li-g711a-lu-bian-ma/"/>
+    <id>https://ldm0715.github.io/post/yin-pin-chu-li-g711a-lu-bian-ma/</id>
+    <published>2023-05-08T10:00:00.000Z</published>
+    <updated>2023-08-13T07:00:49.045Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="音视频信号处理" scheme="https://ldm0715.github.io/categories/%E9%9F%B3%E8%A7%86%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="音视频信号处理" scheme="https://ldm0715.github.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器视觉-生成高斯金字塔</title>
+    <link href="https://ldm0715.github.io/post/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/"/>
+    <id>https://ldm0715.github.io/post/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/</id>
+    <published>2023-04-23T10:01:00.000Z</published>
+    <updated>2023-08-15T13:11:26.223Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="机器视觉" scheme="https://ldm0715.github.io/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="机器视觉" scheme="https://ldm0715.github.io/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Mermaid绘图</title>
+    <link href="https://ldm0715.github.io/post/shi-yong-mermaid-hui-tu/"/>
+    <id>https://ldm0715.github.io/post/shi-yong-mermaid-hui-tu/</id>
+    <published>2023-04-18T06:42:00.000Z</published>
+    <updated>2023-08-18T03:31:12.178Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="杂&amp;Mess" scheme="https://ldm0715.github.io/categories/%E6%9D%82-Mess/"/>
+    
+    
+    <category term="mermaid" scheme="https://ldm0715.github.io/tags/mermaid/"/>
+    
+    <category term="Typora" scheme="https://ldm0715.github.io/tags/Typora/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Anaconda的基础使用总结</title>
+    <link href="https://ldm0715.github.io/post/anaconda-de-ji-chu-shi-yong/"/>
+    <id>https://ldm0715.github.io/post/anaconda-de-ji-chu-shi-yong/</id>
+    <published>2023-03-25T08:00:00.000Z</published>
+    <updated>2023-08-17T15:35:52.117Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="pip" scheme="https://ldm0715.github.io/tags/pip/"/>
+    
+    <category term="Anaconda" scheme="https://ldm0715.github.io/tags/Anaconda/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo与Halo的使用后的感受</title>
+    <link href="https://ldm0715.github.io/post/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/"/>
+    <id>https://ldm0715.github.io/post/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/</id>
+    <published>2023-03-13T05:57:45.000Z</published>
+    <updated>2024-01-29T09:28:12.431Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Halo博客" scheme="https://ldm0715.github.io/categories/Halo%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Halo" scheme="https://ldm0715.github.io/tags/Halo/"/>
+    
+    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客搭建</title>
+    <link href="https://ldm0715.github.io/post/hexo-bo-ke-da-jian-li-cheng/"/>
+    <id>https://ldm0715.github.io/post/hexo-bo-ke-da-jian-li-cheng/</id>
+    <published>2023-02-21T05:57:45.000Z</published>
+    <updated>2024-01-29T09:28:39.102Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;关于我为什么使用 Hexo，其实还挺戏剧性的，一开始我使用的是 Halo</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo博客" scheme="https://ldm0715.github.io/categories/Hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://ldm0715.github.io/post/hello-world/"/>
+    <id>https://ldm0715.github.io/post/hello-world/</id>
+    <published>2023-02-21T05:57:45.000Z</published>
+    <updated>2023-08-17T15:36:19.224Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文为Hexo博客搭建时候默认生成的文章。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post.</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo博客" scheme="https://ldm0715.github.io/categories/Hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python编程中遇到的一些问题</title>
+    <link href="https://ldm0715.github.io/post/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/"/>
+    <id>https://ldm0715.github.io/post/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/</id>
+    <published>2022-11-19T02:12:00.000Z</published>
+    <updated>2023-08-17T15:36:03.178Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  近期进行Python编程的问题汇总。&lt;/p&gt;
+&lt;h2 id=&quot;需求文档的生成&quot;&gt;&lt;a href=&quot;#需求文档的生成&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="PyCharm" scheme="https://ldm0715.github.io/tags/PyCharm/"/>
+    
+    <category term="Jupyter" scheme="https://ldm0715.github.io/tags/Jupyter/"/>
+    
+    <category term="OpenCV" scheme="https://ldm0715.github.io/tags/OpenCV/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用whl文件快速安装PyTorch</title>
+    <link href="https://ldm0715.github.io/post/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/"/>
+    <id>https://ldm0715.github.io/post/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/</id>
+    <published>2022-11-16T12:44:00.000Z</published>
+    <updated>2023-08-17T15:35:47.644Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;div align=&quot;center&quot;&gt;
+  &lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="PyTorch" scheme="https://ldm0715.github.io/tags/PyTorch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Halo博客搭建历程</title>
+    <link href="https://ldm0715.github.io/post/halo-bo-ke-da-jian-li-cheng/"/>
+    <id>https://ldm0715.github.io/post/halo-bo-ke-da-jian-li-cheng/</id>
+    <published>2022-11-11T11:25:00.000Z</published>
+    <updated>2023-08-17T15:34:50.250Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;说在前面&quot;&gt;&lt;a href=&quot;#说在前面&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Halo博客" scheme="https://ldm0715.github.io/categories/Halo%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Halo" scheme="https://ldm0715.github.io/tags/Halo/"/>
+    
+    <category term="服务器" scheme="https://ldm0715.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="DNS" scheme="https://ldm0715.github.io/tags/DNS/"/>
+    
+  </entry>
+  
+</feed>
