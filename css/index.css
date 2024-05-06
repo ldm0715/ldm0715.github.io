@@ -2093,8 +2093,8 @@ figure.highlight pre .javascript .function {
 }
 .article-sort-item-img {
   overflow: hidden;
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: 100px;
 }
 .article-sort-item-info {
   -webkit-box-flex: 1;
