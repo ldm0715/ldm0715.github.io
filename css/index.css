@@ -2839,7 +2839,7 @@ h1.page-title + .tag-cloud-list {
   margin-top: -9px;
   color: #a9a9a9;
   font-style: italic;
-  font-size: 140%;
+  font-size: 120%;
 }
 #aside-content #card-toc .toc-content {
   overflow-y: scroll;
