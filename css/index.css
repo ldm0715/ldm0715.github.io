@@ -3623,6 +3623,7 @@ h1.page-title + .tag-cloud-list {
   margin-right: 6px;
   height: 36px;
   vertical-align: middle;
+  border-radius: 10px;
 }
 #nav #toggle-menu {
   display: none;
