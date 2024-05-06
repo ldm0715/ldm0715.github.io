@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-01-29T11:42:38.710Z</updated>
+  <updated>2024-05-06T04:34:01.205Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vue3-基础语法笔记</title>
+    <link href="https://ldm0715.github.io/post/vue-xue-xi-bi-ji/"/>
+    <id>https://ldm0715.github.io/post/vue-xue-xi-bi-ji/</id>
+    <published>2024-05-06T10:00:00.000Z</published>
+    <updated>2024-05-06T04:34:01.205Z</updated>
+    
+    
+    <summary type="html">Vue小白初学整理的笔记</summary>
+    
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="Vue" scheme="https://ldm0715.github.io/tags/Vue/"/>
+    
+    <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>正则表达式</title>
     <link href="https://ldm0715.github.io/post/zheng-ze-biao-da-shi/"/>
     <id>https://ldm0715.github.io/post/zheng-ze-biao-da-shi/</id>
     <published>2024-01-29T10:00:00.000Z</published>
-    <updated>2024-01-29T11:42:38.710Z</updated>
+    <updated>2024-05-06T01:48:45.772Z</updated>
     
     
       
@@ -37,11 +60,11 @@
     <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
+    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
+    
     <category term="string" scheme="https://ldm0715.github.io/tags/string/"/>
     
     <category term="正则表达式" scheme="https://ldm0715.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    
-    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
     
   </entry>
   
