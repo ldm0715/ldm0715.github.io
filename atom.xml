@@ -69,11 +69,11 @@
   </entry>
   
   <entry>
-    <title>Github Page自定义域名</title>
+    <title>GithubPage-自定义域名</title>
     <link href="https://ldm0715.github.io/post/github-page-zi-ding-yi-yu-ming/"/>
     <id>https://ldm0715.github.io/post/github-page-zi-ding-yi-yu-ming/</id>
     <published>2023-08-17T15:01:00.000Z</published>
-    <updated>2024-01-29T09:27:35.989Z</updated>
+    <updated>2024-05-06T05:23:46.324Z</updated>
     
     
       
@@ -123,11 +123,11 @@
   </entry>
   
   <entry>
-    <title>机器视觉-LBP特征提取算法</title>
+    <title>OpenCV-LBP特征提取算法</title>
     <link href="https://ldm0715.github.io/post/ji-qi-shi-jue-lbp-suan-fa/"/>
     <id>https://ldm0715.github.io/post/ji-qi-shi-jue-lbp-suan-fa/</id>
     <published>2023-06-19T12:00:00.000Z</published>
-    <updated>2023-08-13T07:00:16.099Z</updated>
+    <updated>2024-05-06T05:25:10.740Z</updated>
     
     
       
@@ -144,6 +144,8 @@
     
     
     <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="OpenCV" scheme="https://ldm0715.github.io/tags/OpenCV/"/>
     
     <category term="机器视觉" scheme="https://ldm0715.github.io/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
     
@@ -181,7 +183,7 @@
     <link href="https://ldm0715.github.io/post/yin-pin-chu-li-g711a-lu-bian-ma/"/>
     <id>https://ldm0715.github.io/post/yin-pin-chu-li-g711a-lu-bian-ma/</id>
     <published>2023-05-08T10:00:00.000Z</published>
-    <updated>2023-08-13T07:00:49.045Z</updated>
+    <updated>2024-05-06T05:25:52.925Z</updated>
     
     
       
@@ -204,11 +206,11 @@
   </entry>
   
   <entry>
-    <title>机器视觉-生成高斯金字塔</title>
+    <title>OpenCV-高斯金字塔</title>
     <link href="https://ldm0715.github.io/post/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/"/>
     <id>https://ldm0715.github.io/post/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/</id>
     <published>2023-04-23T10:01:00.000Z</published>
-    <updated>2023-08-15T13:11:26.223Z</updated>
+    <updated>2024-05-06T05:25:37.746Z</updated>
     
     
       
@@ -225,6 +227,8 @@
     
     
     <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="OpenCV" scheme="https://ldm0715.github.io/tags/OpenCV/"/>
     
     <category term="机器视觉" scheme="https://ldm0715.github.io/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
     
@@ -314,31 +318,6 @@
   </entry>
   
   <entry>
-    <title>Hexo博客搭建</title>
-    <link href="https://ldm0715.github.io/post/hexo-bo-ke-da-jian-li-cheng/"/>
-    <id>https://ldm0715.github.io/post/hexo-bo-ke-da-jian-li-cheng/</id>
-    <published>2023-02-21T05:57:45.000Z</published>
-    <updated>2024-01-29T11:36:21.978Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;关于我为什么使用 Hexo，其实还挺戏剧性的，一开始我使用的是 Halo</summary>
-        
-      
-    
-    
-    
-    <category term="Hexo博客" scheme="https://ldm0715.github.io/categories/Hexo%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="https://ldm0715.github.io/post/hello-world/"/>
     <id>https://ldm0715.github.io/post/hello-world/</id>
@@ -354,6 +333,31 @@
 &lt;p&gt;本文为Hexo博客搭建时候默认生成的文章。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post.</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo博客" scheme="https://ldm0715.github.io/categories/Hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客搭建</title>
+    <link href="https://ldm0715.github.io/post/hexo-bo-ke-da-jian-li-cheng/"/>
+    <id>https://ldm0715.github.io/post/hexo-bo-ke-da-jian-li-cheng/</id>
+    <published>2023-02-21T05:57:45.000Z</published>
+    <updated>2024-01-29T11:36:21.978Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;关于我为什么使用 Hexo，其实还挺戏剧性的，一开始我使用的是 Halo</summary>
         
       
     

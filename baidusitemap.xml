@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ldm0715.github.io/post/yin-pin-chu-li-g711a-lu-bian-ma/</loc>
+    <lastmod>2024-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://ldm0715.github.io/post/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/</loc>
+    <lastmod>2024-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://ldm0715.github.io/post/ji-qi-shi-jue-lbp-suan-fa/</loc>
+    <lastmod>2024-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://ldm0715.github.io/post/github-page-zi-ding-yi-yu-ming/</loc>
+    <lastmod>2024-05-06</lastmod>
+  </url>
+  <url>
     <loc>https://ldm0715.github.io/post/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/</loc>
     <lastmod>2024-05-06</lastmod>
   </url>
@@ -37,10 +53,6 @@
     <lastmod>2024-01-29</lastmod>
   </url>
   <url>
-    <loc>https://ldm0715.github.io/post/github-page-zi-ding-yi-yu-ming/</loc>
-    <lastmod>2024-01-29</lastmod>
-  </url>
-  <url>
     <loc>https://ldm0715.github.io/post/hello-world/</loc>
     <lastmod>2023-08-17</lastmod>
   </url>
@@ -51,17 +63,5 @@
   <url>
     <loc>https://ldm0715.github.io/post/halo-bo-ke-da-jian-li-cheng/</loc>
     <lastmod>2023-08-17</lastmod>
-  </url>
-  <url>
-    <loc>https://ldm0715.github.io/post/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/</loc>
-    <lastmod>2023-08-15</lastmod>
-  </url>
-  <url>
-    <loc>https://ldm0715.github.io/post/yin-pin-chu-li-g711a-lu-bian-ma/</loc>
-    <lastmod>2023-08-13</lastmod>
-  </url>
-  <url>
-    <loc>https://ldm0715.github.io/post/ji-qi-shi-jue-lbp-suan-fa/</loc>
-    <lastmod>2023-08-13</lastmod>
   </url>
 </urlset> 
