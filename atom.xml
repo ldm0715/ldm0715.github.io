@@ -150,11 +150,11 @@
   </entry>
   
   <entry>
-    <title>FFmpeg——一些简单的视频处理</title>
+    <title>FFmpeg-简单的视频处理</title>
     <link href="https://ldm0715.github.io/post/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/"/>
     <id>https://ldm0715.github.io/post/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/</id>
     <published>2023-05-22T02:25:25.000Z</published>
-    <updated>2023-08-17T15:35:03.851Z</updated>
+    <updated>2024-05-06T05:13:06.581Z</updated>
     
     
       
@@ -231,11 +231,11 @@
   </entry>
   
   <entry>
-    <title>使用Mermaid绘图</title>
+    <title>Mermaid-基础图的绘制</title>
     <link href="https://ldm0715.github.io/post/shi-yong-mermaid-hui-tu/"/>
     <id>https://ldm0715.github.io/post/shi-yong-mermaid-hui-tu/</id>
     <published>2023-04-18T06:42:00.000Z</published>
-    <updated>2023-08-18T03:31:12.178Z</updated>
+    <updated>2024-05-06T05:11:39.097Z</updated>
     
     
       
@@ -258,11 +258,11 @@
   </entry>
   
   <entry>
-    <title>Anaconda的基础使用总结</title>
+    <title>Anaconda-基础使用总结</title>
     <link href="https://ldm0715.github.io/post/anaconda-de-ji-chu-shi-yong/"/>
     <id>https://ldm0715.github.io/post/anaconda-de-ji-chu-shi-yong/</id>
     <published>2023-03-25T08:00:00.000Z</published>
-    <updated>2023-08-17T15:35:52.117Z</updated>
+    <updated>2024-05-06T05:12:09.574Z</updated>
     
     
       
@@ -281,6 +281,8 @@
     <category term="pip" scheme="https://ldm0715.github.io/tags/pip/"/>
     
     <category term="Anaconda" scheme="https://ldm0715.github.io/tags/Anaconda/"/>
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
     
   </entry>
   
