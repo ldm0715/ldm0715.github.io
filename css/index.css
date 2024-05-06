@@ -2668,8 +2668,8 @@ h1.page-title + .tag-cloud-list {
 }
 #aside-content .aside-list > .aside-list-item .thumbnail {
   overflow: hidden;
-  width: 4.2em;
-  height: 4.2em;
+  width: 100px;
+  height: 50px;
 }
 #aside-content .aside-list > .aside-list-item .content {
   -webkit-box-flex: 1;
