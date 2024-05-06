@@ -291,11 +291,11 @@
   </entry>
   
   <entry>
-    <title>Hexo与Halo的使用后的感受</title>
+    <title>Hexo vs Halo-两者使用的感受</title>
     <link href="https://ldm0715.github.io/post/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/"/>
     <id>https://ldm0715.github.io/post/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/</id>
     <published>2023-03-13T05:57:45.000Z</published>
-    <updated>2024-01-29T09:28:12.431Z</updated>
+    <updated>2024-05-06T05:52:56.687Z</updated>
     
     
       
@@ -312,6 +312,31 @@
     
     
     <category term="Halo" scheme="https://ldm0715.github.io/tags/Halo/"/>
+    
+    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-博客搭建</title>
+    <link href="https://ldm0715.github.io/post/hexo-bo-ke-da-jian-li-cheng/"/>
+    <id>https://ldm0715.github.io/post/hexo-bo-ke-da-jian-li-cheng/</id>
+    <published>2023-02-21T05:57:45.000Z</published>
+    <updated>2024-05-06T05:47:13.452Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;关于我为什么使用 Hexo，其实还挺戏剧性的，一开始我使用的是 Halo</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo博客" scheme="https://ldm0715.github.io/categories/Hexo%E5%8D%9A%E5%AE%A2/"/>
+    
     
     <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
     
@@ -346,36 +371,11 @@
   </entry>
   
   <entry>
-    <title>Hexo博客搭建</title>
-    <link href="https://ldm0715.github.io/post/hexo-bo-ke-da-jian-li-cheng/"/>
-    <id>https://ldm0715.github.io/post/hexo-bo-ke-da-jian-li-cheng/</id>
-    <published>2023-02-21T05:57:45.000Z</published>
-    <updated>2024-01-29T11:36:21.978Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;关于我为什么使用 Hexo，其实还挺戏剧性的，一开始我使用的是 Halo</summary>
-        
-      
-    
-    
-    
-    <category term="Hexo博客" scheme="https://ldm0715.github.io/categories/Hexo%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python编程中遇到的一些问题</title>
+    <title>PyCharm-编程中遇到的一些问题</title>
     <link href="https://ldm0715.github.io/post/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/"/>
     <id>https://ldm0715.github.io/post/python-bian-cheng-zhong-yu-dao-de-yi-xie-wen-ti/</id>
     <published>2022-11-19T02:12:00.000Z</published>
-    <updated>2024-01-30T02:38:07.684Z</updated>
+    <updated>2024-05-06T05:45:48.174Z</updated>
     
     
       
@@ -403,11 +403,11 @@
   </entry>
   
   <entry>
-    <title>使用whl文件快速安装PyTorch</title>
+    <title>PyTorch-国内极速安装</title>
     <link href="https://ldm0715.github.io/post/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/"/>
     <id>https://ldm0715.github.io/post/shi-yong-whl-wen-jian-kuai-su-an-zhuang-pytorch/</id>
     <published>2022-11-16T12:44:00.000Z</published>
-    <updated>2023-08-17T15:35:47.644Z</updated>
+    <updated>2024-05-06T05:46:48.146Z</updated>
     
     
       
@@ -431,11 +431,11 @@
   </entry>
   
   <entry>
-    <title>Halo博客搭建历程</title>
+    <title>Halo-博客搭建</title>
     <link href="https://ldm0715.github.io/post/halo-bo-ke-da-jian-li-cheng/"/>
     <id>https://ldm0715.github.io/post/halo-bo-ke-da-jian-li-cheng/</id>
     <published>2022-11-11T11:25:00.000Z</published>
-    <updated>2023-08-17T15:34:50.250Z</updated>
+    <updated>2024-05-06T05:51:31.376Z</updated>
     
     
       
