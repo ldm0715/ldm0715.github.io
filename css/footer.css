@@ -1,0 +1,25 @@
+#moe>a {
+    text-decoration: none;
+    color: black;
+}
+
+#moe img {
+    width:auto;
+    height:32px;
+    vertical-align:middle;
+}
+
+#moe a:hover {
+    color: pink;
+    text-decoration: none;
+}
+
+#miit a {
+    text-decoration: none;
+    color: black;
+}
+
+#miit a:hover {
+    color: yellow;
+    text-decoration: none;
+}
