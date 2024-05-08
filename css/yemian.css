@@ -1,15 +1,15 @@
 /* 文章图片增加边框 */
 #post img[class^="entered"][class$="loaded"] {
   display: block;
-  border: 5px solid #ddd;
-  padding: 5px;
+  border: 1px solid #ddd;
+  padding: 1px;
   background: #fff;
 }
 
 :root {
   --trans-light: rgba(255, 255, 255, 0.88);
   --trans-dark: rgba(25, 25, 25, 0.88);
-  --border-style: 1px solid rgb(169, 169, 169);
+  --border-style: 1px solid rgb(197, 231, 246);
   --backdrop-filter: blur(5px) saturate(150%);
 }
 
@@ -17,7 +17,7 @@
 #recent-posts > .recent-post-item {
   background: var(--trans-light);
   backdrop-filter: var(--backdrop-filter);
-  border-radius: 25px;
+  border-radius: 10px;
   border: var(--border-style);
 }
 
@@ -36,7 +36,7 @@ div#archive {
   background: var(--trans-light);
   backdrop-filter: var(--backdrop-filter);
   border: var(--border-style);
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 /* 导航栏 */

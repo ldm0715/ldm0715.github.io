@@ -40,7 +40,8 @@ if (
       } else {
         var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`;
       }
-      document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;
+      // document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;
+      document.getElementById("fps").innerHTML = `FPS:${fps}`;
       frame = 0;
       lastTime = now;
     }

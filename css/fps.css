@@ -2,7 +2,7 @@
 #fps {
     position: fixed;
     /* 指定位置 */
-    right: 250px;
+    left: 0;
     bottom: 10px;
     z-index: 1919810;
   }
