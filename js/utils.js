@@ -294,6 +294,7 @@ const btf = {
     const scrollPercent = (currentTop - headerHeight) / (contentMath)
     const scrollPercentRounded = Math.round(scrollPercent * 100)
     const percentage = (scrollPercentRounded > 100) ? 100 : (scrollPercentRounded <= 0) ? 0 : scrollPercentRounded
+    // 返回带%的百分比
     return percentage
   },
 
