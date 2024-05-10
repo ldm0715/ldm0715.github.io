@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-05-10T07:32:43.718Z</updated>
+  <updated>2024-05-10T09:33:58.944Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue3-Vite项目初识</title>
+    <link href="https://ldm0715.github.io/post/vite/"/>
+    <id>https://ldm0715.github.io/post/vite/</id>
+    <published>2024-05-10T10:00:00.000Z</published>
+    <updated>2024-05-10T09:33:58.944Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;什么是Vite？&quot;&gt;&lt;a href=&quot;#什么是Vite？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Vue3" scheme="https://ldm0715.github.io/tags/Vue3/"/>
+    
+    <category term="Vite" scheme="https://ldm0715.github.io/tags/Vite/"/>
+    
+  </entry>
   
   <entry>
     <title>JS-ES6入门</title>
@@ -39,9 +68,9 @@
     
     <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="ES6" scheme="https://ldm0715.github.io/tags/ES6/"/>
-    
     <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
+    
+    <category term="ES6" scheme="https://ldm0715.github.io/tags/ES6/"/>
     
   </entry>
   
@@ -62,9 +91,9 @@
     
     <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
-    
     <category term="Vue" scheme="https://ldm0715.github.io/tags/Vue/"/>
+    
+    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
     
   </entry>
   
@@ -340,9 +369,9 @@
     <category term="Halo博客" scheme="https://ldm0715.github.io/categories/Halo%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
-    
     <category term="Halo" scheme="https://ldm0715.github.io/tags/Halo/"/>
+    
+    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
     
   </entry>
   
