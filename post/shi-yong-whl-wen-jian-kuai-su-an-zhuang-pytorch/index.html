@@ -285,10 +285,10 @@ document.addEventListener('pjax:send', () => {
 <li>如果输入pip您发现还在下载torch，那么您下载的.whl不满足对应要求，请按照pip出现的版本重新下载.whl文件。</li>
 </ul>
 <h2 id="一些检查指令"><a href="#一些检查指令" class="headerlink" title="一些检查指令"></a>一些检查指令</h2><ul>
-<li>返回当前设备索引<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.cuda.current_device()</span><br></pre></td></tr></table></figure></li>
-<li>返回GPU的数量  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.cuda.device_count()</span><br></pre></td></tr></table></figure></li>
-<li>返回gpu名字，设备索引默认从0开始<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.cuda.get_device_name(0)</span><br></pre></td></tr></table></figure></li>
-<li>cuda是否可用<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.cuda.is_available()</span><br></pre></td></tr></table></figure>
+<li>返回当前设备索引<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch<span class="selector-class">.cuda</span><span class="selector-class">.current_device</span>()</span><br></pre></td></tr></table></figure></li>
+<li>返回GPU的数量  <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch<span class="selector-class">.cuda</span><span class="selector-class">.device_count</span>()</span><br></pre></td></tr></table></figure></li>
+<li>返回gpu名字，设备索引默认从0开始<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch<span class="selector-class">.cuda</span><span class="selector-class">.get_device_name</span>(<span class="number">0</span>)</span><br></pre></td></tr></table></figure></li>
+<li>cuda是否可用<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch<span class="selector-class">.cuda</span><span class="selector-class">.is_available</span>()</span><br></pre></td></tr></table></figure>
 我的结果：<div align="center">
 <img src="https://z4a.net/images/2022/11/16/check.png" alt="PyTorch_office" title="PyTorch主页" width="350">
 </div>

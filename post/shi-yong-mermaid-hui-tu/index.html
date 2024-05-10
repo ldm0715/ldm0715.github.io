@@ -188,7 +188,7 @@ document.addEventListener('pjax:send', () => {
 <li>LR - left to right</li>
 </ul>
 <p>例子1 TB：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">	a --&gt; b &amp; c --&gt; d</span><br></pre></td></tr></table></figure>
+<figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">	<span class="function"><span class="title">a</span> --&gt;</span> <span class="function"><span class="title">b</span> &amp; c --&gt;</span> d</span><br></pre></td></tr></table></figure>
 
 
 
@@ -202,7 +202,7 @@ flowchart TB
 
 
 <p>例子2 LR：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">	a --&gt; b &amp; c --&gt; d</span><br></pre></td></tr></table></figure>
+<figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">	<span class="function"><span class="title">a</span> --&gt;</span> <span class="function"><span class="title">b</span> &amp; c --&gt;</span> d</span><br></pre></td></tr></table></figure>
 
 
 
@@ -225,7 +225,7 @@ flowchart TB
 <li>double circle - <code>((()))</code></li>
 </ul>
 <p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">	A([one]) --&gt; B&#123;&#123;two&#125;&#125; &amp; c[(three)] --&gt; d[/hello/]</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">	<span class="selector-tag">A</span>(<span class="selector-attr">[one]</span>) --&gt; <span class="selector-tag">B</span>&#123;&#123;two&#125;&#125; &amp; c<span class="selector-attr">[(three)]</span> --&gt; d<span class="selector-attr">[/hello/]</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -246,7 +246,7 @@ flowchart TB
 <li>延长方式 - <code>----&gt;</code></li>
 </ul>
 <p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">	a[start] --&gt; b&#123;Is it?&#125;</span><br><span class="line">	b --&gt;|Yes| c[OK]</span><br><span class="line">	c --&gt; d[Rethink] --&gt; b</span><br><span class="line">	b ----&gt;|No| e[End]</span><br></pre></td></tr></table></figure>
+<figure class="highlight coq"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">	a[start] --&gt; b&#123;Is it?&#125;</span><br><span class="line">	b --&gt;|<span class="type">Yes</span>| <span class="type">c</span>[OK]</span><br><span class="line">	c --&gt; d[Rethink] --&gt; b</span><br><span class="line">	b ----&gt;|<span class="type">No</span>| <span class="type">e</span>[<span class="keyword">End</span>]</span><br></pre></td></tr></table></figure>
 
 
 
@@ -260,7 +260,7 @@ flowchart TB
 
 <h3 id="特殊符号显示"><a href="#特殊符号显示" class="headerlink" title="特殊符号显示"></a>特殊符号显示</h3><p>用引号包含住内容，一般可以表示括号内容，如果有更加复杂的需求，可以使用<code>:# ;</code></p>
 <p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">	a[&quot;This is a text(#3556;)&quot;] --&gt; b[&quot;A dec char:#9829;&quot;]</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">	<span class="selector-tag">a</span><span class="selector-attr">[<span class="string">&quot;This is a text(#3556;)&quot;</span>]</span> --&gt; <span class="selector-tag">b</span><span class="selector-attr">[<span class="string">&quot;A dec char:#9829;&quot;</span>]</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -270,10 +270,10 @@ flowchart TB
   </pre></div>
 
 <h3 id="多图（Subgraphs）"><a href="#多图（Subgraphs）" class="headerlink" title="多图（Subgraphs）"></a>多图（Subgraphs）</h3><p>语法</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">subgraph title</span><br><span class="line">	graph definition</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">subgraph <span class="built_in">title</span></span><br><span class="line">	<span class="keyword">graph</span> definition</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
 
 <p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">	subgraph one</span><br><span class="line">	a1 --&gt; a2</span><br><span class="line">	end</span><br><span class="line">	subgraph two </span><br><span class="line">	b1 --&gt; b2</span><br><span class="line">	end</span><br><span class="line">	subgraph three</span><br><span class="line">	c1 --&gt; c2</span><br><span class="line">	end</span><br><span class="line">	c1 --&gt; a2</span><br></pre></td></tr></table></figure>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">flowchart</span> TB</span><br><span class="line">	subgraph one</span><br><span class="line">	<span class="built_in">a1</span> --&gt; <span class="built_in">a2</span></span><br><span class="line">	<span class="meta">end</span></span><br><span class="line">	subgraph two </span><br><span class="line">	b1 --&gt; b2</span><br><span class="line">	<span class="meta">end</span></span><br><span class="line">	subgraph three</span><br><span class="line">	<span class="built_in">c1</span> --&gt; <span class="built_in">c2</span></span><br><span class="line">	<span class="meta">end</span></span><br><span class="line">	<span class="built_in">c1</span> --&gt; <span class="built_in">a2</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -292,7 +292,7 @@ flowchart TB
   </pre></div>
 
 <p>多图的情况下可以使用图到图的连接,也可以实现图外连接：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">    c1--&gt;a2</span><br><span class="line">    subgraph one</span><br><span class="line">    a1--&gt;a2</span><br><span class="line">    end</span><br><span class="line">    subgraph two</span><br><span class="line">    b1--&gt;b2</span><br><span class="line">    end</span><br><span class="line">    subgraph three</span><br><span class="line">    c1--&gt;c2</span><br><span class="line">    end</span><br><span class="line">    q[&quot;你干嘛&quot;] --&gt; one</span><br><span class="line">    one --&gt; two &amp; e[&quot;哎呦&quot;]</span><br><span class="line">    three --&gt; two</span><br><span class="line">    two --&gt; c2</span><br></pre></td></tr></table></figure>
+<figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">    <span class="function"><span class="title">c1</span>--&gt;</span>a2</span><br><span class="line">    subgraph one</span><br><span class="line">    <span class="function"><span class="title">a1</span>--&gt;</span>a2</span><br><span class="line">    end</span><br><span class="line">    subgraph two</span><br><span class="line">    <span class="function"><span class="title">b1</span>--&gt;</span>b2</span><br><span class="line">    end</span><br><span class="line">    subgraph three</span><br><span class="line">    <span class="function"><span class="title">c1</span>--&gt;</span>c2</span><br><span class="line">    end</span><br><span class="line">    <span class="function"><span class="title">q</span>[&quot;你干嘛&quot;] --&gt;</span> one</span><br><span class="line">    <span class="function"><span class="title">one</span> --&gt;</span> two &amp; e[<span class="string">&quot;哎呦&quot;</span>]</span><br><span class="line">    <span class="function"><span class="title">three</span> --&gt;</span> two</span><br><span class="line">    <span class="function"><span class="title">two</span> --&gt;</span> c2</span><br></pre></td></tr></table></figure>
 
 
 
@@ -315,7 +315,7 @@ flowchart TB
   </pre></div>
 
 <p>也可以用<code>direction</code>来规定子图的方向</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">  subgraph TOP</span><br><span class="line">    direction TB</span><br><span class="line">    subgraph B1</span><br><span class="line">        direction RL</span><br><span class="line">        i1 --&gt;f1</span><br><span class="line">    end</span><br><span class="line">    subgraph B2</span><br><span class="line">        direction BT</span><br><span class="line">        i2 --&gt;f2</span><br><span class="line">    end</span><br><span class="line">  end</span><br><span class="line">  A --&gt; TOP --&gt; B</span><br><span class="line">  B1 --&gt; B2</span><br></pre></td></tr></table></figure>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">  <span class="keyword">subgraph </span>TOP</span><br><span class="line">    <span class="keyword">direction </span>TB</span><br><span class="line">    <span class="keyword">subgraph </span><span class="keyword">B1</span></span><br><span class="line"><span class="keyword"></span>        <span class="keyword">direction </span>RL</span><br><span class="line">        i1 --&gt;f1</span><br><span class="line">    end</span><br><span class="line">    <span class="keyword">subgraph </span><span class="keyword">B2</span></span><br><span class="line"><span class="keyword"></span>        <span class="keyword">direction </span><span class="keyword">BT</span></span><br><span class="line"><span class="keyword"></span>        i2 --&gt;f2</span><br><span class="line">    end</span><br><span class="line">  end</span><br><span class="line">  A --&gt; TOP --&gt; <span class="keyword">B</span></span><br><span class="line"><span class="keyword"></span>  <span class="keyword">B1 </span>--&gt; <span class="keyword">B2</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -338,10 +338,10 @@ flowchart TB
 
 <h3 id="互动"><a href="#互动" class="headerlink" title="互动"></a>互动</h3><p>可以将单击事件绑定到节点，单击可能导致 javascript 回调或将在新的浏览器选项卡中打开的链接。其实就是实现类似按钮的功能，其中回调功能不做概述。</p>
 <p>语法：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">click 对象 “网址” “注释”</span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">click 对象 “网址” “注释”</span><br></pre></td></tr></table></figure>
 
 <p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">    A--&gt;B</span><br><span class="line">    B--&gt;C</span><br><span class="line">    C--&gt;D</span><br><span class="line">    click A callback &quot;Tooltip for a callback&quot;</span><br><span class="line">    click B &quot;https://www.gcnanmu3125.xyz&quot; &quot;我的博客地址&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">    <span class="selector-tag">A</span>--&gt;<span class="selector-tag">B</span></span><br><span class="line">    <span class="selector-tag">B</span>--&gt;C</span><br><span class="line">    C--&gt;D</span><br><span class="line">    click <span class="selector-tag">A</span> callback &quot;Tooltip for <span class="selector-tag">a</span> callback&quot;</span><br><span class="line">    click <span class="selector-tag">B</span> &quot;https://www.gcnanmu3125.xyz<span class="string">&quot; &quot;</span>我的博客地址<span class="string">&quot;</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -355,7 +355,7 @@ flowchart TB
   </pre></div>
 
 <h3 id="对fontawesome的基本支持"><a href="#对fontawesome的基本支持" class="headerlink" title="对fontawesome的基本支持"></a>对fontawesome的基本支持</h3><p>可以从字体添加图标。这些图标可通过语法 <code>fa:icon</code>类名访问。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">flowchart TD</span><br><span class="line">    B[&quot;fab:fa-twitter for peace&quot;]</span><br><span class="line">    B--&gt;C[fa:fa-ban forbidden]</span><br><span class="line">    B--&gt;D(fa:fa-spinner)</span><br><span class="line">    B--&gt;E(A fa:fa-camera-retro perhaps?)</span><br></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">flowchart</span> <span class="selector-tag">TD</span></span><br><span class="line">    <span class="selector-tag">B</span><span class="selector-attr">[<span class="string">&quot;fab:fa-twitter for peace&quot;</span>]</span></span><br><span class="line">    <span class="selector-tag">B</span><span class="selector-tag">--</span>&gt;<span class="selector-tag">C</span><span class="selector-attr">[fa:fa-ban forbidden]</span></span><br><span class="line">    <span class="selector-tag">B</span><span class="selector-tag">--</span>&gt;<span class="selector-tag">D</span>(<span class="attribute">fa</span>:fa-spinner)</span><br><span class="line">    <span class="selector-tag">B</span><span class="selector-tag">--</span>&gt;<span class="selector-tag">E</span>(A <span class="attribute">fa</span>:fa-camera-retro perhaps?)</span><br></pre></td></tr></table></figure>
 
 
 
@@ -375,7 +375,7 @@ flowchart TB
 <li>元素值（如果不是比例，会根据数量直接生成比例）</li>
 </ul>
 <p>简单的例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pie title Pets adopted by volunteers</span><br><span class="line">    &quot;Dogs&quot; : 386</span><br><span class="line">    &quot;Cats&quot; : 85</span><br><span class="line">    &quot;Rats&quot; : 15</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pie title Pets adopted by volunteers</span><br><span class="line">    <span class="string">&quot;Dogs&quot;</span> : 386</span><br><span class="line">    <span class="string">&quot;Cats&quot;</span> : 85</span><br><span class="line">    <span class="string">&quot;Rats&quot;</span> : 15</span><br></pre></td></tr></table></figure>
 
 
 
@@ -387,7 +387,7 @@ flowchart TB
   </pre></div>
 
 <p>如果想显示数据，可以通过<code>showdata</code>关键字在图例显示具体值</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pie showData</span><br><span class="line">    title Key elements in Product X</span><br><span class="line">    &quot;Calcium&quot; : 42.96</span><br><span class="line">    &quot;Potassium&quot; : 50.05</span><br><span class="line">    &quot;Magnesium&quot; : 10.01</span><br><span class="line">    &quot;Iron&quot; :  6</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pie showData</span><br><span class="line">    title Key elements <span class="keyword">in</span> Product X</span><br><span class="line">    <span class="string">&quot;Calcium&quot;</span> : 42.96</span><br><span class="line">    <span class="string">&quot;Potassium&quot;</span> : 50.05</span><br><span class="line">    <span class="string">&quot;Magnesium&quot;</span> : 10.01</span><br><span class="line">    <span class="string">&quot;Iron&quot;</span> :  6</span><br></pre></td></tr></table></figure>
 
 
 
@@ -402,13 +402,13 @@ flowchart TB
 
 <h2 id="Timeline（时间轴）"><a href="#Timeline（时间轴）" class="headerlink" title="Timeline（时间轴）"></a>Timeline（时间轴）</h2><p>关键字: <code>timeline</code></p>
 <p>基本写法为：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">timeline </span><br><span class="line">	title XXX</span><br><span class="line">	&#123;time period&#125; : &#123;event&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">timeline </span><br><span class="line">	title XXX</span><br><span class="line">	&#123;<span class="selector-tag">time</span> period&#125; : &#123;event&#125;</span><br></pre></td></tr></table></figure>
 
 <p>简单演示：</p>
 <blockquote>
 <p>发现Typora只支持到mermaid 9.1.2，所以无法绘制时间轴，因此不展示后续。</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">timeline</span><br><span class="line">    title History of Social Media Platform</span><br><span class="line">    2002 : LinkedIn</span><br><span class="line">    2004 : Facebook</span><br><span class="line">         : Google</span><br><span class="line">    2005 : Youtube</span><br><span class="line">    2006 : Twitter</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">timeline</span><br><span class="line">    title History <span class="keyword">of</span> Social Media Platform</span><br><span class="line">    <span class="number">2002</span> : <span class="type">LinkedIn</span></span><br><span class="line">    <span class="number">2004</span> : <span class="type">Facebook</span></span><br><span class="line">         : <span class="type">Google</span></span><br><span class="line">    <span class="number">2005</span> : <span class="type">Youtube</span></span><br><span class="line">    <span class="number">2006</span> : <span class="type">Twitter</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -425,7 +425,7 @@ timeline
   </pre></div>
 
 <h2 id="动手实践"><a href="#动手实践" class="headerlink" title="动手实践"></a>动手实践</h2><p>流程图：<a target="_blank" rel="noopener" href="https://blog.csdn.net/cc920095705/article/details/113769741">https://blog.csdn.net/cc920095705/article/details/113769741</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">flowchart TD</span><br><span class="line">	a[Start] --- b[Your Operation]</span><br><span class="line">	b --- c&#123;Yes or No?&#125; ---|Yes| d([End])</span><br><span class="line">	a ---|No| c</span><br></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">flowchart</span> <span class="selector-tag">TD</span></span><br><span class="line">	<span class="selector-tag">a</span><span class="selector-attr">[Start]</span> <span class="selector-tag">---</span> <span class="selector-tag">b</span><span class="selector-attr">[Your Operation]</span></span><br><span class="line">	<span class="selector-tag">b</span> <span class="selector-tag">---</span> <span class="selector-tag">c</span>&#123;<span class="selector-tag">Yes</span> <span class="selector-tag">or</span> <span class="selector-tag">No</span>?&#125; <span class="selector-tag">---</span>|<span class="selector-tag">Yes</span>| <span class="selector-tag">d</span>([End])</span><br><span class="line">	<span class="selector-tag">a</span> <span class="selector-tag">---</span>|<span class="selector-tag">No</span>| <span class="selector-tag">c</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -440,7 +440,7 @@ timeline
 
 <p>饼图</p>
 <p>数据来源：<a target="_blank" rel="noopener" href="http://www.xinhuanet.com/2023-01/17/c_1129292204.htm">国家统计局：2022年居民收入和消费支出情况-新华网 (xinhuanet.com)</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">pie showdata</span><br><span class="line">	title 2022年居民人均消费基础及构成(单位：元)</span><br><span class="line">	&quot;其他用品及服务&quot; : 595</span><br><span class="line">	&quot;食品烟酒&quot; : 7481</span><br><span class="line">	&quot;衣着&quot; : 1365</span><br><span class="line">	&quot;居住&quot; : 5882</span><br><span class="line">	&quot;生活用品及服务&quot; : 1432</span><br><span class="line">	&quot;交通通信&quot; : 3195</span><br><span class="line">	&quot;教育文化娱乐&quot; : 2469</span><br><span class="line">	&quot;医疗保健&quot; : 2120</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">pie showdata</span><br><span class="line">	title <span class="number">2022</span>年居民人均消费基础及构成(单位：元)</span><br><span class="line">	<span class="string">&quot;其他用品及服务&quot;</span> : 595</span><br><span class="line">	<span class="string">&quot;食品烟酒&quot;</span> : 7481</span><br><span class="line">	<span class="string">&quot;衣着&quot;</span> : 1365</span><br><span class="line">	<span class="string">&quot;居住&quot;</span> : 5882</span><br><span class="line">	<span class="string">&quot;生活用品及服务&quot;</span> : 1432</span><br><span class="line">	<span class="string">&quot;交通通信&quot;</span> : 3195</span><br><span class="line">	<span class="string">&quot;教育文化娱乐&quot;</span> : 2469</span><br><span class="line">	<span class="string">&quot;医疗保健&quot;</span> : 2120</span><br></pre></td></tr></table></figure>
 
 
 

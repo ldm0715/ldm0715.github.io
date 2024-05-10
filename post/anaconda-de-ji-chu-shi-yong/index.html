@@ -209,7 +209,7 @@ document.addEventListener('pjax:send', () => {
 </li>
 <li><p>修改环境名</p>
 <p>conda没有直接重命名环境的指令，但是它提供了克隆指令，你可以先使用克隆指令克隆将要修改名字的环境到新建的环境中，然后用删除指令删除原有的环境。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda create --name B --clone A</span><br><span class="line">conda remove --name A --all</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda create <span class="attr">--name</span> <span class="selector-tag">B</span> <span class="attr">--clone</span> <span class="selector-tag">A</span></span><br><span class="line">conda remove <span class="attr">--name</span> <span class="selector-tag">A</span> <span class="attr">--all</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="包与下载源的切换"><a href="#包与下载源的切换" class="headerlink" title="包与下载源的切换"></a>包与下载源的切换</h2><h3 id="Python包的基础操作"><a href="#Python包的基础操作" class="headerlink" title="Python包的基础操作"></a>Python包的基础操作</h3><p>激活了Conda环境后，我们就可以在环境中对包进行查看、安装、删除等操作。在环境中，我们就可以使用Python自带的<code>pip指令</code>进行下载，pip指令默认的下载地址为:</p>
 <blockquote>
@@ -228,7 +228,7 @@ document.addEventListener('pjax:send', () => {
 <ul>
 <li>注：如果你想更换下载源，可以加上<code>-c 链接</code></li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -c 下载源链接 包名</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> -c 下载源链接 包名</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>删除包</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip uninstall 包名</span><br></pre></td></tr></table></figure>
@@ -251,27 +251,27 @@ document.addEventListener('pjax:send', () => {
 </blockquote>
 <ol>
 <li><p>展示所有下载地址</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --show-sources</span><br></pre></td></tr></table></figure>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda <span class="built_in">config</span> <span class="comment">--show-sources</span></span><br></pre></td></tr></table></figure>
 
 <p><img src="https://z4a.net/images/2023/03/25/all_chanels.png"></p>
 </li>
 <li><p>添加下载源</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels 镜像源链接</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda<span class="built_in"> config </span>--<span class="built_in">add</span> channels 镜像源链接</span><br></pre></td></tr></table></figure>
 
 <p>或者</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --append channels 镜像源链接</span><br></pre></td></tr></table></figure>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda <span class="built_in">config</span> <span class="comment">--append channels 镜像源链接</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>去除镜像源</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --remove channels 镜像源链接</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda<span class="built_in"> config </span>--<span class="built_in">remove</span> channels 镜像源链接</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>删除所有下载源（恢复默认下载源）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --remove-key channels</span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --remove-key channels</span><br></pre></td></tr></table></figure>
 
 <p>此项操作后，除了<code>default</code>外，所有的后期添加的下载源都将被删除。</p>
 </li>
 <li><p>设置全局默认下载源</p>
 <p>如果你想直接设置一个默认的下载源，请使用以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip config set global.index-url 下载源</span><br></pre></td></tr></table></figure>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip config <span class="keyword">set</span> <span class="keyword">global</span>.<span class="keyword">index</span>-url 下载源</span><br></pre></td></tr></table></figure>
 
 <img src="https://z4a.net/images/2023/03/25/set_init_config.png" style="zoom: 80%;" />
 
@@ -279,7 +279,7 @@ document.addEventListener('pjax:send', () => {
 <img src="https://z4a.net/images/2023/03/25/install_url.png" style="zoom:67%;" />
 </li>
 <li><p>从channel中安装包时显示channel的url</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --set show_channel_urls yes</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda<span class="built_in"> config </span>--<span class="built_in">set</span> show_channel_urls <span class="literal">yes</span></span><br></pre></td></tr></table></figure>
 
 <p><img src="https://z4a.net/images/2023/03/25/show_chanels.png"></p>
 </li>
@@ -287,12 +287,12 @@ document.addEventListener('pjax:send', () => {
 <ul>
 <li>添加中科大镜像源</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/cloud/pytorch/</span><br><span class="line">conda config --set show_channel_urls yes</span><br><span class="line">pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https:<span class="regexp">//mi</span>rrors.ustc.edu.cn<span class="regexp">/anaconda/</span>pkgs<span class="regexp">/main/</span></span><br><span class="line">conda config --add channels https:<span class="regexp">//mi</span>rrors.ustc.edu.cn<span class="regexp">/anaconda/</span>pkgs<span class="regexp">/free/</span></span><br><span class="line">conda config --add channels https:<span class="regexp">//mi</span>rrors.bfsu.edu.cn<span class="regexp">/anaconda/</span>cloud<span class="regexp">/pytorch/</span></span><br><span class="line">conda config --set show_channel_urls yes</span><br><span class="line">pip config set global.index-url https:<span class="regexp">//mi</span>rrors.ustc.edu.cn<span class="regexp">/pypi/</span>web/simple</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>添加清华源</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --append channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/fastai/</span><br><span class="line">conda config --append channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</span><br><span class="line">conda config --append channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/</span><br><span class="line">conda config --set show_channel_urls yes</span><br><span class="line">pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https:<span class="regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="regexp">/anaconda/</span>cloud<span class="regexp">/conda-forge/</span></span><br><span class="line">conda config --add channels https:<span class="regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="regexp">/anaconda/</span>pkgs<span class="regexp">/free/</span></span><br><span class="line">conda config --add channels https:<span class="regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="regexp">/anaconda/</span>pkgs<span class="regexp">/main/</span></span><br><span class="line">conda config --append channels https:<span class="regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="regexp">/anaconda/</span>cloud<span class="regexp">/fastai/</span></span><br><span class="line">conda config --append channels https:<span class="regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="regexp">/anaconda/</span>cloud<span class="regexp">/pytorch/</span></span><br><span class="line">conda config --append channels https:<span class="regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="regexp">/anaconda/</span>cloud<span class="regexp">/bioconda/</span></span><br><span class="line">conda config --set show_channel_urls yes</span><br><span class="line">pip config set global.index-url https:<span class="regexp">//</span>pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="conda-install与pip-install"><a href="#conda-install与pip-install" class="headerlink" title="conda install与pip install"></a>conda install与pip install</h2><p>其实自己在日常使用时有时也使用过<code>conda install 包名</code>,安装后貌似也可以正常使用，这时候我有点好奇<code>conda install</code>与<code>pip install</code>到底有什么区别，巧的是，这个问题官方文档也有解释。</p>
 <blockquote>

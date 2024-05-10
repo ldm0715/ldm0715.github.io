@@ -205,10 +205,10 @@ document.addEventListener('pjax:send', () => {
 <p>初次使用需要设定用户名及绑定邮箱。</p>
 <ul>
 <li><p>设置用户名</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name 用户名</span><br></pre></td></tr></table></figure>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">config</span> <span class="comment">--global user.name 用户名</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>绑定邮箱</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email 邮箱地址</span><br></pre></td></tr></table></figure>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">config</span> <span class="comment">--global user.email 邮箱地址</span></span><br></pre></td></tr></table></figure>
 
 <p>这两个设置对于轻度使用的用户来说按照喜好填写就行，不会有什么后续影响。</p>
 </li>
@@ -216,23 +216,23 @@ document.addEventListener('pjax:send', () => {
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Hexo 本身拥有的特点就是离线性，搭建的过程完全依赖于本地，后期就只是编写后上传仓库。所以我们需要先在本地搭建起 Hexo。</p>
 <h3 id="全局安装Hexo"><a href="#全局安装Hexo" class="headerlink" title="全局安装Hexo"></a>全局安装Hexo</h3><ol>
 <li><p>打开<code>cmd</code>输入以下指令，全局安装<code>Hexo</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-<span class="keyword">cli</span> -g</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>安装完全后，使用以下指令验证安装是否成功</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo -v</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="创建本地Hexo项目"><a href="#创建本地Hexo项目" class="headerlink" title="创建本地Hexo项目"></a>创建本地Hexo项目</h3><p>在本地新建一个文件夹作为 Hexo 项目的地址。<strong>在项目文件夹得目录下打开 <code>cmd</code>：</strong></p>
 <ol>
 <li><p>初始化Hexo项目（得到博客系统文件）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init hexoblog</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">init</span> hexoblog</span><br></pre></td></tr></table></figure>
 
 <p>初始化完成后会出现项目的基本结构，后续一些博客的基础设置修改根据根目录下的<code>_config.yml</code> 文件来实现。</p>
 </li>
 <li><p>安装npm（已安装可跳过）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>启动Hexo</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">server</span></span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>本地启动后的地址为： <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></p>
@@ -243,7 +243,7 @@ document.addEventListener('pjax:send', () => {
 <h2 id="修改博客基础设置"><a href="#修改博客基础设置" class="headerlink" title="修改博客基础设置"></a>修改博客基础设置</h2><ol>
 <li><p>site基础设置</p>
 <p>进入Hexo项目文件夹（简称根目录），打开<code>_config.yml</code>（配置文件），找到如下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: &#x27;&#x27;</span><br><span class="line">subtitle: &#x27;&#x27;</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords: &#x27;&#x27;</span><br><span class="line">author: &#x27;&#x27;</span><br><span class="line">language: &#x27;&#x27;</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
+<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line"><span class="symbol">title:</span> <span class="comment">&#x27;&#x27;</span></span><br><span class="line"><span class="symbol">subtitle:</span> <span class="comment">&#x27;&#x27;</span></span><br><span class="line"><span class="symbol">description:</span> <span class="comment">&#x27;&#x27;</span></span><br><span class="line"><span class="symbol">keywords:</span> <span class="comment">&#x27;&#x27;</span></span><br><span class="line"><span class="symbol">author:</span> <span class="comment">&#x27;&#x27;</span></span><br><span class="line"><span class="symbol">language:</span> <span class="comment">&#x27;&#x27;</span></span><br><span class="line"><span class="symbol">timezone:</span> <span class="comment">&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <p>这就是网站的基础设置项，这里只讲一些基础参数的修改：</p>
 <ul>
@@ -277,44 +277,44 @@ document.addEventListener('pjax:send', () => {
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">butterfly</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>启动博客</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo serve</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo serve</span></span><br></pre></td></tr></table></figure>
 
 <p>可以缩写为：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo s</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="将博客上传到Github或者Gitee"><a href="#将博客上传到Github或者Gitee" class="headerlink" title="将博客上传到Github或者Gitee"></a>将博客上传到Github或者Gitee</h2><p>将 hexo 博客上传到个人的 github 仓库后，可以直接通过仓库名来访问博客，这就等于白嫖了 github 仓库作为服务器，可以零成本搭建博客且文件不会丢失，小代价是有时可能无法正常访问，这时候可以考虑搭建<strong>全站 CDN（Content Delivery Network）提高访问的速度（网上都推荐 jsDelivr）</strong>，当然也不能保证 CDN 不会崩（jsDelivr 貌似崩了半年），所以看个人的需求吧。</p>
 <p>放到 gitee 上也是一个好选择，访问速度有了保障，但是代价是 gitee 可能哪天就不支持静态页面托管了（有先例），<strong>因此还是首先推荐搭建到 github 仓库。</strong></p>
 <h3 id="上传到Github仓库"><a href="#上传到Github仓库" class="headerlink" title="上传到Github仓库"></a>上传到Github仓库</h3><h4 id="生成SSH密匙"><a href="#生成SSH密匙" class="headerlink" title="生成SSH密匙"></a>生成SSH密匙</h4><p>目录打开命令行，输入以下代码生成密匙：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot; </span><br></pre></td></tr></table></figure>
+<figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -<span class="built_in">t</span> rsa -C <span class="string">&quot;xxxxx@xxxxx.com&quot;</span> </span><br></pre></td></tr></table></figure>
 
 <p>其中<code>xxxxx@xxxxx.com</code>输入你GitHub的邮箱，实际上这只是一个名称，不是最关键的。接下来的选项一路回车即可。</p>
 <p>然后到<code>C:\Users\用户名\.ssh</code>，其中之后便会生成<code>id_rsa</code>和<code>id_rsa.pub</code>。其中 SSH 密匙在<code>id_rsa.pub</code>中。</p>
 <p>登陆 github → 点击头像 → setting → SHH and GPG keys → New SSH key 把 id_rsa.pub 复制到其中即可。</p>
 <p>输入一下代码进行确认绑定</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh</span> -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure>
 
 <p>输入<code>yes</code>后就会收到绑定成功邮件。</p>
 <h4 id="创建博客仓库"><a href="#创建博客仓库" class="headerlink" title="创建博客仓库"></a>创建博客仓库</h4><p>登陆 github → <code>＋号</code>（头像旁边） → New repository</p>
 <p>仓库名字命名必须为：<code>github用户名.github.io</code>, 然后<strong>将仓库设为Public</strong>，例如本网站的仓库名为：<code>ldm0715.github.io</code></p>
 <h4 id="修改博客配置文件"><a href="#修改博客配置文件" class="headerlink" title="修改博客配置文件"></a>修改博客配置文件</h4><p>打开博客根目录下的<code>_config.yml</code>, 找到<code>deploy</code>, 格式为：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: github仓库地址  例如：https://github.com/OliverLoki/OliverLoki.github.io.git </span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Deployment</span></span><br><span class="line"><span class="meta">## Docs: https:<span class="comment">//hexo.io/docs/one-command-deployment</span></span></span><br><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol">  repo:</span> github仓库地址  例如：https:<span class="comment">//github.com/OliverLoki/OliverLoki.github.io.git </span></span><br><span class="line"><span class="symbol">  branch:</span> main</span><br></pre></td></tr></table></figure>
 
 <h4 id="上传文件到github仓库"><a href="#上传文件到github仓库" class="headerlink" title="上传文件到github仓库"></a>上传文件到github仓库</h4><p>输入上传代码（需要安装插件，详见：[生成和上传页面指令](# 生成与上传页面指令)）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo d</span></span><br></pre></td></tr></table></figure>
 
 <p>刷新即可看到仓库中出现了博客文件（<strong>因为网络问题可能会失败，失败就多试几次</strong>）</p>
 <h3 id="上传到Gitee仓库"><a href="#上传到Gitee仓库" class="headerlink" title="上传到Gitee仓库"></a>上传到Gitee仓库</h3><p>上传Gitee与上传Github只有一些不一样，下面只说说不一样的地方，具体流程和上传Github一样。</p>
 <h4 id="生成SSH密匙-1"><a href="#生成SSH密匙-1" class="headerlink" title="生成SSH密匙"></a>生成SSH密匙</h4><p>跟Github不同，我们需要输入以下指令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@gitee.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh</span> -T git<span class="variable">@gitee</span>.com</span><br></pre></td></tr></table></figure>
 
 <img src="https://s2.loli.net/2023/04/24/zIFfHcW1vUj25l4.png" style="zoom:67%;" />
 
 <p>输入<code>yes</code>即可。</p>
 <h4 id="创建博客仓库-1"><a href="#创建博客仓库-1" class="headerlink" title="创建博客仓库"></a>创建博客仓库</h4><p>和github创建仓库的要点一样，<strong>要把仓库名设置为</strong><code>gitee用户名</code>，然后初次创建的时候是不能直接设置为<code>Public</code>的，需要在创建了仓库之后去“管理”中更改为”开源“。</p>
 <h4 id="修改博客配置文件-1"><a href="#修改博客配置文件-1" class="headerlink" title="修改博客配置文件"></a>修改博客配置文件</h4><p>在Gitee的仓库中，默认分支不再是main，而是master，因此修改如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: gitee仓库地址  例如：https://gitee.com/OliverLoki/OliverLoki.gitee.io.git </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Deployment</span></span><br><span class="line"><span class="meta">## Docs: https:<span class="comment">//hexo.io/docs/one-command-deployment</span></span></span><br><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol">  repo:</span> gitee仓库地址  例如：https:<span class="comment">//gitee.com/OliverLoki/OliverLoki.gitee.io.git </span></span><br><span class="line"><span class="symbol">  branch:</span> master</span><br></pre></td></tr></table></figure>
 
-<h4 id="上传文件到gitee仓库"><a href="#上传文件到gitee仓库" class="headerlink" title="上传文件到gitee仓库"></a>上传文件到gitee仓库</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h4 id="上传文件到gitee仓库"><a href="#上传文件到gitee仓库" class="headerlink" title="上传文件到gitee仓库"></a>上传文件到gitee仓库</h4><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo d</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="开启静态页面托管服务"><a href="#开启静态页面托管服务" class="headerlink" title="开启静态页面托管服务"></a>开启静态页面托管服务</h4><p>跟Github不同，Gitee没有默认使用静态托管页面，因此我们需要手动开启静态托管页面的功能（<strong>此功能需要实名认证</strong>）</p>
 <img src="https://s2.loli.net/2023/04/24/W3kLSv8N7XQJ2YU.png" style="zoom: 67%;" />
@@ -328,31 +328,31 @@ document.addEventListener('pjax:send', () => {
 
 <h2 id="Hexo系统基础命令"><a href="#Hexo系统基础命令" class="headerlink" title="Hexo系统基础命令"></a>Hexo系统基础命令</h2><p>建立好博客之后，还需要学会一些 <code>Hexo</code> 的一些日常操作指令，这样才能方面后续使用。</p>
 <h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><p>文章默认生成在<code>.\source\_posts</code>文件夹下，且默认格式为 Markdown</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;文章名字&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;文章名字&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>按照路径打开文章后内容如下：</p>
 <p>这种方法不常用，不如直接右键生成<code>.md</code>文件</p>
 <h3 id="生成和上传页面指令"><a href="#生成和上传页面指令" class="headerlink" title="生成和上传页面指令"></a>生成和上传页面指令</h3><p>因为 Hexo 是由一些静态的网页组成的，因此在编写完页面或者文章后，需要手动生成静态网页，也需要手动上传到指定的服务器。</p>
 <p>生成静态页面和上传功能首先需要安装 <code>hexo-deployer-git</code> 插件。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
 
 <ol>
 <li><p>清除页面缓存（有些设置需要清除缓存之后才能显示）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure>
 
 <p>缩写为：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo cl</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>生成静态页面（上传页面时才需要这么做）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo g</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>上传页面</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo d</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>一键部署</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g --d</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl <span class="meta">&amp;&amp; hexo g --d</span></span><br></pre></td></tr></table></figure></li>
 </ol>
-<h3 id="创建新的页面"><a href="#创建新的页面" class="headerlink" title="创建新的页面"></a>创建新的页面</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page “页面名”</span><br></pre></td></tr></table></figure>
+<h3 id="创建新的页面"><a href="#创建新的页面" class="headerlink" title="创建新的页面"></a>创建新的页面</h3><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="type">page</span> “页面名”</span><br></pre></td></tr></table></figure>
 
 <p>需要注意的是，生成的页面默认在项目的 source 文件夹下 (例如：<code>F:\Hexo\source</code>)，默认生成的网页地址为<code> 你的网址/页面名/</code>，所以页面名要与<code>_config.yml</code>文件中设置的页面名保持一致。</p>
 <p>稍微总结一下<strong>生成的相关操作</strong>：</p>
@@ -376,7 +376,7 @@ document.addEventListener('pjax:send', () => {
 </tr>
 </tbody></table>
 <h3 id="hexo三连"><a href="#hexo三连" class="headerlink" title="hexo三连"></a>hexo三连</h3><p>如果你觉得一条条写命令麻烦，你可以使用<code>&amp;&amp;</code>来连接这些命令，在更改了网页之后，我们一般要先清除缓存，生成界面，上传页面，一条一条敲的话很麻烦，这时候你就可以这样写：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight sas"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl <span class="variable">&amp;&amp;</span> hexo g <span class="variable">&amp;&amp;</span> hexo d</span><br></pre></td></tr></table></figure>
 
 <h2 id="文章属性快速设置"><a href="#文章属性快速设置" class="headerlink" title="文章属性快速设置"></a>文章属性快速设置</h2><p>文章拥有很多属性，如：标题，摘要，tags，类别等。那么就需要学会如何在 md 文件中编写<code>YAML格式</code>（文章头）让系统识别到这是设置的属性。</p>
 <h3 id="文章基础属性设置"><a href="#文章基础属性设置" class="headerlink" title="文章基础属性设置"></a>文章基础属性设置</h3><p>在 md 文件开头写入如下格式（YAML）：</p>
@@ -386,7 +386,7 @@ document.addEventListener('pjax:send', () => {
 <h3 id="给文章加密"><a href="#给文章加密" class="headerlink" title="给文章加密"></a>给文章加密</h3><p>有些人可能会拿博客写日记、账号密码等私密内容，这些内容肯定不能直接公开，最直接的保密方法就是给文章加密（当然会不会给轻松破解就不清楚了）</p>
 <ol>
 <li><p>安装插件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install <span class="comment">--save hexo-blog-encrypt</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>加密<code>YAML</code>格式</p>
 <p><code>YAML</code>写法为</p>
@@ -410,20 +410,20 @@ document.addEventListener('pjax:send', () => {
 <h3 id="本地搜索插件"><a href="#本地搜索插件" class="headerlink" title="本地搜索插件"></a>本地搜索插件</h3><p>这个插件可以提供站内文章搜索功能，非常推荐安装</p>
 <ol>
 <li><p>安装指令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo<span class="operator">-</span>generator<span class="operator">-</span><span class="keyword">search</span> <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>修改配置</p>
 <p>那么在博客配置文件<code>_config.yml</code>中新增以下配置项：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">search: path: search.xml;</span><br><span class="line">field: post;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">search</span>: <span class="type">path</span>: <span class="keyword">search</span>.xml;</span><br><span class="line">field: post;</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="文章字数统计"><a href="#文章字数统计" class="headerlink" title="文章字数统计"></a>文章字数统计</h3><p>这个插件能在文章的标题下面显示文章字数</p>
 <ol>
 <li><p>安装指令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save hexo-wordcount</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="selector-tag">i</span> <span class="attr">--save</span> hexo-wordcount</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>修改配置</p>
 <p>在博客配置文件<code>_config.yml</code>中新增以下配置项：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">post_wordcount:</span><br><span class="line">  date: true # 发布日期</span><br><span class="line">  update: true # 更新日期</span><br><span class="line">  wordCount: true # 文章字数统计</span><br><span class="line">  totalCount: true # 站点总文章字数</span><br><span class="line">  min2read: true # 文章阅读时长</span><br><span class="line">  readCount: true # 文章阅读次数</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_wordcount:</span></span><br><span class="line">  <span class="attr">date:</span> <span class="literal">true</span> <span class="comment"># 发布日期</span></span><br><span class="line">  <span class="attr">update:</span> <span class="literal">true</span> <span class="comment"># 更新日期</span></span><br><span class="line">  <span class="attr">wordCount:</span> <span class="literal">true</span> <span class="comment"># 文章字数统计</span></span><br><span class="line">  <span class="attr">totalCount:</span> <span class="literal">true</span> <span class="comment"># 站点总文章字数</span></span><br><span class="line">  <span class="attr">min2read:</span> <span class="literal">true</span> <span class="comment"># 文章阅读时长</span></span><br><span class="line">  <span class="attr">readCount:</span> <span class="literal">true</span> <span class="comment"># 文章阅读次数</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="中文链接转拼音"><a href="#中文链接转拼音" class="headerlink" title="中文链接转拼音"></a>中文链接转拼音</h3><p>对于中文使用者来说，文章标题都是中文的，因为 hexo 会默认将文章标题作为网页链接的一部分，这就可能会出现一些不便。例如：</p>
 <blockquote>
@@ -436,15 +436,15 @@ document.addEventListener('pjax:send', () => {
 </blockquote>
 <ol>
 <li><p>安装指令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-permalink-pinyin --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="selector-tag">i</span> hexo-permalink-pinyin <span class="attr">--save</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>修改配置</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">permalink_pinyin:</span><br><span class="line">  enable: true</span><br><span class="line">  separator: &#x27;-&#x27; # default: &#x27;-&#x27;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">permalink_pinyin:</span></span><br><span class="line"><span class="symbol">  enable:</span> true</span><br><span class="line"><span class="symbol">  separator:</span> <span class="string">&#x27;-&#x27;</span> <span class="meta"># default: <span class="string">&#x27;-&#x27;</span></span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="文章加密插件"><a href="#文章加密插件" class="headerlink" title="文章加密插件"></a>文章加密插件</h3><p>顾名思义，可以给文章加密。</p>
 <ol>
 <li><p>安装指令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install <span class="comment">--save hexo-blog-encrypt</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>用法</p>
 <p>具体可见上文内容[给文章加密](# 给文章加密)</p>
@@ -453,7 +453,7 @@ document.addEventListener('pjax:send', () => {
 <h3 id="文章隐藏插件"><a href="#文章隐藏插件" class="headerlink" title="文章隐藏插件"></a>文章隐藏插件</h3><p>顾名思义，可以将文章隐藏。</p>
 <ol>
 <li><p>安装指令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-hide-posts --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-hide-posts <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>用法</p>
 <p>在文章的<code>YAML</code>中加入</p>
@@ -461,10 +461,10 @@ document.addEventListener('pjax:send', () => {
 </ol>
 <h3 id="RSS插件"><a href="#RSS插件" class="headerlink" title="RSS插件"></a>RSS插件</h3><ol>
 <li><p>安装插件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在博客根目录<code>_config.yml</code>中添加如下配置</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  enable: true</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br><span class="line">  hub:</span><br><span class="line"> content:</span><br><span class="line"> content_limit: 140</span><br><span class="line"> content_limit_delim: &#x27; &#x27;</span><br><span class="line"> order_by: -date</span><br><span class="line"> icon: icon.png</span><br><span class="line"> autodiscovery: true</span><br><span class="line"> template:</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br><span class="line">  <span class="attr">hub:</span></span><br><span class="line"> <span class="attr">content:</span></span><br><span class="line"> <span class="attr">content_limit:</span> <span class="number">140</span></span><br><span class="line"> <span class="attr">content_limit_delim:</span> <span class="string">&#x27; &#x27;</span></span><br><span class="line"> <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line"> <span class="attr">icon:</span> <span class="string">icon.png</span></span><br><span class="line"> <span class="attr">autodiscovery:</span> <span class="literal">true</span></span><br><span class="line"> <span class="attr">template:</span></span><br></pre></td></tr></table></figure>
 
 <p>其实默认即可，但是如果想改的话建议查看官网：</p>
 <blockquote>
@@ -472,10 +472,10 @@ document.addEventListener('pjax:send', () => {
 </blockquote>
 </li>
 <li><p>在主题的<code>_config.yml</code>中添加如下配置</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rss: /atom.xml</span><br></pre></td></tr></table></figure>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">rss:</span> /atom.xml</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>添加（或者修改）social处的配置</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fas fa-rss: 你的博客地址/atom.xml</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fas fa-rss: 你的博客地址/atom.xml</span><br></pre></td></tr></table></figure></li>
 </ol>
 <p>最终生成效果如下，地址为<code>博客地址 + /atom.xml</code>：</p>
 <img src="https://s2.loli.net/2023/02/25/y2SnZURhqsQVFYt.png" style="zoom: 67%;" />
