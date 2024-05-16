@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-05-16T11:55:47.637Z</updated>
+  <updated>2024-05-16T12:16:45.737Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue3-Pinia持久化插件</title>
+    <link href="https://ldm0715.github.io/post/pinia/"/>
+    <id>https://ldm0715.github.io/post/pinia/</id>
+    <published>2024-05-17T10:00:00.000Z</published>
+    <updated>2024-05-16T12:16:45.737Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Vue3" scheme="https://ldm0715.github.io/tags/Vue3/"/>
+    
+    <category term="Pinia" scheme="https://ldm0715.github.io/tags/Pinia/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue3-Vite项目初识</title>
