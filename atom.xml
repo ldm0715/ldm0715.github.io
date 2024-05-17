@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-05-17T01:59:36.131Z</updated>
+  <updated>2024-05-17T02:40:16.066Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue3-路由配置实践</title>
+    <link href="https://ldm0715.github.io/post/vuerouter/"/>
+    <id>https://ldm0715.github.io/post/vuerouter/</id>
+    <published>2024-05-17T10:30:00.000Z</published>
+    <updated>2024-05-17T02:40:16.066Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Vue3" scheme="https://ldm0715.github.io/tags/Vue3/"/>
+    
+    <category term="Router" scheme="https://ldm0715.github.io/tags/Router/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue3-Pinia持久化插件</title>
