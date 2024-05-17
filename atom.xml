@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-05-16T12:16:45.737Z</updated>
+  <updated>2024-05-17T01:59:36.131Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://ldm0715.github.io/post/pinia/"/>
     <id>https://ldm0715.github.io/post/pinia/</id>
     <published>2024-05-17T10:00:00.000Z</published>
-    <updated>2024-05-16T12:16:45.737Z</updated>
+    <updated>2024-05-17T01:59:36.131Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;什么是Pinia？&quot;&gt;&lt;a href=&quot;#什么是Pinia？&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -370,11 +370,11 @@
     <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
     
     
-    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
-    
     <category term="pip" scheme="https://ldm0715.github.io/tags/pip/"/>
     
     <category term="Anaconda" scheme="https://ldm0715.github.io/tags/Anaconda/"/>
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
     
   </entry>
   
