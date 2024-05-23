@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-05-22T11:23:50.682Z</updated>
+  <updated>2024-05-23T04:50:27.263Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS-变量与常见语法</title>
+    <link href="https://ldm0715.github.io/post/js-bian-liang-yu-chang-jian-yu-fa/"/>
+    <id>https://ldm0715.github.io/post/js-bian-liang-yu-chang-jian-yu-fa/</id>
+    <published>2024-05-23T05:00:00.000Z</published>
+    <updated>2024-05-23T04:50:27.263Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot; title=&quot;变量&quot;&gt;&lt;/a&gt;变量&lt;/h2&gt;&lt;p&gt;变量的本质是值的引用，当我们调用变量的时候，其实就是调用变量对应的值。&lt;/p&gt;
+&lt;h2 id=&quot;变量提升&quot;&gt;&lt;a href=&quot;#变量提升&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>Python-pathlib路径实践</title>
@@ -532,34 +560,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;关于我为什么使用 Hexo，其实还挺戏剧性的，一开始我使用的是 Halo</summary>
-        
-      
-    
-    
-    
-    <category term="Hexo博客" scheme="https://ldm0715.github.io/categories/Hexo%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://ldm0715.github.io/post/hello-world/"/>
-    <id>https://ldm0715.github.io/post/hello-world/</id>
-    <published>2023-02-21T05:57:45.000Z</published>
-    <updated>2024-05-07T03:07:19.032Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;本文为Hexo博客搭建时候默认生成的文章。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post.</summary>
         
       
     
