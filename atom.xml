@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-05-23T04:50:27.263Z</updated>
+  <updated>2024-05-24T07:20:47.667Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ldm0715.github.io/post/js-bian-liang-yu-chang-jian-yu-fa/"/>
     <id>https://ldm0715.github.io/post/js-bian-liang-yu-chang-jian-yu-fa/</id>
     <published>2024-05-23T05:00:00.000Z</published>
-    <updated>2024-05-23T04:50:27.263Z</updated>
+    <updated>2024-05-24T07:20:47.667Z</updated>
     
     
       
@@ -76,7 +76,7 @@
     <link href="https://ldm0715.github.io/post/print-format/"/>
     <id>https://ldm0715.github.io/post/print-format/</id>
     <published>2024-05-22T10:00:00.000Z</published>
-    <updated>2024-05-23T09:21:12.178Z</updated>
+    <updated>2024-05-24T07:24:30.616Z</updated>
     
     
       
@@ -267,9 +267,9 @@
     
     <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
-    
     <category term="ES6" scheme="https://ldm0715.github.io/tags/ES6/"/>
+    
+    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
     
   </entry>
   
