@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-05-24T07:20:47.667Z</updated>
+  <updated>2024-05-25T13:26:31.047Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JS-变量与常见语法</title>
+    <title>JS-01变量与常见语法</title>
     <link href="https://ldm0715.github.io/post/js-bian-liang-yu-chang-jian-yu-fa/"/>
     <id>https://ldm0715.github.io/post/js-bian-liang-yu-chang-jian-yu-fa/</id>
     <published>2024-05-23T05:00:00.000Z</published>
-    <updated>2024-05-24T07:20:47.667Z</updated>
+    <updated>2024-05-25T13:26:31.047Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot; title=&quot;变量&quot;&gt;&lt;/a&gt;变量&lt;/h2&gt;&lt;p&gt;变量的本质是值的引用，当我们调用变量的时候，其实就是调用变量对应的值。&lt;/p&gt;
-&lt;h2 id=&quot;变量提升&quot;&gt;&lt;a href=&quot;#变量提升&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本博客实际上更应该算是笔记，实际的内容都来自阮一峰的JavaScript教程，笔记几乎就是教程的简洁版本。&lt;/p&gt;
+&lt;h2</summary>
         
       
     
@@ -103,7 +103,7 @@
     <link href="https://ldm0715.github.io/post/typing/"/>
     <id>https://ldm0715.github.io/post/typing/</id>
     <published>2024-05-22T10:00:00.000Z</published>
-    <updated>2024-05-22T08:51:23.924Z</updated>
+    <updated>2024-05-25T03:58:49.083Z</updated>
     
     
       
