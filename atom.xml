@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-05-25T13:38:34.949Z</updated>
+  <updated>2024-05-25T13:48:20.231Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -17,9 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JS-数据类型(02)</title>
+    <link href="https://ldm0715.github.io/post/js-02-shu-ju-lei-xing/"/>
+    <id>https://ldm0715.github.io/post/js-02-shu-ju-lei-xing/</id>
+    <published>2024-05-25T13:00:00.000Z</published>
+    <updated>2024-05-25T13:48:20.231Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JS-变量与常见语法(01)</title>
-    <link href="https://ldm0715.github.io/post/js-bian-liang-yu-chang-jian-yu-fa/"/>
-    <id>https://ldm0715.github.io/post/js-bian-liang-yu-chang-jian-yu-fa/</id>
+    <link href="https://ldm0715.github.io/post/js-01-bian-liang-yu-chang-jian-yu-fa/"/>
+    <id>https://ldm0715.github.io/post/js-01-bian-liang-yu-chang-jian-yu-fa/</id>
     <published>2024-05-23T05:00:00.000Z</published>
     <updated>2024-05-25T13:38:34.949Z</updated>
     
@@ -544,33 +571,6 @@
     <category term="Anaconda" scheme="https://ldm0715.github.io/tags/Anaconda/"/>
     
     <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo vs Halo-两者使用的感受</title>
-    <link href="https://ldm0715.github.io/post/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/"/>
-    <id>https://ldm0715.github.io/post/hexo-yu-halo-de-shi-yong-hou-de-gan-shou/</id>
-    <published>2023-03-13T05:57:45.000Z</published>
-    <updated>2024-05-07T03:07:35.443Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Halo博客" scheme="https://ldm0715.github.io/categories/Halo%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-    <category term="Halo" scheme="https://ldm0715.github.io/tags/Halo/"/>
-    
-    <category term="Hexo" scheme="https://ldm0715.github.io/tags/Hexo/"/>
     
   </entry>
   
