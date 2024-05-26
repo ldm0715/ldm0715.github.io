@@ -76,16 +76,10 @@
     <link href="https://ldm0715.github.io/post/pathlib/"/>
     <id>https://ldm0715.github.io/post/pathlib/</id>
     <published>2024-05-22T11:00:00.000Z</published>
-    <updated>2024-05-22T11:23:50.682Z</updated>
+    <updated>2024-05-26T08:34:26.184Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;什么是pathlib？&quot;&gt;&lt;a href=&quot;#什么是pathlib？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">使用pathlib模块不仅比os模块更规范，也更加方便。</summary>
     
     
     
@@ -550,16 +544,10 @@
     <link href="https://ldm0715.github.io/post/anaconda-de-ji-chu-shi-yong/"/>
     <id>https://ldm0715.github.io/post/anaconda-de-ji-chu-shi-yong/</id>
     <published>2023-03-25T08:00:00.000Z</published>
-    <updated>2024-05-07T03:07:06.268Z</updated>
+    <updated>2024-05-26T08:38:36.354Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">是一个开源的Anaconda是专注于数据分析的Python发行版本，包含了conda、Python等190多个科学包及其依赖项。但我们更多的还是使用它进行包的安装和环境管理</summary>
     
     
     
