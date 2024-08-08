@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-08-06T00:25:18.415Z</updated>
+  <updated>2024-08-08T15:30:01.282Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Koa-快速入门</title>
+    <link href="https://ldm0715.github.io/post/koa-kuai-su-ru-men/"/>
+    <id>https://ldm0715.github.io/post/koa-kuai-su-ru-men/</id>
+    <published>2024-08-07T12:30:00.000Z</published>
+    <updated>2024-08-08T15:30:01.282Z</updated>
+    
+    
+    <summary type="html">Koa 是一个由 Express 的原始开发者创建的 Node.js 后端框架，旨在提供更小、更灵活的基础后端框架。</summary>
+    
+    
+    
+    <category term="后端" scheme="https://ldm0715.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="后端" scheme="https://ldm0715.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="Nodejs" scheme="https://ldm0715.github.io/tags/Nodejs/"/>
+    
+    <category term="Koa" scheme="https://ldm0715.github.io/tags/Koa/"/>
+    
+  </entry>
   
   <entry>
     <title>Nodejs-常见模块应用</title>
@@ -120,6 +143,33 @@
   </entry>
   
   <entry>
+    <title>Python-输出格式化</title>
+    <link href="https://ldm0715.github.io/post/print-format/"/>
+    <id>https://ldm0715.github.io/post/print-format/</id>
+    <published>2024-05-22T10:00:00.000Z</published>
+    <updated>2024-05-24T07:24:30.616Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python-Typing类型注释实践</title>
     <link href="https://ldm0715.github.io/post/typing/"/>
     <id>https://ldm0715.github.io/post/typing/</id>
@@ -145,33 +195,6 @@
     <category term="typing" scheme="https://ldm0715.github.io/tags/typing/"/>
     
     <category term="类型注解" scheme="https://ldm0715.github.io/tags/%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python-输出格式化</title>
-    <link href="https://ldm0715.github.io/post/print-format/"/>
-    <id>https://ldm0715.github.io/post/print-format/</id>
-    <published>2024-05-22T10:00:00.000Z</published>
-    <updated>2024-05-24T07:24:30.616Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
-    
-    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
     
   </entry>
   
@@ -536,33 +559,6 @@
     <category term="OpenCV" scheme="https://ldm0715.github.io/tags/OpenCV/"/>
     
     <category term="机器视觉" scheme="https://ldm0715.github.io/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mermaid-基础图的绘制</title>
-    <link href="https://ldm0715.github.io/post/shi-yong-mermaid-hui-tu/"/>
-    <id>https://ldm0715.github.io/post/shi-yong-mermaid-hui-tu/</id>
-    <published>2023-04-18T06:42:00.000Z</published>
-    <updated>2024-05-07T03:06:49.510Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="杂&amp;Mess" scheme="https://ldm0715.github.io/categories/%E6%9D%82-Mess/"/>
-    
-    
-    <category term="mermaid" scheme="https://ldm0715.github.io/tags/mermaid/"/>
-    
-    <category term="Typora" scheme="https://ldm0715.github.io/tags/Typora/"/>
     
   </entry>
   
