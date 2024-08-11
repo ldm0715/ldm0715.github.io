@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-08-08T15:30:01.282Z</updated>
+  <updated>2024-08-11T11:05:12.084Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Django-基础组件使用实战</title>
+    <link href="https://ldm0715.github.io/post/django/"/>
+    <id>https://ldm0715.github.io/post/django/</id>
+    <published>2024-08-10T10:00:00.000Z</published>
+    <updated>2024-08-11T11:05:12.084Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;过时的技术，笔记是原来写的。但是由于其中有一些例子，所以想着还是上传一下。&lt;/p&gt;
+&lt;p&gt;非要用Python写后端，请移步使用&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://ldm0715.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="后端" scheme="https://ldm0715.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="Django" scheme="https://ldm0715.github.io/tags/Django/"/>
+    
+  </entry>
   
   <entry>
     <title>Koa-快速入门</title>
@@ -143,33 +173,6 @@
   </entry>
   
   <entry>
-    <title>Python-输出格式化</title>
-    <link href="https://ldm0715.github.io/post/print-format/"/>
-    <id>https://ldm0715.github.io/post/print-format/</id>
-    <published>2024-05-22T10:00:00.000Z</published>
-    <updated>2024-05-24T07:24:30.616Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
-    
-    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Python-Typing类型注释实践</title>
     <link href="https://ldm0715.github.io/post/typing/"/>
     <id>https://ldm0715.github.io/post/typing/</id>
@@ -195,6 +198,33 @@
     <category term="typing" scheme="https://ldm0715.github.io/tags/typing/"/>
     
     <category term="类型注解" scheme="https://ldm0715.github.io/tags/%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python-输出格式化</title>
+    <link href="https://ldm0715.github.io/post/print-format/"/>
+    <id>https://ldm0715.github.io/post/print-format/</id>
+    <published>2024-05-22T10:00:00.000Z</published>
+    <updated>2024-05-24T07:24:30.616Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
     
   </entry>
   
@@ -338,9 +368,9 @@
     
     <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
-    
     <category term="ES6" scheme="https://ldm0715.github.io/tags/ES6/"/>
+    
+    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
     
   </entry>
   
@@ -530,35 +560,6 @@
     <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
     
     <category term="音视频信号处理" scheme="https://ldm0715.github.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OpenCV-高斯金字塔</title>
-    <link href="https://ldm0715.github.io/post/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/"/>
-    <id>https://ldm0715.github.io/post/ji-qi-shi-jue-sheng-cheng-gao-si-jin-zi-ta/</id>
-    <published>2023-04-23T10:01:00.000Z</published>
-    <updated>2024-05-07T03:06:41.113Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="机器视觉" scheme="https://ldm0715.github.io/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
-    
-    
-    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
-    
-    <category term="OpenCV" scheme="https://ldm0715.github.io/tags/OpenCV/"/>
-    
-    <category term="机器视觉" scheme="https://ldm0715.github.io/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
     
   </entry>
   
