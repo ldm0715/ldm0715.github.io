@@ -18,8 +18,8 @@
   
   <entry>
     <title>Django-基础组件使用实战</title>
-    <link href="https://ldm0715.github.io/post/django/"/>
-    <id>https://ldm0715.github.io/post/django/</id>
+    <link href="https://ldm0715.github.io/post/django-ji-chu-zu-jian-kuai-su-ru-men/"/>
+    <id>https://ldm0715.github.io/post/django-ji-chu-zu-jian-kuai-su-ru-men/</id>
     <published>2024-08-10T10:00:00.000Z</published>
     <updated>2024-08-11T11:10:01.455Z</updated>
     
@@ -51,7 +51,7 @@
     <link href="https://ldm0715.github.io/post/koa-kuai-su-ru-men/"/>
     <id>https://ldm0715.github.io/post/koa-kuai-su-ru-men/</id>
     <published>2024-08-07T12:30:00.000Z</published>
-    <updated>2024-08-08T15:30:01.282Z</updated>
+    <updated>2024-08-11T11:14:43.833Z</updated>
     
     
     <summary type="html">Koa 是一个由 Express 的原始开发者创建的 Node.js 后端框架，旨在提供更小、更灵活的基础后端框架。</summary>
