@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ldm0715.github.io/post/shi-yan-bao-gao-zhong-de-word-pai-ban-ji-qiao/</loc>
+    <lastmod>2024-08-11</lastmod>
+  </url>
+  <url>
     <loc>https://ldm0715.github.io/post/koa-kuai-su-ru-men/</loc>
     <lastmod>2024-08-11</lastmod>
   </url>
@@ -55,10 +59,6 @@
   <url>
     <loc>https://ldm0715.github.io/post/js-es6/</loc>
     <lastmod>2024-05-10</lastmod>
-  </url>
-  <url>
-    <loc>https://ldm0715.github.io/post/shi-yan-bao-gao-zhong-de-word-pai-ban-ji-qiao/</loc>
-    <lastmod>2024-05-07</lastmod>
   </url>
   <url>
     <loc>https://ldm0715.github.io/post/vue-xue-xi-bi-ji/</loc>
