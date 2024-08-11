@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-08-11T11:05:12.084Z</updated>
+  <updated>2024-08-11T11:10:01.455Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ldm0715.github.io/post/django/"/>
     <id>https://ldm0715.github.io/post/django/</id>
     <published>2024-08-10T10:00:00.000Z</published>
-    <updated>2024-08-11T11:05:12.084Z</updated>
+    <updated>2024-08-11T11:10:01.455Z</updated>
     
     
       
@@ -173,6 +173,33 @@
   </entry>
   
   <entry>
+    <title>Python-输出格式化</title>
+    <link href="https://ldm0715.github.io/post/print-format/"/>
+    <id>https://ldm0715.github.io/post/print-format/</id>
+    <published>2024-05-22T10:00:00.000Z</published>
+    <updated>2024-05-24T07:24:30.616Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python-Typing类型注释实践</title>
     <link href="https://ldm0715.github.io/post/typing/"/>
     <id>https://ldm0715.github.io/post/typing/</id>
@@ -198,33 +225,6 @@
     <category term="typing" scheme="https://ldm0715.github.io/tags/typing/"/>
     
     <category term="类型注解" scheme="https://ldm0715.github.io/tags/%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python-输出格式化</title>
-    <link href="https://ldm0715.github.io/post/print-format/"/>
-    <id>https://ldm0715.github.io/post/print-format/</id>
-    <published>2024-05-22T10:00:00.000Z</published>
-    <updated>2024-05-24T07:24:30.616Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
-    
-    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
     
   </entry>
   
@@ -368,9 +368,9 @@
     
     <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="ES6" scheme="https://ldm0715.github.io/tags/ES6/"/>
-    
     <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
+    
+    <category term="ES6" scheme="https://ldm0715.github.io/tags/ES6/"/>
     
   </entry>
   
