@@ -166,7 +166,7 @@
     })(window)</script><link rel="stylesheet" href="/css/set_font.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3962437_6snoplzeg9u.css"><span id="fps"></span><link rel="stylesheet" href="/css/fps.css"><link rel="stylesheet" href="/css/pic_border.css"><link rel="stylesheet" href="/css/right.css"><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/yemian.css"><link rel="stylesheet" href="/css/bilibili.css"><link rel="stylesheet" href="/css/kuanping.css"><link rel="stylesheet" href="/css/weather.css"><link rel="stylesheet" href="/css/footer.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
 <style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
   white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
-<link rel="stylesheet" href="/css/runtime.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/css/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="gcnanmuの博客" type="application/atom+xml">
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="/css/runtime.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/css/swiperstyle.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="gcnanmuの博客" type="application/atom+xml">
 </head><body><script>window.paceOptions = {
   restartOnPushState: false
 }
@@ -188,7 +188,7 @@ document.addEventListener('pjax:send', () => {
 <li>LR - left to right</li>
 </ul>
 <p>例子1 TB：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">	a --&gt; b &amp; c --&gt; d</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">    a --&gt; b &amp; c --&gt; d</span><br></pre></td></tr></table></figure>
 
 
 
@@ -202,7 +202,7 @@ flowchart TB
 
 
 <p>例子2 LR：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">	a --&gt; b &amp; c --&gt; d</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">    a --&gt; b &amp; c --&gt; d</span><br></pre></td></tr></table></figure>
 
 
 
@@ -225,7 +225,7 @@ flowchart TB
 <li>double circle - <code>((()))</code></li>
 </ul>
 <p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">	A([one]) --&gt; B&#123;&#123;two&#125;&#125; &amp; c[(three)] --&gt; d[/hello/]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">    A([one]) --&gt; B&#123;&#123;two&#125;&#125; &amp; c[(three)] --&gt; d[/hello/]</span><br></pre></td></tr></table></figure>
 
 
 
@@ -246,7 +246,7 @@ flowchart TB
 <li>延长方式 - <code>----&gt;</code></li>
 </ul>
 <p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">	a[start] --&gt; b&#123;Is it?&#125;</span><br><span class="line">	b --&gt;|Yes| c[OK]</span><br><span class="line">	c --&gt; d[Rethink] --&gt; b</span><br><span class="line">	b ----&gt;|No| e[End]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">    a[start] --&gt; b&#123;Is it?&#125;</span><br><span class="line">    b --&gt;|Yes| c[OK]</span><br><span class="line">    c --&gt; d[Rethink] --&gt; b</span><br><span class="line">    b ----&gt;|No| e[End]</span><br></pre></td></tr></table></figure>
 
 
 
@@ -260,7 +260,7 @@ flowchart TB
 
 <h3 id="特殊符号显示"><a href="#特殊符号显示" class="headerlink" title="特殊符号显示"></a>特殊符号显示</h3><p>用引号包含住内容，一般可以表示括号内容，如果有更加复杂的需求，可以使用<code>:# ;</code></p>
 <p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">	a[&quot;This is a text(#3556;)&quot;] --&gt; b[&quot;A dec char:#9829;&quot;]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">    a[&quot;This is a text(#3556;)&quot;] --&gt; b[&quot;A dec char:#9829;&quot;]</span><br></pre></td></tr></table></figure>
 
 
 
@@ -270,10 +270,10 @@ flowchart TB
   </pre></div>
 
 <h3 id="多图（Subgraphs）"><a href="#多图（Subgraphs）" class="headerlink" title="多图（Subgraphs）"></a>多图（Subgraphs）</h3><p>语法</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">subgraph title</span><br><span class="line">	graph definition</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">subgraph title</span><br><span class="line">    graph definition</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 
 <p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">	subgraph one</span><br><span class="line">	a1 --&gt; a2</span><br><span class="line">	end</span><br><span class="line">	subgraph two </span><br><span class="line">	b1 --&gt; b2</span><br><span class="line">	end</span><br><span class="line">	subgraph three</span><br><span class="line">	c1 --&gt; c2</span><br><span class="line">	end</span><br><span class="line">	c1 --&gt; a2</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">flowchart TB</span><br><span class="line">    subgraph one</span><br><span class="line">    a1 --&gt; a2</span><br><span class="line">    end</span><br><span class="line">    subgraph two </span><br><span class="line">    b1 --&gt; b2</span><br><span class="line">    end</span><br><span class="line">    subgraph three</span><br><span class="line">    c1 --&gt; c2</span><br><span class="line">    end</span><br><span class="line">    c1 --&gt; a2</span><br></pre></td></tr></table></figure>
 
 
 
@@ -402,7 +402,7 @@ flowchart TB
 
 <h2 id="Timeline（时间轴）"><a href="#Timeline（时间轴）" class="headerlink" title="Timeline（时间轴）"></a>Timeline（时间轴）</h2><p>关键字: <code>timeline</code></p>
 <p>基本写法为：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">timeline </span><br><span class="line">	title XXX</span><br><span class="line">	&#123;time period&#125; : &#123;event&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">timeline </span><br><span class="line">    title XXX</span><br><span class="line">    &#123;time period&#125; : &#123;event&#125;</span><br></pre></td></tr></table></figure>
 
 <p>简单演示：</p>
 <blockquote>
@@ -425,7 +425,7 @@ timeline
   </pre></div>
 
 <h2 id="动手实践"><a href="#动手实践" class="headerlink" title="动手实践"></a>动手实践</h2><p>流程图：<a target="_blank" rel="noopener" href="https://blog.csdn.net/cc920095705/article/details/113769741">https://blog.csdn.net/cc920095705/article/details/113769741</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">flowchart TD</span><br><span class="line">	a[Start] --- b[Your Operation]</span><br><span class="line">	b --- c&#123;Yes or No?&#125; ---|Yes| d([End])</span><br><span class="line">	a ---|No| c</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">flowchart TD</span><br><span class="line">    a[Start] --- b[Your Operation]</span><br><span class="line">    b --- c&#123;Yes or No?&#125; ---|Yes| d([End])</span><br><span class="line">    a ---|No| c</span><br></pre></td></tr></table></figure>
 
 
 
@@ -440,7 +440,7 @@ timeline
 
 <p>饼图</p>
 <p>数据来源：<a target="_blank" rel="noopener" href="http://www.xinhuanet.com/2023-01/17/c_1129292204.htm">国家统计局：2022年居民收入和消费支出情况-新华网 (xinhuanet.com)</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">pie showdata</span><br><span class="line">	title 2022年居民人均消费基础及构成(单位：元)</span><br><span class="line">	&quot;其他用品及服务&quot; : 595</span><br><span class="line">	&quot;食品烟酒&quot; : 7481</span><br><span class="line">	&quot;衣着&quot; : 1365</span><br><span class="line">	&quot;居住&quot; : 5882</span><br><span class="line">	&quot;生活用品及服务&quot; : 1432</span><br><span class="line">	&quot;交通通信&quot; : 3195</span><br><span class="line">	&quot;教育文化娱乐&quot; : 2469</span><br><span class="line">	&quot;医疗保健&quot; : 2120</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">pie showdata</span><br><span class="line">    title 2022年居民人均消费基础及构成(单位：元)</span><br><span class="line">    &quot;其他用品及服务&quot; : 595</span><br><span class="line">    &quot;食品烟酒&quot; : 7481</span><br><span class="line">    &quot;衣着&quot; : 1365</span><br><span class="line">    &quot;居住&quot; : 5882</span><br><span class="line">    &quot;生活用品及服务&quot; : 1432</span><br><span class="line">    &quot;交通通信&quot; : 3195</span><br><span class="line">    &quot;教育文化娱乐&quot; : 2469</span><br><span class="line">    &quot;医疗保健&quot; : 2120</span><br></pre></td></tr></table></figure>
 
 
 
@@ -559,7 +559,23 @@ document.body.addEventListener('input', POWERMODE);
             }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
 
             history_calendar_injector_config()
-        } </script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><script data-pjax>
+        } </script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '500ms');
+    arr[i].setAttribute('data-wow-delay', '50ms');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
   function butterfly_footer_beautify_injector_config(){
     var parent_div_git = document.getElementById('footer-wrap');
     var item_html = '<p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.9.0" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=brevo" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src="https://img.shields.io/badge/Powerby-Github-d021d6?style=flat&amp;logo=Github" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/lxgw/LxgwWenKai-Screen" style="margin-inline:5px" data-title="本站字体为霞鹜文楷" title=""><img src="https://img.shields.io/badge/Font-LXGW%20WenKai-pink?style=flat&amp;logo=fluentd" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
@@ -607,20 +623,4 @@ document.body.addEventListener('input', POWERMODE);
   else if (epage === cpage){
     butterfly_swiper_injector_config();
   }
-  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
-for(var i = 0;i<arr.length;i++){
-    arr[i].classList.add('wow');
-    arr[i].classList.add('animate__zoomIn');
-    arr[i].setAttribute('data-wow-duration', '500ms');
-    arr[i].setAttribute('data-wow-delay', '50ms');
-    arr[i].setAttribute('data-wow-offset', '100');
-    arr[i].setAttribute('data-wow-iteration', '1');
-  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
-for(var i = 0;i<arr.length;i++){
-    arr[i].classList.add('wow');
-    arr[i].classList.add('animate__zoomIn');
-    arr[i].setAttribute('data-wow-duration', '');
-    arr[i].setAttribute('data-wow-delay', '');
-    arr[i].setAttribute('data-wow-offset', '');
-    arr[i].setAttribute('data-wow-iteration', '');
-  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --></body></html>
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><!-- hexo injector body_end end --></body></html>
