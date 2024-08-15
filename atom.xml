@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-08-15T03:11:29.012Z</updated>
+  <updated>2024-08-15T09:05:58.193Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript-模块化</title>
+    <link href="https://ldm0715.github.io/post/javascript-mo-kuai-hua/"/>
+    <id>https://ldm0715.github.io/post/javascript-mo-kuai-hua/</id>
+    <published>2024-08-15T09:00:00.000Z</published>
+    <updated>2024-08-15T09:05:58.193Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="CommonJs" scheme="https://ldm0715.github.io/tags/CommonJs/"/>
+    
+    <category term="ECMA6" scheme="https://ldm0715.github.io/tags/ECMA6/"/>
+    
+  </entry>
   
   <entry>
     <title>TypeScript-快速上手</title>
@@ -533,33 +560,6 @@
     <category term="OpenCV" scheme="https://ldm0715.github.io/tags/OpenCV/"/>
     
     <category term="机器视觉" scheme="https://ldm0715.github.io/tags/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>FFmpeg-简单的视频处理</title>
-    <link href="https://ldm0715.github.io/post/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/"/>
-    <id>https://ldm0715.github.io/post/ffmpeg-yi-xie-jian-dan-de-shi-pin-chu-li/</id>
-    <published>2023-05-22T02:25:25.000Z</published>
-    <updated>2024-05-07T03:07:09.633Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="音视频信号处理" scheme="https://ldm0715.github.io/categories/%E9%9F%B3%E8%A7%86%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
-    
-    
-    <category term="音视频处理" scheme="https://ldm0715.github.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/"/>
-    
-    <category term="FFmpeg" scheme="https://ldm0715.github.io/tags/FFmpeg/"/>
     
   </entry>
   
