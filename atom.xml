@@ -18,8 +18,8 @@
   
   <entry>
     <title>前端-跨域&amp;解决方案</title>
-    <link href="https://ldm0715.github.io/post/qian-duan-kua-yu-jie-jue-fang-an/"/>
-    <id>https://ldm0715.github.io/post/qian-duan-kua-yu-jie-jue-fang-an/</id>
+    <link href="https://ldm0715.github.io/post/qian-duan-kua-yu-he-jie-jue-fang-an/"/>
+    <id>https://ldm0715.github.io/post/qian-duan-kua-yu-he-jie-jue-fang-an/</id>
     <published>2024-08-16T03:30:00.000Z</published>
     <updated>2024-08-16T03:37:37.037Z</updated>
     
@@ -449,9 +449,9 @@
     
     <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
-    
     <category term="ES6" scheme="https://ldm0715.github.io/tags/ES6/"/>
+    
+    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
     
   </entry>
   
