@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-08-16T03:37:37.037Z</updated>
+  <updated>2024-08-27T15:08:46.467Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Electron API-快速上手</title>
+    <link href="https://ldm0715.github.io/post/electronapi-kuai-su-shang-shou/"/>
+    <id>https://ldm0715.github.io/post/electronapi-kuai-su-shang-shou/</id>
+    <published>2024-08-27T09:00:00.000Z</published>
+    <updated>2024-08-27T15:08:46.467Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;什么是electron&quot;&gt;&lt;a href=&quot;#什么是electron&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="Electron" scheme="https://ldm0715.github.io/tags/Electron/"/>
+    
+    <category term="跨平台" scheme="https://ldm0715.github.io/tags/%E8%B7%A8%E5%B9%B3%E5%8F%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>前端-跨域&amp;解决方案</title>
@@ -91,9 +118,9 @@
     <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="TypeScript" scheme="https://ldm0715.github.io/tags/TypeScript/"/>
-    
     <category term="Nodejs" scheme="https://ldm0715.github.io/tags/Nodejs/"/>
+    
+    <category term="TypeScript" scheme="https://ldm0715.github.io/tags/TypeScript/"/>
     
   </entry>
   
@@ -254,33 +281,6 @@
   </entry>
   
   <entry>
-    <title>Python-输出格式化</title>
-    <link href="https://ldm0715.github.io/post/print-format/"/>
-    <id>https://ldm0715.github.io/post/print-format/</id>
-    <published>2024-05-22T10:00:00.000Z</published>
-    <updated>2024-05-24T07:24:30.616Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
-    
-    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Python-Typing类型注释实践</title>
     <link href="https://ldm0715.github.io/post/typing/"/>
     <id>https://ldm0715.github.io/post/typing/</id>
@@ -306,6 +306,33 @@
     <category term="typing" scheme="https://ldm0715.github.io/tags/typing/"/>
     
     <category term="类型注解" scheme="https://ldm0715.github.io/tags/%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python-输出格式化</title>
+    <link href="https://ldm0715.github.io/post/print-format/"/>
+    <id>https://ldm0715.github.io/post/print-format/</id>
+    <published>2024-05-22T10:00:00.000Z</published>
+    <updated>2024-05-24T07:24:30.616Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
     
   </entry>
   
@@ -531,33 +558,6 @@
     <category term="Github Page" scheme="https://ldm0715.github.io/tags/Github-Page/"/>
     
     <category term="域名" scheme="https://ldm0715.github.io/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Word-格式与排版</title>
-    <link href="https://ldm0715.github.io/post/shi-yan-bao-gao-zhong-de-word-pai-ban-ji-qiao/"/>
-    <id>https://ldm0715.github.io/post/shi-yan-bao-gao-zhong-de-word-pai-ban-ji-qiao/</id>
-    <published>2023-07-18T13:18:00.000Z</published>
-    <updated>2024-08-11T12:24:23.495Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="杂&amp;Mess" scheme="https://ldm0715.github.io/categories/%E6%9D%82-Mess/"/>
-    
-    
-    <category term="Word" scheme="https://ldm0715.github.io/tags/Word/"/>
-    
-    <category term="排版" scheme="https://ldm0715.github.io/tags/%E6%8E%92%E7%89%88/"/>
     
   </entry>
   
