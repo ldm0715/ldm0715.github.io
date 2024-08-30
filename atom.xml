@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-08-29T10:03:32.918Z</updated>
+  <updated>2024-08-30T11:33:15.043Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -21,14 +21,16 @@
     <link href="https://ldm0715.github.io/post/qian-duan-cong-ru-men-dao-fang-qi/"/>
     <id>https://ldm0715.github.io/post/qian-duan-cong-ru-men-dao-fang-qi/</id>
     <published>2024-08-29T09:30:00.000Z</published>
-    <updated>2024-08-29T10:03:32.918Z</updated>
+    <updated>2024-08-30T11:33:15.043Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;值得学习的技术&quot;&gt;&lt;a href=&quot;#值得学习的技术&quot; class=&quot;headerlink&quot; title=&quot;值得学习的技术&quot;&gt;&lt;/a&gt;值得学习的技术&lt;/h2&gt;&lt;img</summary>
+    <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
+&lt;h2 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;ES6：&lt;a</summary>
         
       
     
@@ -46,7 +48,7 @@
     <link href="https://ldm0715.github.io/post/axios-qing-qiu-ji-ben-shi-yong/"/>
     <id>https://ldm0715.github.io/post/axios-qing-qiu-ji-ben-shi-yong/</id>
     <published>2024-08-29T09:00:00.000Z</published>
-    <updated>2024-08-29T10:55:06.086Z</updated>
+    <updated>2024-08-30T11:28:17.526Z</updated>
     
     
       
@@ -198,9 +200,9 @@
     <category term="后端" scheme="https://ldm0715.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-    <category term="后端" scheme="https://ldm0715.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
-    
     <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="后端" scheme="https://ldm0715.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
     
     <category term="Django" scheme="https://ldm0715.github.io/tags/Django/"/>
     
@@ -333,33 +335,6 @@
   </entry>
   
   <entry>
-    <title>Python-输出格式化</title>
-    <link href="https://ldm0715.github.io/post/print-format/"/>
-    <id>https://ldm0715.github.io/post/print-format/</id>
-    <published>2024-05-22T10:00:00.000Z</published>
-    <updated>2024-05-24T07:24:30.616Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
-    
-    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Python-Typing类型注释实践</title>
     <link href="https://ldm0715.github.io/post/typing/"/>
     <id>https://ldm0715.github.io/post/typing/</id>
@@ -385,6 +360,33 @@
     <category term="typing" scheme="https://ldm0715.github.io/tags/typing/"/>
     
     <category term="类型注解" scheme="https://ldm0715.github.io/tags/%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python-输出格式化</title>
+    <link href="https://ldm0715.github.io/post/print-format/"/>
+    <id>https://ldm0715.github.io/post/print-format/</id>
+    <published>2024-05-22T10:00:00.000Z</published>
+    <updated>2024-05-24T07:24:30.616Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
     
   </entry>
   
