@@ -6,7 +6,7 @@ function randomPost() {
 		.then((data) => {
 			let ls = data.querySelectorAll("url loc");
 			// 将ls中所有的链接的开头换为https://hexo.gcnanmu3125.xyz/
-			const newUrl = "https://hexo.gcnanmu3125.xyz/";
+			const newUrl = "https://hexo.gcnanmu3125.top/";
 
 			for (let i = 0; i < ls.length; i++) {
 				let str = ls[i].innerHTML;
