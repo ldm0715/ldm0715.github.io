@@ -8,6 +8,10 @@ function randomPost() {
 			// 将ls中所有的链接的开头换为https://hexo.gcnanmu3125.xyz/
 			const newUrl = "https://hexo.gcnanmu3125.top/";
 
+			// 读取当前的url
+
+			console.log(location.href);
+
 			for (let i = 0; i < ls.length; i++) {
 				let str = ls[i].innerHTML;
 				const urlSplit = str.split("/");
