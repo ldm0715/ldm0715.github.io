@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-08-30T16:14:23.344Z</updated>
+  <updated>2024-12-29T08:03:04.180Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最小的单位-</title>
+    <link href="https://ldm0715.github.io/post/shang-chuan-pypi/"/>
+    <id>https://ldm0715.github.io/post/shang-chuan-pypi/</id>
+    <published>2024-12-29T09:30:00.000Z</published>
+    <updated>2024-12-29T08:03:04.180Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;第一次在PyPI上传Python包，记录一下整个流程&lt;/p&gt;
+&lt;h2 id=&quot;注册账号&quot;&gt;&lt;a href=&quot;#注册账号&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="biliemoji" scheme="https://ldm0715.github.io/tags/biliemoji/"/>
+    
+  </entry>
   
   <entry>
     <title>Promise-基础原理与使用</title>
@@ -75,14 +103,14 @@
     <link href="https://ldm0715.github.io/post/axios-qing-qiu-ji-ben-shi-yong/"/>
     <id>https://ldm0715.github.io/post/axios-qing-qiu-ji-ben-shi-yong/</id>
     <published>2024-08-29T09:00:00.000Z</published>
-    <updated>2024-08-30T11:28:17.526Z</updated>
+    <updated>2024-12-05T10:09:20.475Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;要了解axios，需要先了解Ajax（Asynchronous JavaScript And XML 即异步 JavaScript 和</summary>
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
         
       
     
@@ -531,35 +559,6 @@
     <category term="Vue3" scheme="https://ldm0715.github.io/tags/Vue3/"/>
     
     <category term="Vite" scheme="https://ldm0715.github.io/tags/Vite/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS-ES6入门</title>
-    <link href="https://ldm0715.github.io/post/js-es6/"/>
-    <id>https://ldm0715.github.io/post/js-es6/</id>
-    <published>2024-05-09T10:00:00.000Z</published>
-    <updated>2024-05-10T13:16:32.872Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;ECMAScript是什么&quot;&gt;&lt;a href=&quot;#ECMAScript是什么&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="JavaScript" scheme="https://ldm0715.github.io/tags/JavaScript/"/>
-    
-    <category term="ES6" scheme="https://ldm0715.github.io/tags/ES6/"/>
     
   </entry>
   
