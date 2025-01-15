@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2025-01-15T09:29:20.335Z</updated>
+  <updated>2025-01-15T09:35:43.314Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://ldm0715.github.io/post/wpf-csharp-ru-men/"/>
     <id>https://ldm0715.github.io/post/wpf-csharp-ru-men/</id>
     <published>2025-01-15T09:00:00.000Z</published>
-    <updated>2025-01-15T09:29:20.335Z</updated>
+    <updated>2025-01-15T09:35:43.314Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;C-入门&quot;&gt;&lt;a href=&quot;#C-入门&quot; class=&quot;headerlink&quot; title=&quot;C#入门&quot;&gt;&lt;/a&gt;C#入门&lt;/h2&gt;&lt;h3 id=&quot;配置环境&quot;&gt;&lt;a href=&quot;#配置环境&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;配置环境&quot;&gt;&lt;a href=&quot;#配置环境&quot; class=&quot;headerlink&quot; title=&quot;配置环境&quot;&gt;&lt;/a&gt;配置环境&lt;/h2&gt;&lt;p&gt;安装&lt;a href=&quot;https://dotnet.microsoft.com/zh-cn/download&quot;&gt;</summary>
         
       
     
@@ -280,9 +280,9 @@
     <category term="后端" scheme="https://ldm0715.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-    <category term="后端" scheme="https://ldm0715.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
-    
     <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="后端" scheme="https://ldm0715.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
     
     <category term="Django" scheme="https://ldm0715.github.io/tags/Django/"/>
     
