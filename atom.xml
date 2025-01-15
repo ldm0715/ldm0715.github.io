@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2024-12-29T08:06:19.159Z</updated>
+  <updated>2025-01-15T09:25:49.319Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSharp入门</title>
+    <link href="https://ldm0715.github.io/post/csharp-ru-men/"/>
+    <id>https://ldm0715.github.io/post/csharp-ru-men/</id>
+    <published>2025-01-15T09:00:00.000Z</published>
+    <updated>2025-01-15T09:25:49.319Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;C-入门&quot;&gt;&lt;a href=&quot;#C-入门&quot; class=&quot;headerlink&quot; title=&quot;C#入门&quot;&gt;&lt;/a&gt;C#入门&lt;/h2&gt;&lt;h3 id=&quot;配置环境&quot;&gt;&lt;a href=&quot;#配置环境&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="C#" scheme="https://ldm0715.github.io/categories/C/"/>
+    
+    
+    <category term="C#" scheme="https://ldm0715.github.io/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>最小的单位-将包上传到PyPI</title>
@@ -255,9 +280,9 @@
     <category term="后端" scheme="https://ldm0715.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
-    
     <category term="后端" scheme="https://ldm0715.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
     
     <category term="Django" scheme="https://ldm0715.github.io/tags/Django/"/>
     
@@ -390,33 +415,6 @@
   </entry>
   
   <entry>
-    <title>Python-输出格式化</title>
-    <link href="https://ldm0715.github.io/post/print-format/"/>
-    <id>https://ldm0715.github.io/post/print-format/</id>
-    <published>2024-05-22T10:00:00.000Z</published>
-    <updated>2024-05-24T07:24:30.616Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
-    
-    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Python-Typing类型注释实践</title>
     <link href="https://ldm0715.github.io/post/typing/"/>
     <id>https://ldm0715.github.io/post/typing/</id>
@@ -442,6 +440,33 @@
     <category term="typing" scheme="https://ldm0715.github.io/tags/typing/"/>
     
     <category term="类型注解" scheme="https://ldm0715.github.io/tags/%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python-输出格式化</title>
+    <link href="https://ldm0715.github.io/post/print-format/"/>
+    <id>https://ldm0715.github.io/post/print-format/</id>
+    <published>2024-05-22T10:00:00.000Z</published>
+    <updated>2024-05-24T07:24:30.616Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="format" scheme="https://ldm0715.github.io/tags/format/"/>
     
   </entry>
   
@@ -529,36 +554,6 @@
     <category term="Vue3" scheme="https://ldm0715.github.io/tags/Vue3/"/>
     
     <category term="Pinia" scheme="https://ldm0715.github.io/tags/Pinia/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue3-Vite项目初识</title>
-    <link href="https://ldm0715.github.io/post/vite/"/>
-    <id>https://ldm0715.github.io/post/vite/</id>
-    <published>2024-05-10T10:00:00.000Z</published>
-    <updated>2024-05-16T11:55:47.637Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;由于hexo不单独支持vue的语法高亮，因此部分vue的高亮使用的是html。&lt;/p&gt;
-&lt;h2 id=&quot;什么是Vite？&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="Vue3" scheme="https://ldm0715.github.io/tags/Vue3/"/>
-    
-    <category term="Vite" scheme="https://ldm0715.github.io/tags/Vite/"/>
     
   </entry>
   
