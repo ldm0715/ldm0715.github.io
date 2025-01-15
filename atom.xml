@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2025-01-15T09:35:43.314Z</updated>
+  <updated>2025-01-15T14:29:22.710Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WPF-CSharp核心</title>
+    <link href="https://ldm0715.github.io/post/wpf-csharp-he-xin/"/>
+    <id>https://ldm0715.github.io/post/wpf-csharp-he-xin/</id>
+    <published>2025-01-15T12:00:00.000Z</published>
+    <updated>2025-01-15T14:29:22.710Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;面向对象&quot;&gt;&lt;a href=&quot;#面向对象&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="C#" scheme="https://ldm0715.github.io/categories/C/"/>
+    
+    
+    <category term="C#" scheme="https://ldm0715.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WPF-CSharp基础</title>
+    <link href="https://ldm0715.github.io/post/wpf-csharp-ji-chu/"/>
+    <id>https://ldm0715.github.io/post/wpf-csharp-ji-chu/</id>
+    <published>2025-01-15T10:00:00.000Z</published>
+    <updated>2025-01-15T14:33:51.026Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;复杂数据类型&quot;&gt;&lt;a href=&quot;#复杂数据类型&quot; class=&quot;headerlink&quot; title=&quot;复杂数据类型&quot;&gt;&lt;/a&gt;复杂数据类型&lt;/h2&gt;&lt;p&gt;主要了解枚举类、数组、结构体&lt;/p&gt;
+&lt;h3 id=&quot;枚举类&quot;&gt;&lt;a href=&quot;#枚举类&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="C#" scheme="https://ldm0715.github.io/categories/C/"/>
+    
+    
+    <category term="C#" scheme="https://ldm0715.github.io/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>WPF-CSharp入门</title>
@@ -252,9 +303,9 @@
     <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Nodejs" scheme="https://ldm0715.github.io/tags/Nodejs/"/>
-    
     <category term="TypeScript" scheme="https://ldm0715.github.io/tags/TypeScript/"/>
+    
+    <category term="Nodejs" scheme="https://ldm0715.github.io/tags/Nodejs/"/>
     
   </entry>
   
@@ -496,64 +547,6 @@
     <category term="Vue3" scheme="https://ldm0715.github.io/tags/Vue3/"/>
     
     <category term="ElementPlus" scheme="https://ldm0715.github.io/tags/ElementPlus/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue3-路由配置实践</title>
-    <link href="https://ldm0715.github.io/post/vuerouter/"/>
-    <id>https://ldm0715.github.io/post/vuerouter/</id>
-    <published>2024-05-17T10:30:00.000Z</published>
-    <updated>2024-08-04T14:59:58.107Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="Vue3" scheme="https://ldm0715.github.io/tags/Vue3/"/>
-    
-    <category term="Router" scheme="https://ldm0715.github.io/tags/Router/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue3-Pinia持久化插件</title>
-    <link href="https://ldm0715.github.io/post/pinia/"/>
-    <id>https://ldm0715.github.io/post/pinia/</id>
-    <published>2024-05-17T10:00:00.000Z</published>
-    <updated>2024-05-17T01:59:36.131Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;什么是Pinia？&quot;&gt;&lt;a href=&quot;#什么是Pinia？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="Vue3" scheme="https://ldm0715.github.io/tags/Vue3/"/>
-    
-    <category term="Pinia" scheme="https://ldm0715.github.io/tags/Pinia/"/>
     
   </entry>
   
