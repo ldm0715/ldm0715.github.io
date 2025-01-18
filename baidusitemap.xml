@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ldm0715.github.io/post/python-shi-jian-mo-kuai/</loc>
+    <lastmod>2025-01-18</lastmod>
+  </url>
+  <url>
+    <loc>https://ldm0715.github.io/post/qian-duan-cong-ru-men-dao-fang-qi/</loc>
+    <lastmod>2025-01-18</lastmod>
+  </url>
+  <url>
     <loc>https://ldm0715.github.io/post/promise-ji-chu-yuan-li-yu-shi-yong/</loc>
     <lastmod>2025-01-15</lastmod>
   </url>
@@ -27,10 +35,6 @@
   <url>
     <loc>https://ldm0715.github.io/post/django-ji-chu-zu-jian-kuai-su-ru-men/</loc>
     <lastmod>2025-01-15</lastmod>
-  </url>
-  <url>
-    <loc>https://ldm0715.github.io/post/qian-duan-cong-ru-men-dao-fang-qi/</loc>
-    <lastmod>2024-08-30</lastmod>
   </url>
   <url>
     <loc>https://ldm0715.github.io/post/koa-kuai-su-ru-men/</loc>

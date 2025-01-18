@@ -6,7 +6,7 @@
   <link href="https://ldm0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://ldm0715.github.io/"/>
-  <updated>2025-01-15T14:39:38.975Z</updated>
+  <updated>2025-01-18T10:31:15.580Z</updated>
   <id>https://ldm0715.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python-时间模块</title>
+    <link href="https://ldm0715.github.io/post/python-shi-jian-mo-kuai/"/>
+    <id>https://ldm0715.github.io/post/python-shi-jian-mo-kuai/</id>
+    <published>2025-01-18T12:00:00.000Z</published>
+    <updated>2025-01-18T10:31:15.580Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python实践" scheme="https://ldm0715.github.io/categories/Python%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Python" scheme="https://ldm0715.github.io/tags/Python/"/>
+    
+    <category term="time" scheme="https://ldm0715.github.io/tags/time/"/>
+    
+  </entry>
   
   <entry>
     <title>WPF-CSharp核心</title>
@@ -152,15 +179,14 @@
     <link href="https://ldm0715.github.io/post/qian-duan-cong-ru-men-dao-fang-qi/"/>
     <id>https://ldm0715.github.io/post/qian-duan-cong-ru-men-dao-fang-qi/</id>
     <published>2024-08-29T09:30:00.000Z</published>
-    <updated>2024-08-30T11:33:15.043Z</updated>
+    <updated>2025-01-18T08:53:10.407Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
-&lt;h2 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h2&gt;&lt;ul&gt;
+    <summary type="html">&lt;h2 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;ES6：&lt;a</summary>
         
       
@@ -518,35 +544,6 @@
     <category term="typing" scheme="https://ldm0715.github.io/tags/typing/"/>
     
     <category term="类型注解" scheme="https://ldm0715.github.io/tags/%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue3-ElementPlus组件库</title>
-    <link href="https://ldm0715.github.io/post/element-plus/"/>
-    <id>https://ldm0715.github.io/post/element-plus/</id>
-    <published>2024-05-19T10:00:00.000Z</published>
-    <updated>2024-05-24T08:20:49.717Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://ldm0715.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="前端" scheme="https://ldm0715.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="Vue3" scheme="https://ldm0715.github.io/tags/Vue3/"/>
-    
-    <category term="ElementPlus" scheme="https://ldm0715.github.io/tags/ElementPlus/"/>
     
   </entry>
   
