@@ -1,0 +1,3 @@
+[submodule "themes/xuanzhi"]
+	path = themes/xuanzhi
+	url = https://github.com/ldm0715/xuanzhi.git

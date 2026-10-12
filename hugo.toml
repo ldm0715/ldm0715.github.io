@@ -1,0 +1,57 @@
+baseURL = 'https://ldm0715.github.io/'
+defaultContentLanguage = 'zh-cn'
+locale = 'zh-cn'
+title = '宫城楠木'
+theme = 'xuanzhi'
+
+# emoji 是顶层开关，不是 goldmark extension——写成 extensions.emoji 不报错但静默失效
+enableEmoji = true
+
+# 生成 robots.txt（模板在主题 layouts/robots.txt，里面声明 sitemap）
+enableRobotsTXT = true
+
+[markup]
+  [markup.highlight]
+    style = 'monokailight'
+    noClasses = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+  [markup.goldmark.parser]
+    attribute.block = true
+  [markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+      inline = [['\(', '\)']]
+      block = [['\[', '\]'], ['$$', '$$']]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+  # 点缀色切换：terracotta（陶土橘）/ indigo（黛青），二选一
+  accent = 'terracotta'
+  author = '宫城楠木'
+  description = '记录学习、编程与生活'
+
+# 头栏导航：加页面只改这里，不用动主题模板。
+# 不配这一段时，主题会退回「主内容段 + 分类法页」的旧算法。
+[[menus.main]]
+  name = '归档'
+  pageRef = '/posts'
+  weight = 10
+[[menus.main]]
+  name = '分类'
+  pageRef = '/categories'
+  weight = 20
+[[menus.main]]
+  name = '标签'
+  pageRef = '/tags'
+  weight = 30
+[[menus.main]]
+  name = '关于'
+  pageRef = '/about'
+  weight = 40
+
+  # 首页欢迎区欢迎语
+  [params.hero]
+    greeting = '一纸短笺，见字如面'

@@ -1,0 +1,15 @@
+public/
+resources/
+.hugo_build.lock
+
+# 设计预览（visual companion）会话目录：mockup、临时内容、字体副本
+.superpowers/
+
+# 开发期 junction 指向 F:\hugo_theme，主题本身在独立仓库，不进站点仓库
+# themes/xuanzhi/
+
+# 本地工具产物：Chrome profile + 截图 + 临时脚本（25M / 502 个文件）
+.zcode/
+
+# 关于页设计稿各版 mockup：本地比对用的稿板，不是站点内容
+about-design/
