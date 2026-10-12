@@ -1,0 +1,5 @@
+{
+  "installCommand": "git submodule update --init --recursive",
+  "buildCommand": "hugo --minify --baseURL https://ldm0715-github-io.vercel.app/ && npx --yes pagefind@latest --site public",
+  "outputDirectory": "public"
+}
