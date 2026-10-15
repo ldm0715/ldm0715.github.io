@@ -1,0 +1,17 @@
+# Netlify 构建配置（对应 vercel.json）
+# 文件配置优先级高于网页后台的设置，改这里就够了
+
+[build]
+  # 1. 拉 submodule：主题 themes/xuanzhi 不拉下来，构建会挂在模板找不到
+  # 2. hugo --baseURL "$URL"：hugo.toml 里写死的是 GitHub Pages 域名，
+  #    这里覆盖成 Netlify 的实际地址（$URL 会随自定义域名自动变）
+  # 3. pagefind：搜索索引不是 Hugo 生成的，要单独跑
+  command = "git submodule update --init --recursive && hugo --minify --baseURL \"$URL\" && npx --yes pagefind@latest --site public"
+  publish = "public"
+
+[build.environment]
+  # 必须设，否则构建镜像里没有 hugo 命令（本地是 0.165.0 extended）
+  HUGO_VERSION = "0.165.0"
+  HUGO_ENV = "production"
+  # npx 跑 pagefind 需要
+  NODE_VERSION = "22"
